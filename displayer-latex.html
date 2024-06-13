@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display LaTeX with MathJax</title>
+    <title>نمایش LaTeX با MathJax</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            tags: "ams",
+            macros: {
+                RR: "\\mathbb{R}"
+            },
+            processEscapes: true,
+            processEnvironments: true,
+            processRefs: true,
+            autoload: {
+                color: [],
+                require: ["AMSmath"]
+            },
+            ignoreHtmlClass: "tex2jax_ignore",
+            elementScripts: element,
+            compileError: ["noUndefined", "Safe"]
+        }
+    };
+    </script>
+    <style>
+        body {
+            direction: rtl;
+            font-family: 'Vazir', sans-serif;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Displaying LaTeX with MathJax</h1>
+<h1>نمایش LaTeX با MathJax</h1>
 
 <div id="latex-content"></div>
 
@@ -24,7 +50,7 @@ fetch('main.tex')
         document.getElementById('latex-content').innerHTML = cleanData;
 
         // Process LaTeX with MathJax
-        MathJax.typeset();
+        MathJax.typesetPromise();
     })
     .catch(error => console.error('Error loading LaTeX file:', error));
 </script>
