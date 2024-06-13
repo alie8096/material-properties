@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display LaTeX with MathJax</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<h1>Displaying LaTeX with MathJax</h1>
+
+<div id="latex-content"></div>
+
+<script>
+// Load LaTeX file and display its content
+fetch('document.tex')
+    .then(response => response.text())
+    .then(data => {
+        // Remove LaTeX document class and begin document commands
+        const cleanData = data.replace(/\\documentclass{[^}]*}|\\usepackage\[.*?\]{.*?}|\\begin{document}|\\end{document}/g, '');
+
+        // Insert LaTeX content into HTML
+        document.getElementById('latex-content').innerHTML = cleanData;
+
+        // Process LaTeX with MathJax
+        MathJax.typeset();
+    })
+    .catch(error => console.error('Error loading LaTeX file:', error));
+</script>
+
+</body>
+</html>
