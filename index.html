@@ -25,12 +25,14 @@
     <div id="canvasContainer">
         <canvas id="pdfCanvas"></canvas>
     </div>
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <!-- بارگذاری pdf.js از CDN رسمی -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
     <script>
-        var url = 'main.pdf';
-
+        // تعیین مسیر فایل pdf.worker.js از CDN رسمی
         var pdfjsLib = window['pdfjs-dist/build/pdf'];
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.worker.min.js';
+
+        var url = 'main.pdf';
 
         var loadingTask = pdfjsLib.getDocument(url);
         loadingTask.promise.then(function(pdf) {
