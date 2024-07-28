@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>پرزنتیشن من</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            direction: rtl;
+            font-family: "Yas", sans-serif;
+        }
+        #canvasContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvasContainer">
+        <canvas id="pdfCanvas"></canvas>
+    </div>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script>
+        var url = 'example.pdf';
+
+        var pdfjsLib = window['pdfjs-dist/build/pdf'];
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+        var loadingTask = pdfjsLib.getDocument(url);
+        loadingTask.promise.then(function(pdf) {
+            console.log('PDF loaded');
+
+            pdf.getPage(1).then(function(page) {
+                console.log('Page loaded');
+
+                var scale = 1.5;
+                var viewport = page.getViewport({scale: scale});
+
+                var canvas = document.getElementById('pdfCanvas');
+                var context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                var renderTask = page.render(renderContext);
+                renderTask.promise.then(function() {
+                    console.log('Page rendered');
+                });
+            });
+        }, function (reason) {
+            console.error(reason);
+        });
+    </script>
+</body>
+</html>
