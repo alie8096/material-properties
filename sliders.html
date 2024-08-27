@@ -1,0 +1,683 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Presentation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+  
+  <!-- پشتیبانی از KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body, {
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false},
+                  {left: '\(', right: '\)', display: false},
+                  {left: '\[', right: '\]', display: true}
+              ],
+              ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          });"></script>
+  
+  <style>
+      /* استایل‌های سفارشی */
+      body {
+          font-family: 'Vazir', sans-serif;
+          direction: rtl;
+          text-align: right;
+          line-height: 1.8;
+      }
+      .reveal {
+          direction: ltr;  /* قرار دادن کل اسلایدر به صورت چپ به راست */
+      }
+      .reveal .navigate-left,
+      .reveal .navigate-right {
+          display: none;  /* مخفی کردن فلش‌های پیش‌فرض Reveal.js */
+      }
+      .slide {
+          padding: 20px;
+          text-align: right; /* متن‌ها به صورت راست‌چین */
+      }
+      .text {
+          font-size: 24px;
+      }
+      .list {
+          margin: 20px auto;
+          text-align: right; /* لیست‌ها به صورت راست‌چین */
+      }
+      .link {
+          color: blue;
+          text-decoration: underline;
+      }
+      .image {
+          max-width: 100%;
+          height: auto;
+      }
+      .table {
+          margin: 20px auto;
+          width: 80%;
+      }
+      .math-container {
+          direction: ltr;  /* فرمول‌ها به صورت چپ به راست */
+          text-align: left;
+          margin: 20px 0;
+      }
+      p {
+          margin: 20px 0;
+      }
+      .navigation {
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          align-items: center;
+          z-index: 1000; /* اضافه کردن z-index برای قرار گرفتن دکمه‌ها بالای محتوا */
+      }
+      .navigation button {
+          margin: 0 5px;
+          padding: 8px 16px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+      }
+      .navigation input {
+          width: 50px;
+          text-align: center;
+          font-size: 16px;
+          margin: 0 5px;
+          padding: 5px;
+      }
+      .navigation input[type="number"] {
+          -moz-appearance: textfield;
+      }
+      .navigation input::-webkit-outer-spin-button,
+      .navigation input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+      .navigation span {
+          font-size: 16px;
+          color: #333;
+      }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="slide-1" class="slide"><h1>خواص مواد مهندسی</h1>
+<p class="text"><strong>دکتر اعظم بیگی خردمند</strong></p></section>
+<section id="slide-2" class="slide"><h2>منابع</h2>
+<ol class="list">
+<li>W. F. Smith, <em>Principles of Materials Science and Engineering</em>, 3rd Edition, McGraw Hill, 1996.</li>
+<li>K. G. Budinski and M. K. Budinski, <em>Engineering Materials: Properties and Selection</em>, 7th Edition, Prentice Hall, 2002.</li>
+</ol></section>
+<section id="slide-3" class="slide"><h2>فصل اول</h2>
+<h3>تاریخچه</h3>
+<ul class="list">
+<li>متالورژی به عنوان صنعت مادر حدود 6-7 هزار سال پیش شکل گرفت.</li>
+<li>مس اولین فلزی بود که به صورت خالص استخراج شد.</li>
+</ul>
+<p class="text"><img class="image" alt="تاریخه" src="images/mp1.jpg" /></p></section>
+<section id="slide-4" class="slide"><h3>انواع مواد مهندسی</h3>
+<p class="text"><strong>فلزات:</strong></p>
+<ul class="list">
+<li>رسانای خوب حرارت و الکتریسیته.</li>
+<li>شکل‌پذیر (به دلیل پیوند فلزی).</li>
+</ul>
+<p class="text"><strong>سرامیک‌ها:</strong></p>
+<ul class="list">
+<li>پیوند کووالانسی و یونی.</li>
+<li>دارای سختی و دیرگدازی بالا.</li>
+</ul>
+<p class="text"><strong>پلیمرها:</strong></p>
+<ul class="list">
+<li>از مولکول‌های بزرگ و طویل تشکیل شده‌اند.</li>
+</ul></section>
+<section id="slide-5" class="slide"><h3>فلزها</h3>
+<ul class="list">
+<li><code>چیدمان اتمی بسیار منظم و فشرده</code></li>
+<li><code>چگالی بالا</code></li>
+<li><code>صلبیت</code></li>
+<li><code>استحکام</code></li>
+<li><code>انعطاف‌پذیری</code></li>
+<li><code>مقاومت به رشد ترک</code></li>
+<li><code>الکترون آزاد</code></li>
+<li><code>هدایت گرمایی</code></li>
+<li><code>هدایت الکتریکی</code></li>
+<li>عدم انتقال نور</li>
+<li><code>بیشترین کاربرد در مهندسی</code></li>
+</ul>
+<p class="text"><img class="image" alt="فلز ها" src="images/mp2.jpg" /></p></section>
+<section id="slide-6" class="slide"><h3>فلزات آهنی</h3>
+<ul class="list">
+<li><code>چُدن‌ها</code>: آلیاژهای آهن-کربن و عناصر دیگر که کمتر از 2% کربن دارند.</li>
+<li><code>چُدن سفید</code></li>
+<li><code>چُدن‌های گرافیتی</code></li>
+<li><code>چُدن خاکستری</code></li>
+<li><code>چُدن داکتیل (نشکن)</code></li>
+<li><code>چُدن مالیبل (چکشخوار)</code></li>
+<li><code>فولادها</code>: آلیاژهای آهن-کربن و عناصر دیگر که بیشتر از 2% کربن دارند.</li>
+<li><code>ساده کربنی</code></li>
+<li><code>کم آلیاژ</code></li>
+<li><code>زنگ نزن</code></li>
+<li><code>ابزار</code></li>
+</ul></section>
+<section id="slide-7" class="slide"><h3>سرامیک‌ها</h3>
+<ul class="list">
+<li><code>تُرد</code></li>
+<li><code>مقاومت دمایی</code></li>
+<li><code>انعطاف‌پذیری کم</code></li>
+<li><code>عموماً مستحکم</code></li>
+<li><code>عموماً پایداری شیمیایی</code></li>
+<li><code>عموماً عایق جریان</code></li>
+<li><code>استثنا: گروهی الکتروسرامیک‌ها رسانا هستند</code> (در ساخت ترانزیستورها، یکسو کننده‌ها و ICها)</li>
+</ul>
+<p class="text"><img class="image" alt="سرامیک ها" src="images/mp3.jpg" /></p></section>
+<section id="slide-8" class="slide"><h3>کاربرد سرامیک‌ها</h3>
+<ul class="list">
+<li><code>مصالح ساختمانی</code></li>
+<li><code>شیشه‌ها</code></li>
+<li>شیشه‌های هوشمند</li>
+<li>ساینده‌ها</li>
+<li>مته‌ها</li>
+<li>ابزار برش</li>
+<li>انواع سیمان‌ها</li>
+<li>سرامیک‌های پوشش دهی</li>
+<li>بیو سرامیک‌ها</li>
+<li>فیلترها</li>
+<li>کاتالیست‌ها</li>
+<li>الکتروسرامیک‌ها</li>
+</ul></section>
+<section id="slide-9" class="slide"><h3>پلیمرها</h3>
+<ul class="list">
+<li><code>مقاومت دمایی</code></li>
+<li><code>در دمای زیر صفر تُرد</code></li>
+<li><code>در دمای بالا عموماً شکل‌پذیر</code></li>
+<li><code>در دمای خیلی بالا متلاشی</code></li>
+<li><code>عموماً کم چگال</code></li>
+<li><code>عموماً عایق جریان</code></li>
+<li><code>عموماً پایداری شیمیایی در دمای محیط</code></li>
+</ul>
+<p class="text"><img class="image" alt="پلیمر ها" src="images/mp4.jpg" /></p></section>
+<section id="slide-10" class="slide"><h3>مقایسه سه ماده اصلی</h3>
+<table class="table">
+<thead>
+<tr>
+<th>ویژگی</th>
+<th>سرامیک</th>
+<th>فلز</th>
+<th>پلیمر</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>سختی</td>
+<td>بسیار بالا</td>
+<td>متوسط</td>
+<td>کم</td>
+</tr>
+<tr>
+<td>مدول الاستیسیته</td>
+<td>بالا</td>
+<td>متوسط</td>
+<td>پایین</td>
+</tr>
+<tr>
+<td>استحکام در دمای بالا</td>
+<td>بسیار بالا</td>
+<td>بالا</td>
+<td>پایین</td>
+</tr>
+<tr>
+<td>انبساط حرارتی</td>
+<td>کم</td>
+<td>متوسط</td>
+<td>زیاد</td>
+</tr>
+<tr>
+<td>شکل‌پذیری</td>
+<td>کم</td>
+<td>زیاد</td>
+<td>زیاد</td>
+</tr>
+<tr>
+<td>مقاومت به خوردگی</td>
+<td>بسیار بالا</td>
+<td>بسته به نوع</td>
+<td>متوسط تا زیاد</td>
+</tr>
+<tr>
+<td>مقاومت به سایش</td>
+<td>بالا</td>
+<td>متوسط</td>
+<td>کم</td>
+</tr>
+<tr>
+<td>رسانایی الکتریکی</td>
+<td>کم</td>
+<td>بسیار بالا</td>
+<td>بسیار کم</td>
+</tr>
+<tr>
+<td>چگالی</td>
+<td>بالا</td>
+<td>بالا</td>
+<td>کم</td>
+</tr>
+<tr>
+<td>رسانایی حرارتی</td>
+<td>کم</td>
+<td>بالا</td>
+<td>بسیار کم</td>
+</tr>
+</tbody>
+</table></section>
+<section id="slide-11" class="slide"><h3>کامپوزیت‌ها</h3>
+<p>اجزاء مواد کامپوزیتی از نظر شکل و ترکیب شیمیایی متفاوت هستند.<br />
+اجزاء در یکدیگر حل نمی‌شوند (مخلوط می‌شوند).<br />
+ایجاد موادی با خواص جدید.<br />
+دارای خواص مناسب‌تری نسبت به اجزاء اولیه.</p>
+<p><img class="image" alt="کامپوزیت ها" src="images/mp5.jpg" />
+<img class="image" alt="کامپوزیت ها" src="images/mp6.png" /></p></section>
+<section id="slide-12" class="slide"><h3>مواد مدرن</h3>
+<p>نیمه‌هادی‌ها<br />
+مواد زیستی<br />
+مواد هوشمند<br />
+مواد نانو  </p>
+<p><img class="image" alt="مواد مدرن" src="images/mp7.jpg" />
+<img class="image" alt="مواد مدرن" src="images/mp8.jpg" /></p></section>
+<section id="slide-13" class="slide"><h3>مواد هوشمند بر اساس محرک‌ها</h3>
+<p>آلیاژ حافظه شکلی<br />
+سرامیک پیزوالکتریک<br />
+مواد مغناطیسی<br />
+الکترو/مغناطیسی  </p>
+<p class="text"><img class="image" alt="مواد هوشمند" src="images/mp9.png" /></p></section>
+<section id="slide-14" class="slide"><h3>محورهای اصلی علم مواد</h3>
+<p>فرایند<br />
+ساختار<br />
+خواص<br />
+کارایی  </p>
+<p class="text"><img class="image" alt="محورهای اصلی علم مواد" src="images/mp10.png" /></p></section>
+<section id="slide-15" class="slide"><h3>تأثیر محورهای اصلی بر هم</h3>
+<p>علم مواد به بررسی ارتباط بین ۴ عنصر می‌پردازد:<br />
+ساختار تابعی از فرایند ساخت آن‌هاست.<br />
+عملکرد تابعی از ویژگی‌های آن ماده است.</p>
+<p class="text">برای مثال، تأثیر فرایند در ساختار، ویژگی و عملکرد در برابر نور.</p>
+<p class="text"><img class="image" alt="تأثیر محورهای اصلی بر هم" src="images/mp11.png" /></p></section>
+<section id="slide-16" class="slide"><h3>تأثیر فرایند ساخت در آلومینیم اکسید</h3>
+<p>یک قرص تک‌بلور و شفاف.<br />
+یک قرص چندبلوری نیمه‌کدر.<br />
+یک قرص چندبلوری کاملاً مات.</p>
+<p class="text"><img class="image" alt="آلومینیم اکسید" src="images/mp12.png" /></p></section>
+<section id="slide-17" class="slide"><h3>چرا علم مواد؟</h3>
+<p class="text">به‌عنوان یک مهندس موفق باید اطلاعاتی از ساختار و ویژگی مواد و تأثیر آن در فرایند ساخت برای رسیدن به عملکردهای بهتر داشته باشیم.</p>
+<p class="text"><img class="image" alt="Question mark" src="images/mp13.png" /></p></section>
+<section id="slide-18" class="slide"><h3>سطوح ساختار مواد</h3>
+<p class="text"><img class="image" alt="سطوح ساختار مواد" src="images/mp14.png" /></p></section>
+<section id="slide-19" class="slide"><h3>حساسیت به ریزساختار</h3>
+<p class="text"><strong>خواص غیر حساس:</strong></p>
+<ul class="list">
+<li>دانسیته</li>
+<li>مدول یانگ</li>
+<li>ضریب انبساط حرارتی</li>
+<li>گرمای ویژه</li>
+</ul>
+<p class="text"><strong>خواص حساس:</strong></p>
+<ul class="list">
+<li>استحکام تسلیم</li>
+<li>استحکام کششی</li>
+<li>شکل‌پذیری</li>
+<li>چقرمگی شکست</li>
+<li>استحکام خستگی</li>
+<li>استحکام خزشی</li>
+</ul>
+<p class="text"><img class="image" alt="حساسیت به ریزساختار" src="images/mp15.png" /></p></section>
+<section id="slide-20" class="slide"><h3>انواع خواص مواد</h3>
+<ul class="list">
+<li>مکانیکی</li>
+<li>الکتریکی</li>
+<li>حرارتی</li>
+<li>مغناطیسی</li>
+<li>نوری</li>
+<li>استهلاکی</li>
+</ul>
+<p class="text"><img class="image" alt="انواع خواص مواد" src="images/mp16.jpg" /></p></section>
+<section id="slide-21" class="slide"><h3>ساختار اتمی</h3>
+<p class="text"><strong>اتم:</strong></p>
+<ul class="list">
+<li>پروتون (مثبت)</li>
+<li>نوترون (خنثی)</li>
+<li>الکترون (منفی)</li>
+</ul>
+<p class="text"><img class="image" alt="اتم" src="images/mp17.png" /></p>
+<p class="text"><strong>نمایش ساختار هسته‌ای اتم:</strong></p>
+<ul class="list">
+<li>عدد اتمی ($Z$): تعداد پروتون‌ها</li>
+<li>عدد جرمی ($A$): تعداد پروتون‌ها + نوترون‌ها</li>
+</ul>
+<p class="text"><div class="math-container">$$A = Z + N$$</div></p>
+<ul class="list">
+<li>عدد آووگادرو ($N_A$):</li>
+</ul>
+<p class="text"><div class="math-container">$$N_A = 6.02 \times 10^{23}$$</div></p>
+<p class="text"><img class="image" alt="آووگادرو" src="images/mp18.jpg" /></p></section>
+<section id="slide-22" class="slide"><h3>ساختار الکترونی</h3>
+<p class="text"><strong>والانس (n):</strong></p>
+<ul class="list">
+<li>تعداد الکترون لایه آخر</li>
+<li>تعیین‌کننده خواص شیمیایی</li>
+</ul>
+<h4>دسته‌بندی بر اساس والانس ←</h4>
+<p class="text"><strong>الکترونگاتیویته:</strong></p>
+<ul class="list">
+<li>تمایل به جذب الکترون (الکترونگاتیو) مثل نافلزات</li>
+<li>تمایل به از دست دادن الکترون (الکتروپوزیتیو) مثل فلزات</li>
+</ul>
+<table class="table">
+<thead>
+<tr>
+<th>n</th>
+<th>نوع</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1, 2, 3</td>
+<td>فلز</td>
+</tr>
+<tr>
+<td>4</td>
+<td>شبه فلز</td>
+</tr>
+<tr>
+<td>5, 6, 7</td>
+<td>نافلز</td>
+</tr>
+<tr>
+<td>8</td>
+<td>گاز نجیب</td>
+</tr>
+</tbody>
+</table>
+<p class="text"><strong>جدول تناوبی:</strong></p>
+<ul class="list">
+<li>اساس چیدمان: آرایش الکترونی عناصر</li>
+</ul>
+<p class="text"><img class="image" alt="ساختار الکترونی" src="images/mp19.png" /></p></section>
+<section id="slide-23" class="slide"><h3>پیوندهای بین اتمی</h3>
+<p class="text"><strong>پیوندهای اولیه (اصلی) (پیوند قوی):</strong></p>
+<ul class="list">
+<li>یونی</li>
+<li>کووالانسی</li>
+<li>فلزی</li>
+</ul>
+<p><img class="image" alt="یونی" src="images/mp22.svg" />
+<img class="image" alt="کوالانسی" src="images/mp21.jpg" />
+<img class="image" alt="فلزی" src="images/mp20.png" /></p>
+<p class="text"><strong>پیوندهای ثانویه (فرعی) (پیوند نسبتاً ضعیف):</strong></p>
+<ul class="list">
+<li>واندروالس</li>
+<li>هیدروژنی</li>
+</ul>
+<p><img class="image" alt="هیدروژنی" src="images/mp23.svg" />
+<img class="image" alt="واندروالس" src="images/mp24.png" /></p>
+<p class="text"><strong>نکته:</strong> در این پیوندها انتقال و اشتراک الکترون وجود ندارد.</p></section>
+<section id="slide-24" class="slide"><h3>پیوند فلزی</h3>
+<ul class="list">
+<li>در فلزات و آلیاژها</li>
+<li>مشخصه: الکترون آزاد</li>
+<li>مدل: "دریای الکترون آزاد"</li>
+<li>ماهیت: غیرجهت‌دار</li>
+<li>عامل اتصال: جاذبه بین الکترون‌های آزاد و هسته یونی با بار مثبت</li>
+</ul>
+<p class="text"><img class="image" alt="پیوند بلزی" src="images/mp25.png" /></p>
+<p class="text"><strong>نکته 1:</strong> در مدل دریای الکترون آزاد، الکترون‌های آزاد که به اتم‌های خاص تعلق ندارند.</p>
+<p class="text"><strong>نکته 2:</strong> الکترون‌های غیر والانس باقیمانده و هسته اتم، تشکیل هسته‌های یونی را می‌دهند که دارای بار خالص مثبت هستند و در دریای الکترون شناورند.</p></section>
+<section id="slide-25" class="slide"><h3>پیوند یونی</h3>
+<ul class="list">
+<li>در بسیاری از سرامیک‌ها و ترکیباتی دارای یک الکترونگاتیو و یک الکتروپوزیتیو</li>
+<li>مشخصه: انتقال و داد و ستد الکترون</li>
+<li>ماهیت: غیرجهت‌دار</li>
+<li>عامل اتصال: جاذبه الکترواستاتیکی بین یون مثبت و یون منفی</li>
+<li>عنصر فلزی با دادن الکترون لایه ظرفیت به نافلز، رسیدن هر دو عنصر به آرایش گاز پایدار</li>
+<li>هر چه اختلاف الکترونگاتیو (فلز-غیرفلز) بیشتر باشد، پیوند یونی قوی‌تر یا انرژی پیوند بیشتر</li>
+</ul>
+<p class="text"><img class="image" alt="پیوند یونی" src="images/mp26.png" /></p>
+<p class="text"><strong>ویژگی‌ها:</strong></p>
+<ul class="list">
+<li>سخت</li>
+<li>شکننده</li>
+<li>عایق</li>
+<li>نقطه ذوب بالا</li>
+<li>عدم قابلیت تغییر شکل پلاستیک</li>
+<li>هدایت الکتریکی بسیار کمی (در حالت مذاب و توسط یون‌ها)</li>
+</ul></section>
+<section id="slide-26" class="slide"><h3>پیوند کووالانسی</h3>
+<ul class="list">
+<li>در الماس، سیلیکون و ژرمانیوم</li>
+<li>بین دو غیر فلز و یا بین هیدروژن و یک غیر فلز</li>
+<li>مشخصه: شراکت الکترون</li>
+<li>ماهیت: جهت‌دار</li>
+<li>عامل اتصال: نزدیک شدن دو هسته موجب ایجاد اربیتال الکترونی جدید شامل الکترون‌های به شراکت گذاشته شده می‌شود.</li>
+<li>به علت نامتقارن بودن شکل اربیتال‌ها، قدرت پیوند بین اتمی در تمام جهات یکسان نیست.</li>
+</ul>
+<p class="text"><img class="image" alt="پیوند کووالانسی" src="images/mp27.png" /></p>
+<p class="text"><strong>ویژگی‌ها:</strong></p>
+<ul class="list">
+<li>ترد</li>
+<li>چکش‌خواری ضعیف</li>
+<li>سختی بسیار زیاد (الماس ≠ بیسموت)</li>
+<li>نقطه ذوب بسیار بالا</li>
+<li>عایق الکتریکی (برای حرکت الکترون باید پیوند شکسته شود که به دما و انرژی زیاد نیاز دارد)</li>
+</ul>
+<p class="text"><img class="image" alt="پیوند یونی" src="images/mp28.png" /></p></section>
+<section id="slide-27" class="slide"><h3>پیوند واندروالس</h3>
+<ul class="list">
+<li>بین گازهای ایده‌آل (مانند آرگون، نئون) یا مولکول‌های پایدار مانند متان و مواد آلی دیگر در حالت مایع یا جامد</li>
+<li>ارتباطی به الکترون‌های ظرفیت ندارد</li>
+<li>عامل اتصال: دو قطبی‌های مولکولی یا اتمی است که به صورت دائم یا موقتی به وجود می‌آیند.</li>
+</ul>
+<p class="text"><img class="image" alt="پیوند واندروالس" src="images/mp29.png" /></p>
+<p class="text"><strong>ویژگی‌ها:</strong></p>
+<ul class="list">
+<li>پیوند ضعیف</li>
+<li>در اثر ارتعاشات حرارتی از بین خواهند رفت</li>
+</ul>
+<p class="text"><img class="image" alt="پیوند واندروالس" src="images/mp30.png" /></p></section>
+<section id="slide-28" class="slide"><h3>پیوند هیدروژنی</h3>
+<ul class="list">
+<li>در مولکول‌های غیر آلی (مانند آب) و آلی (مانند DNA)</li>
+<li>عامل اتصال: همراه شدن هیدروژن با یکی از عناصر با الکترونگاتیوی بالا (اکسیژن، نیتروژن، فلوئور)</li>
+</ul>
+<p class="text"><img class="image" alt="پیوند هیدروژنی" src="images/mp31.png" /></p>
+<p class="text"><strong>ویژگی‌ها:</strong></p>
+<ul class="list">
+<li>پیوند ضعیف</li>
+<li>در اثر ارتعاشات حرارتی از بین خواهند رفت</li>
+</ul></section>
+<section id="slide-29" class="slide"><h3>پیوندهای هیبریدی (ترکیبی)</h3>
+<ul class="list">
+<li>در بسیاری از مواد، پیوندهای بین اتمی ترکیبی از پیوندهای اولیه یا ثانویه است.</li>
+</ul>
+<p class="text"><img class="image" alt="پیوند هیبریدی" src="images/mp32.png" /></p></section>
+<section id="slide-30" class="slide"><h3>انرژی پیوند</h3>
+<ul class="list">
+<li>منحنی تغییرات نیروی بین اتمی (و انرژی پتانسیل) بر حسب فاصله بین اتمی</li>
+<li>با نزدیک شدن دو اتم به هم؛ دو نوع نیروی بین اتمی (جاذبه و دافعه) بین آن‌ها شکل می‌گیرد.</li>
+<li>نیروی جاذبه: بسته به نوع پیوند اتمی از نیروی بین مراکز با بار مثبت و منفی است.</li>
+<li>نیروی دافعه: هم‌پوشانی الکترون‌های لایه آخر است که با نزدیک شدن دو اتم، افزایش می‌یابد.</li>
+<li>نیروی خالص: مجموع این دو نیرو است.</li>
+</ul>
+<p class="text"><strong>نکته:</strong> هنگامی که نیروی خالص برابر صفر شود، اتم‌ها در فاصله تعادل قرار دارند.</p></section>
+<section id="slide-31" class="slide"><h3>انرژی پیوند</h3>
+<p class="text"><img class="image" alt="انرژی پیوند" src="images/mp33.jpg" /></p></section>
+<section id="slide-32" class="slide"><h3>انرژی پیوند</h3>
+<p>مهم ترین مشخصه منحني: نقطه مينيمم آن است.
+انرژي متناظر با فاصله ي تعادلي، انرژي پيوند است.
+انرژي پيوندي حداقل انرژي براي جدا كردن و يا شكستن پيوند است.</p>
+<table class="table">
+<thead>
+<tr>
+<th>نوع پیوند</th>
+<th>انرژی پیوند $(kJ)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>یونی</td>
+<td>$625-1550$</td>
+</tr>
+<tr>
+<td>کووالانسی</td>
+<td>$520-1250$</td>
+</tr>
+<tr>
+<td>فلزی</td>
+<td>$100-800$</td>
+</tr>
+<tr>
+<td>واندروالسی</td>
+<td>$&lt; 40$</td>
+</tr>
+</tbody>
+</table></section>
+<section id="slide-33" class="slide"><h3>انرژی پیوند</h3>
+<p>انرژي پيوندي متناسب با دماي ذوب
+<strong>افزايش انرژي پيوندي:</strong>
+دماي ذوب افزايش
+مدول يانگ افزايش
+ضريب انبساط حرارتي كاهش</p>
+<p class="text"><img class="image" alt="انرژی پیوند" src="images/mp34.jpg" /></p>
+<p><strong>در مقياس اتمي:</strong>
+ مقدار مدول يانگ تابعي از مقاومت پيوند اتمي در برابر تغيير فاصله ي تعادلي اتم هاست. مدول يانگ متناسب با شيب نمودار نيروي بين اتمي- فاصله در نقطه ي 
+$$
+aE \propto - \left(\frac{dF}{dr_0}\right)_{r = r_0}
+$$</p></section>
+<section id="slide-34" class="slide"><h2>فصل دوم</h2></section>
+<section id="slide-35" class="slide"><h3>نظم اتمی</h3>
+<ol class="list">
+<li>
+<p><strong>بی نظم</strong>
+مثل گاز ها</p>
+</li>
+<li>
+<p><strong>کریستال</strong>
+نظم بلند دامنه
+عدد همسایگی ثابت
+نظم تکرار شونده (آرایش پریودی) طی انجماد</p>
+</li>
+<li>
+<p><strong>آمورف</strong>
+نظم کم دامنه
+عدد همسایگی متغییر
+نظم تا چند فاصله اتمی حفظ می شود
+سریع سرد کردن مذاب با سرعت حدود برای تولید آمورف فلزی</p>
+</li>
+</ol>
+<p class="text"><img class="image" alt="نظم اتمی" src="images/mp35.png" /></p></section>
+<section id="slide-36" class="slide"><h3>ساختار کریستالی</h3>
+<p><strong>کریستال</strong>: مجموعه اتم هایی که با نظم معین در تمام حجم توزیع شده اند
+از اتصال فرضی مرکز اتم ها سیستم سه بعدی شامل تعداد زیادی متوازی السطوح که شبکه بلوری را تشکیل میدهند
+کوچک ترین متوازی السطوح تکرار شونده در تمام سه جهت حجم بلور را سلول واحد کویند</p>
+<p class="text"><img class="image" alt="ساختار کریستالی" src="images/mp36.png" /></p></section>
+<section id="slide-37" class="slide"><h3>سیستم های بلوری</h3>
+<p>دسته بندی برای راحتی ساختار های بلوری بر مبنای شکل سلول واحد یا آرایش اتمی گروه
+این روش فقط بر پایه شکل سلول واحد بدون توجه به موقعیت اتم ها در سلول واحد
+در این روش یک سیستم مختصاتی برقرار می شود
+تعیین شکل هندسی سلول واحد</p>
+<ol class="list">
+<li>طول بردار در امتداد محور</li>
+<li>طول بردار در امتداد محور</li>
+<li>طول بردار در امتداد محور</li>
+<li>زاويه ي بين بردار و</li>
+<li>زاويه ي بين بردار و</li>
+<li>زاويه ي بين بردار و</li>
+</ol>
+<p class="text"><img class="image" alt="سیستم های بلوری" src="images/mp37.png" /></p></section>
+<section id="slide-38" class="slide"><h3>سیستم های بلوری</h3>
+<p class="text">هفت تلفيق احتمالي وجود می آید که هر کدام يک سيستم بلوري يا سيستم تبلور جداگانه را مشخص مي کنند که 14 حالت به وجود مي آيد به 14 شبكه براوه معروف اند</p>
+<ul class="list">
+<li>مکعبي</li>
+<li>تتراگونال</li>
+<li>هگزاگونال</li>
+<li>ارتورمبيک</li>
+<li>رمبوهدرال</li>
+<li>مونوکلينيک</li>
+<li>تري کلينيک</li>
+</ul>
+<p class="text"><img class="image" alt="سیستم های بلوری" src="images/mp38.jpg" /></p></section>
+<section id="slide-39" class="slide"><h3>سیستم های بلوری</h3>
+<p class="text">اكثر فلزات از سيستم هاي مكعبي يا هگزاگونال متبلور مي شوند.</p>
+<table class="table">
+<thead>
+<tr>
+<th>حالت های مکعبی</th>
+<th>انگلیسی</th>
+<th>اختصار</th>
+<th>شکل</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>مکعبی ساده</td>
+<td>Simple Cubic</td>
+<td>SC</td>
+<td><img class="image" alt="SC" src="images/mp39.png" /></td>
+</tr>
+<tr>
+<td>مکعبی مرکزدار</td>
+<td>Body Centered Cubic</td>
+<td>BCC</td>
+<td><img class="image" alt="BCC" src="images/mp40.png" /></td>
+</tr>
+<tr>
+<td>مکعبی با سطوح مرکز دار</td>
+<td>Face Centered Cubic</td>
+<td>FCC</td>
+<td><img class="image" alt="FCC" src="images/mp41.png" /></td>
+</tr>
+</tbody>
+</table></section>
+<section id="slide-40" class="slide"></section>
+    </div>
+  </div>
+  <div class="navigation">
+    <input type="number" id="slideNumberInput" min="1" max="40">
+    <span id="totalSlides">از 40</span>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script>
+    Reveal.initialize();
+    
+    const totalSlides = 40;
+    const input = document.getElementById('slideNumberInput');
+
+    // تنظیم ورودی شماره اسلاید فعلی
+    Reveal.on('slidechanged', function(event) {
+      input.value = event.indexh + 1;
+    });
+
+    // جستجو و حرکت به اسلاید بر اساس شماره
+    input.addEventListener('change', function() {
+      const persianNumbers = '۰۱۲۳۴۵۶۷۸۹';
+      let slideNumber = input.value.split('').map(c => persianNumbers.includes(c) ? persianNumbers.indexOf(c) : c).join('');
+      slideNumber = parseInt(slideNumber);
+      
+      if (slideNumber >= 1 && slideNumber <= totalSlides) {
+        Reveal.slide(slideNumber - 1);
+      } else {
+        alert('شماره اسلاید معتبر نیست');
+        input.value = Reveal.getIndices().h + 1;
+      }
+    });
+
+    // مقداردهی اولیه ورودی شماره اسلاید
+    input.value = Reveal.getIndices().h + 1;
+  </script>
+</body>
+</html>
