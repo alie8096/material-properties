@@ -1,0 +1,371 @@
+<svg width="1920" height="1080" version="1.1" viewBox="0 0 508 285.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<radialGradient id="radialGradient1542" cx="163.27" cy="86.551" r="254" gradientTransform="matrix(1.2399 .63772 -.25731 .5002 -16.901 -31.298)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#f9f9f9" offset="0"/>
+<stop stop-color="#e6e6e6" offset="1"/>
+</radialGradient>
+<radialGradient id="radialGradient1822" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -194.71 65.898)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<linearGradient id="linearGradient1090">
+<stop stop-color="#fc0" offset="0"/>
+<stop stop-color="#fc0" offset=".24707"/>
+<stop stop-color="#fc0" stop-opacity=".50244" offset="1"/>
+</linearGradient>
+<radialGradient id="radialGradient1824" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -161.08 86.01)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1826" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -194.71 86.01)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1828" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -161.08 65.898)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1830" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -194.71 33.358)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1832" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -177.92 94.952)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1834" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -210.2 94.952)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1836" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -161.13 103.89)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1838" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -194.75 103.89)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1840" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -210.2 42.3)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1842" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -177.92 42.3)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1844" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -145.64 42.3)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1846" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -161.08 33.358)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1848" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -145.64 94.952)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1163" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 64.125 -144.44)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1173" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 98.968 -131.67)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1177" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 118.45 -144.44)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1181" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 44.648 -131.67)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1189" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 64.125 -92.282)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1167" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 80.789 -110.89)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1185" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 44.648 -79.513)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1193" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 98.968 -79.513)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1197" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 118.45 -92.282)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1188" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 49.71 -10.171)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1190" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 84.553 2.5977)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1192" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 104.03 -10.171)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1194" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 30.233 2.5977)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1196" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 49.71 41.985)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1198" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 66.374 23.374)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1200" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 30.233 54.754)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1202" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 84.553 54.754)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1204" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 104.03 41.985)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1583-3" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 146.42 118.77)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient2110-9" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 129 60.232)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<clipPath id="clipPath1668-5">
+<path d="m61.084 32.325 1.6107 0.14032 6.3639-0.65189-2.2849-6.5075-4.8286-0.92604-5.1594 0.49609-3.4727 5.7547 4.8286 1.6536z" fill="none" stroke="#000" stroke-width=".26458px"/>
+</clipPath>
+<radialGradient id="radialGradient1674-8" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 129 60.232)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1706-9" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 129 112.39)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1573-0" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 165.9 53.848)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1585-4" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 165.9 106)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1722-9" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -144.8 -214.65)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1577-6" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 111.58 106)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1569-8" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 111.58 53.848)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<radialGradient id="radialGradient1732-6" cx="60.92" cy="60.819" r="7.1221" gradientTransform="matrix(.49593 .71974 -.82345 .56739 -144.8 -160.33)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1090"/>
+<linearGradient id="linearGradient3723">
+<stop stop-color="#fff" offset="0"/>
+<stop stop-color="#fff" stop-opacity="0" offset="1"/>
+</linearGradient>
+<radialGradient id="radialGradient11515" cx="128.9" cy="154.35" r="126.12" gradientTransform="matrix(.68463 .013389 -.013995 1.5501 170.19 -85.563)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient3723"/>
+<radialGradient id="radialGradient11519" cx="128.9" cy="154.35" r="126.12" gradientTransform="matrix(.64354 .013274 -.013155 1.5368 343.73 -85.233)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient3723"/>
+<radialGradient id="radialGradient11552" cx="128.9" cy="154.35" r="126.12" gradientTransform="matrix(.66707 .013226 -.013636 1.5313 1.7225 -84.356)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient3723"/>
+</defs>
+<g>
+<rect transform="translate(0 -11.25)" x="5" y="16.25" width="498" height="275.75" fill="url(#radialGradient1542)" style="paint-order:stroke fill markers"/>
+</g>
+<g transform="translate(0 -11.25)">
+<g transform="matrix(.97383 0 0 1.0008 338.68 -315)" fill="#fc0" opacity=".5">
+<rect x="4.4825" y="329.64" width="164.82" height="277.15" fill="#fc0" opacity=".3" stroke="#fff" stroke-linejoin="round" stroke-width="1.0698"/>
+</g>
+<rect x="171.2" y="15.143" width="172.3" height="277.12" fill="#000080" opacity=".2" stroke="#fff" stroke-linejoin="round" stroke-width="1.0937"/>
+<rect x="170.38" y="15.145" width="171.8" height="280.56" fill="url(#radialGradient11515)" stroke="#fff" stroke-linejoin="round" stroke-width="1.0989"/>
+<g transform="matrix(1.195 0 0 1.195 199.71 -47.91)">
+<g transform="translate(-14.415 134.27)">
+<circle cx="44.256" cy="-13.926" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="98.576" cy="-13.926" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".50369">
+<path d="m24.779-1.1576 19.477-12.769h54.32l-19.477 12.769h-54.32"/>
+<path d="m24.779-53.314v52.156"/>
+<path d="m79.099-53.314v52.156"/>
+</g>
+<g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="44.256" cy="-66.082" r="6.4925" fill="#fc0" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m44.256-66.082 16.664 33.544" fill="none" stroke-width=".13327px"/>
+<path d="m44.256-66.082v52.156" fill="none" stroke-width=".50369"/>
+<circle cx="98.576" cy="-66.082" r="6.4925" fill="#fc0" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+</g>
+<g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<path d="m98.576-66.082v52.156" stroke-width=".50369"/>
+<path d="m98.576-66.082-37.656 33.544" stroke-width=".13327px"/>
+<path d="m24.779-53.314h54.32l19.477-12.769h-54.32z" stroke-width=".50369"/>
+<path d="m44.256-13.926 16.664-18.612" stroke-width=".13327px"/>
+<path d="m98.576-13.926-37.656-18.612" stroke-width=".13327px"/>
+</g>
+<g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="60.92" cy="-32.538" r="6.4925" fill="#fc0" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m79.099-1.1576-18.179-31.38" fill="none" stroke-width=".13327px"/>
+<path d="m79.099-53.314-18.179 20.776" fill="none" stroke-width=".13327px"/>
+</g>
+<g>
+<circle cx="79.099" cy="-53.314" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="79.099" cy="-1.1576" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="44.256" cy="-66.082" r="6.4925" fill="url(#radialGradient1163)" style="paint-order:stroke fill markers"/>
+</g>
+<path d="m24.779-53.314 36.141 20.776" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".13327px"/>
+<g>
+<circle cx="24.779" cy="-53.314" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="79.099" cy="-53.314" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="79.099" cy="-53.314" r="6.4925" fill="url(#radialGradient1173)" style="paint-order:stroke fill markers"/>
+<circle cx="98.576" cy="-66.082" r="6.4925" fill="url(#radialGradient1177)" style="paint-order:stroke fill markers"/>
+<circle cx="24.779" cy="-53.314" r="6.4925" fill="url(#radialGradient1181)" style="paint-order:stroke fill markers"/>
+<circle cx="44.256" cy="-13.926" r="6.4925" fill="url(#radialGradient1189)" style="paint-order:stroke fill markers"/>
+</g>
+<path d="m24.779-1.1576 36.141-31.38" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".13327px"/>
+<g>
+<circle cx="24.779" cy="-1.1576" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="60.92" cy="-32.538" r="6.4925" fill="url(#radialGradient1167)" style="paint-order:stroke fill markers"/>
+<circle cx="24.779" cy="-1.1576" r="6.4925" fill="url(#radialGradient1185)" style="paint-order:stroke fill markers"/>
+<circle cx="79.099" cy="-1.1576" r="6.4925" fill="url(#radialGradient1193)" style="paint-order:stroke fill markers"/>
+<circle cx="98.576" cy="-13.926" r="6.4925" fill="url(#radialGradient1197)" style="paint-order:stroke fill markers"/>
+</g>
+</g>
+<g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="29.841" cy="120.34" r="6.4925" fill="#fc0" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m29.841 68.185v52.156" fill="none" stroke-width=".50369"/>
+<path d="m10.363 133.11 19.477-12.769h54.32l-19.477 12.769h-54.32" fill="none" stroke-width=".50369"/>
+<circle cx="84.161" cy="120.34" r="6.4925" fill="#fc0" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m10.363 80.953v52.156" fill="none" stroke-width=".50369"/>
+<path d="m64.684 80.953v52.156" fill="none" stroke-width=".50369"/>
+<circle cx="29.841" cy="68.185" r="6.4925" fill="#fc0" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+</g>
+<g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<path d="m29.841 68.185 16.664 33.544" stroke-width=".13327px"/>
+<path d="m84.161 68.185v52.156" stroke-width=".50369"/>
+<path d="m84.161 68.185h-54.32l-19.477 12.769h54.32" stroke-width=".50369"/>
+</g>
+<circle cx="84.161" cy="68.185" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<path d="m64.684 80.953 19.477-12.769" stroke-width=".50369"/>
+<g stroke-width=".13327px">
+<path d="m84.161 68.185-37.656 33.544"/>
+<path d="m29.841 120.34 16.664-18.612"/>
+<path d="m84.161 120.34-37.656-18.612"/>
+</g>
+</g>
+<g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="46.505" cy="101.73" r="6.4925" fill="#fc0" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m64.684 133.11-18.179-31.38" fill="none" stroke-width=".13327px"/>
+<path d="m64.684 80.953-18.179 20.776" fill="none" stroke-width=".13327px"/>
+<circle cx="64.684" cy="80.953" r="6.4925" fill="#fc0" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+</g>
+<circle cx="29.841" cy="68.185" r="6.4925" fill="url(#radialGradient1188)" style="paint-order:stroke fill markers"/>
+<path d="m10.363 80.953 36.141 20.776" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".13327px"/>
+<g>
+<circle cx="10.363" cy="80.953" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="64.684" cy="80.953" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="64.684" cy="80.953" r="6.4925" fill="url(#radialGradient1190)" style="paint-order:stroke fill markers"/>
+<circle cx="84.161" cy="68.185" r="6.4925" fill="url(#radialGradient1192)" style="paint-order:stroke fill markers"/>
+<circle cx="10.363" cy="80.953" r="6.4925" fill="url(#radialGradient1194)" style="paint-order:stroke fill markers"/>
+<circle cx="29.841" cy="120.34" r="6.4925" fill="url(#radialGradient1196)" style="paint-order:stroke fill markers"/>
+</g>
+<path d="m10.363 133.11 36.141-31.38" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".13327px"/>
+<g>
+<circle cx="10.363" cy="133.11" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="46.505" cy="101.73" r="6.4925" fill="url(#radialGradient1198)" style="paint-order:stroke fill markers"/>
+<circle cx="10.363" cy="133.11" r="6.4925" fill="url(#radialGradient1200)" style="paint-order:stroke fill markers"/>
+</g>
+<path d="m64.684 133.11 19.477-12.769" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".50369"/>
+<g>
+<circle cx="64.684" cy="133.11" r="6.4925" fill="url(#radialGradient1202)" style="paint-order:stroke fill markers"/>
+<circle cx="64.684" cy="133.11" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="84.161" cy="120.34" r="6.4925" fill="url(#radialGradient1204)" style="paint-order:stroke fill markers"/>
+</g>
+</g>
+<g transform="translate(0 -314.51)" fill="#800080" opacity=".2">
+<rect x="4.4825" y="329.64" width="164.82" height="277.15" opacity="1" stroke="#fff" stroke-linejoin="round" stroke-width="1.0698"/>
+<g transform="translate(0 .85931)">
+<rect x="4.4825" y="329.64" width="164.82" height="277.15" fill="#800080" opacity=".3" stroke="#fff" stroke-linejoin="round" stroke-width="1.0698"/>
+</g>
+</g>
+<rect x="1.9032" y="15.129" width="167.4" height="277.15" fill="url(#radialGradient11552)"/>
+<g transform="matrix(1.1901 0 0 1.1901 -42.519 -123.73)">
+<circle cx="91.711" cy="184.36" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="146.03" cy="184.36" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".50369">
+<path d="m72.234 144.97v52.156"/>
+<path d="m126.55 144.97v52.156"/>
+<path d="m91.711 132.2v52.156"/>
+</g>
+<circle cx="91.711" cy="132.2" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m146.03 132.2v52.156" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".50369"/>
+<g>
+<circle cx="146.03" cy="132.2" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="126.55" cy="144.97" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="126.55" cy="197.13" r="6.4925" fill="url(#radialGradient1583-3)" style="paint-order:stroke fill markers"/>
+<circle cx="109.13" cy="138.59" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+</g>
+<path d="m91.711 132.2 54.32 52.156" fill="none" stroke="#000" stroke-width=".133"/>
+<circle cx="109.13" cy="138.59" r="6.4925" fill="url(#radialGradient2110-9)" style="paint-order:stroke fill markers"/>
+<g stroke="#000">
+<path d="m146.03 132.2-54.32 52.156" fill="none" stroke-width=".133"/>
+<circle cx="118.87" cy="158.28" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="81.973" cy="164.67" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m72.234 144.97 54.32 52.156" fill="none" stroke-width=".133"/>
+</g>
+<g fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592">
+<circle transform="translate(47.455 106.21)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" style="paint-order:stroke fill markers"/>
+<circle transform="translate(47.455 106.21)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" style="paint-order:stroke fill markers"/>
+<circle cx="109.13" cy="138.59" r="6.4925" style="paint-order:stroke fill markers"/>
+</g>
+<g stroke="#000">
+<path d="m91.711 132.2 34.843 12.769" fill="none" stroke-width=".133"/>
+<circle transform="translate(47.455 106.21)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m72.234 144.97 73.798-12.769" fill="none" stroke-width=".133"/>
+</g>
+<g>
+<circle cx="109.13" cy="138.59" r="6.4925" fill="url(#radialGradient1674-8)" style="paint-order:stroke fill markers"/>
+<circle cx="109.13" cy="190.74" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle transform="translate(47.454 158.37)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+</g>
+<path d="m72.234 197.13 73.798-12.769" fill="none" stroke="#000" stroke-width=".133"/>
+<path d="m91.711 184.36 34.843 12.769" fill="none" stroke="#000" stroke-width=".133"/>
+<circle cx="109.13" cy="190.74" r="6.4925" fill="url(#radialGradient1706-9)" style="paint-order:stroke fill markers"/>
+<g stroke="#000">
+<path d="m126.55 144.97-54.32 52.156" fill="none" stroke-width=".133"/>
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="m72.234 144.97h54.32l19.477-12.769h-54.32z" fill="none" stroke-width=".50369"/>
+<circle transform="translate(47.455 106.21)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" fill="#fc0" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m72.234 197.13 19.477-12.769h54.32l-19.477 12.769h-54.32" fill="none" stroke-width=".50369"/>
+</g>
+</g>
+<g fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592">
+<circle transform="translate(47.454 158.37)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" style="paint-order:stroke fill markers"/>
+<circle cx="99.394" cy="171.05" r="6.4925" style="paint-order:stroke fill markers"/>
+<circle transform="matrix(0,-1,-1,0,0,0)" cx="-164.67" cy="-136.29" r="6.4925" style="paint-order:stroke fill markers"/>
+<circle transform="matrix(0 -1 -1 0 168.67 226.34)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" style="paint-order:stroke fill markers"/>
+</g>
+<path d="m126.55 144.97 19.477 39.388" fill="none" stroke="#000" stroke-width=".133"/>
+<path d="m146.03 132.2-19.477 64.925" fill="none" stroke="#000" stroke-width=".133"/>
+<g>
+<circle cx="126.55" cy="197.13" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="126.55" cy="144.97" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="146.03" cy="132.2" r="6.4925" fill="url(#radialGradient1573-0)" style="paint-order:stroke fill markers"/>
+<circle cx="146.03" cy="184.36" r="6.4925" fill="url(#radialGradient1585-4)" style="paint-order:stroke fill markers"/>
+<circle transform="matrix(0 -1 -1 0 168.67 226.34)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle transform="matrix(0,-1,-1,0,0,0)" cx="-164.67" cy="-136.29" r="6.4925" fill="url(#radialGradient1722-9)" style="paint-order:stroke fill markers"/>
+<circle transform="matrix(0,-1,-1,0,0,0)" cx="-164.67" cy="-81.973" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle transform="matrix(0 -1 -1 0 114.35 226.34)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+</g>
+<g stroke="#000">
+<path d="m72.234 144.97 19.477 39.388" fill="none" stroke-width=".133"/>
+<circle cx="72.234" cy="144.97" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<path d="m72.234 197.13 19.477-64.925" fill="none" stroke-width=".133"/>
+</g>
+<g>
+<circle cx="91.711" cy="184.36" r="6.4925" fill="url(#radialGradient1577-6)" style="paint-order:stroke fill markers"/>
+<circle cx="72.234" cy="197.13" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle cx="91.711" cy="132.2" r="6.4925" fill="url(#radialGradient1569-8)" style="paint-order:stroke fill markers"/>
+<circle transform="matrix(0 -1 -1 0 114.35 226.34)" cx="61.677" cy="32.377" r="6.4925" clip-path="url(#clipPath1668-5)" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2592" style="paint-order:stroke fill markers"/>
+<circle transform="matrix(0,-1,-1,0,0,0)" cx="-164.67" cy="-81.973" r="6.4925" fill="url(#radialGradient1732-6)" style="paint-order:stroke fill markers"/>
+</g>
+</g>
+<g stroke-linejoin="round">
+<rect x="168.44" y="15.37" width="3.4165" height="276.46" stroke="#000" stroke-width=".26458"/>
+<rect x="343.91" y="14.614" width="161.49" height="278.16" fill="url(#radialGradient11519)" stroke="#fff" stroke-width="1.0609"/>
+<rect x="342.02" y="15.37" width="3.4165" height="276.46" stroke="#000" stroke-width=".26458"/>
+</g>
+<g fill="#000000" font-family="'TeX Gyre Adventor'" font-size="14.111px" letter-spacing="0px" stroke-width=".26458" text-anchor="middle" word-spacing="0px">
+<text x="87.866829" y="208.93082" style="line-height:1.25" xml:space="preserve"><tspan x="87.866837" y="208.93082" text-align="center" style="line-height:1.5"><tspan font-size="14.111px" font-weight="bold">Al</tspan>, Ca, <tspan font-size="14.111px" font-weight="bold">Ni</tspan>, <tspan font-size="14.111px" font-weight="bold">Cu</tspan>, Sr, Rh,</tspan><tspan x="89.823639" y="230.19626" text-align="center" style="line-height:1.5"><tspan font-size="14.111px" font-weight="bold">Pd</tspan>, <tspan font-size="14.111px" font-weight="bold">Ag</tspan>, Yb, Th, <tspan font-size="14.111px" font-weight="bold">Ir</tspan>, <tspan font-size="14.111px" font-weight="bold">Pt</tspan>, </tspan><tspan x="87.866829" y="251.4617" text-align="center" style="line-height:1.5"><tspan font-size="14.111px" font-weight="bold">Au</tspan>, <tspan font-size="14.111px" font-weight="bold">Pb</tspan></tspan></text>
+<text x="257.39456" y="210.64946" style="line-height:1.25" xml:space="preserve"><tspan x="257.39456" y="210.64946" text-align="center" style="line-height:1.5"><tspan font-size="14.111px" font-weight="bold">Li</tspan>, <tspan font-size="14.111px" font-weight="bold">Na</tspan>, <tspan font-size="14.111px" font-weight="bold">K</tspan>, <tspan font-size="14.111px" font-weight="bold">V</tspan>, <tspan font-size="14.111px" font-weight="bold">Cr</tspan>, <tspan font-size="14.111px" font-weight="bold">Mn</tspan>, <tspan font-size="14.111px" font-weight="bold">Fe</tspan>,</tspan><tspan x="257.39456" y="231.9149" text-align="center" style="line-height:1.5">Rb, <tspan font-size="14.111px" font-weight="bold">Nb</tspan>, <tspan font-size="14.111px" font-weight="bold">Mo</tspan>, Cs, Ba, Eu,</tspan><tspan x="257.39456" y="253.18034" text-align="center" style="line-height:1.5"><tspan font-size="14.111px" font-weight="bold">Ta<tspan font-family="'TeX Gyre Adventor'" font-weight="normal">,</tspan> W</tspan>, Ra</tspan></text>
+<text x="85.436325" y="150.32912" style="line-height:1.25" xml:space="preserve"><tspan x="85.436325" y="150.32912" text-align="center" style="line-height:0.5">Examples of <tspan font-weight="bold">FCC</tspan></tspan><tspan x="85.436325" y="166.20412" text-align="center" style="line-height:0.5">elements at room</tspan><tspan x="85.436325" y="182.07912" text-align="center" style="line-height:0.5">temperature:</tspan></text>
+<text x="254.96405" y="150.32912" style="line-height:1.25" xml:space="preserve"><tspan x="254.96405" y="150.32912" text-align="center" style="line-height:0.5">Examples of <tspan font-weight="bold">BCC</tspan></tspan><tspan x="254.96405" y="166.20412" text-align="center" style="line-height:0.5">elements at room</tspan><tspan x="254.96405" y="182.07912" text-align="center" style="line-height:0.5">temperature:</tspan></text>
+<text x="424.49179" y="210.75371" style="line-height:1.25" xml:space="preserve"><tspan x="424.49179" y="210.75371" text-align="center" style="line-height:1.5">Be, <tspan font-size="14.111px" font-weight="bold">Mg</tspan>, Sc, <tspan font-size="14.111px" font-weight="bold">Ti</tspan>, <tspan font-size="14.111px" font-weight="bold">Co</tspan>, <tspan font-size="14.111px" font-weight="bold">Zn</tspan>,</tspan><tspan x="424.49179" y="232.01915" text-align="center" style="line-height:1.5">Y, <tspan font-size="14.111px" font-weight="bold">Zr</tspan>, Tc, Ru, Cd, Gd,</tspan><tspan x="424.49179" y="253.18582" text-align="center" style="line-height:1.5">Tb, Dy, Ho, Er, Tm, Lu,</tspan><tspan x="424.49179" y="274.35248" text-align="center" style="line-height:1.5">Hf, Re, Os, Tl</tspan></text>
+</g>
+<g transform="matrix(1.2524 0 0 1.2524 672.87 -107.86)">
+<g fill="#000080" stroke="#000">
+<path d="m-214.62 129.6h33.627"/>
+<path d="m-180.95 111.71v52.652"/>
+<path d="m-214.58 111.71v52.652"/>
+<path d="m-214.62 182.25-15.442-8.9423"/>
+<path d="m-214.62 182.25h33.627"/>
+<path d="m-181 182.25 15.489-8.9423"/>
+</g>
+<g stroke="#000">
+<g>
+<circle cx="-214.58" cy="111.71" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<path d="m-230.07 120.66 15.489-8.9423" fill="#000080"/>
+<circle cx="-180.95" cy="111.71" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<path d="m-214.58 111.71h33.627" fill="#000080"/>
+<path d="m-165.51 120.66-15.442-8.9423" fill="#000080"/>
+<circle cx="-214.58" cy="164.36" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<path d="m-214.58 164.36h33.627" fill="#000080"/>
+<circle cx="-180.95" cy="164.36" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<path d="m-230.07 173.31 15.489-8.9423" fill="#000080"/>
+<circle cx="-230.07" cy="173.31" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<circle cx="-214.58" cy="144.25" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+</g>
+<g>
+<path d="m-214.58 144.25h33.627" fill="none" stroke-width=".5"/>
+<path d="m-197.79 120.66-16.791-8.9423" fill="none" stroke-width=".5"/>
+<path d="m-230.07 120.66v52.652" fill="#000080"/>
+</g>
+<circle cx="-230.07" cy="120.66" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<g>
+<path d="m-214.62 129.6-15.442-8.9423" fill="#000080"/>
+<path d="m-230.07 120.66h32.279" fill="none"/>
+<path d="m-197.79 120.66 16.837-8.9423" fill="none" stroke-width=".5"/>
+</g>
+<circle cx="-197.79" cy="120.66" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<path d="m-214.62 129.6 16.837-8.9423" fill="none" stroke-width=".5"/>
+<path d="m-197.79 120.66h32.279" fill="none"/>
+<circle cx="-180.95" cy="144.25" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<g>
+<path d="m-165.51 173.31-15.442-8.9423" fill="#000080"/>
+<path d="m-197.79 153.2 16.837-8.9423" fill="none" stroke-width=".5"/>
+<path d="m-214.58 144.25 16.791 8.9423" fill="none" stroke-width=".5"/>
+</g>
+</g>
+<circle cx="-214.58" cy="144.25" r="6.4925" fill="url(#radialGradient1822)" style="paint-order:stroke fill markers"/>
+<g stroke="#000">
+<circle cx="-197.79" cy="153.2" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<path d="m-181 129.6-16.791-8.9423" fill="none" stroke-width=".5"/>
+<path d="m-197.79 173.31 16.837-8.9423" fill="none" stroke-width=".5"/>
+</g>
+<circle cx="-180.95" cy="164.36" r="6.4925" fill="url(#radialGradient1824)" style="paint-order:stroke fill markers"/>
+<g stroke="#000">
+<path d="m-197.79 173.31-16.791-8.9423" fill="none" stroke-width=".5"/>
+<path d="m-230.07 173.31h32.279" fill="none"/>
+<circle cx="-197.79" cy="173.31" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<path d="m-214.62 182.25 16.837-8.9423" fill="none" stroke-width=".5"/>
+<circle cx="-214.62" cy="182.25" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+</g>
+<circle cx="-214.58" cy="164.36" r="6.4925" fill="url(#radialGradient1826)" style="paint-order:stroke fill markers"/>
+<g stroke="#000">
+<g>
+<path d="m-214.62 129.6v52.652" fill="#000080"/>
+<circle cx="-214.62" cy="129.6" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<path d="m-197.79 173.31h32.279" fill="none"/>
+<circle cx="-165.51" cy="173.31" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+</g>
+<path d="m-181 182.25-16.791-8.9423" fill="none" stroke-width=".5"/>
+<circle cx="-181" cy="182.25" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+</g>
+<circle cx="-180.95" cy="144.25" r="6.4925" fill="url(#radialGradient1828)" style="paint-order:stroke fill markers"/>
+<path d="m-181 129.6v52.652" fill="#000080" stroke="#000"/>
+<g>
+<circle cx="-214.58" cy="111.71" r="6.4925" fill="url(#radialGradient1830)" style="paint-order:stroke fill markers"/>
+<circle cx="-197.79" cy="173.31" r="6.4925" fill="url(#radialGradient1832)" style="paint-order:stroke fill markers"/>
+<circle cx="-230.07" cy="173.31" r="6.4925" fill="url(#radialGradient1834)" style="paint-order:stroke fill markers"/>
+<circle cx="-181" cy="182.25" r="6.4925" fill="url(#radialGradient1836)" style="paint-order:stroke fill markers"/>
+<circle cx="-214.62" cy="182.25" r="6.4925" fill="url(#radialGradient1838)" style="paint-order:stroke fill markers"/>
+<circle cx="-230.07" cy="120.66" r="6.4925" fill="url(#radialGradient1840)" style="paint-order:stroke fill markers"/>
+<circle cx="-197.79" cy="120.66" r="6.4925" fill="url(#radialGradient1842)" style="paint-order:stroke fill markers"/>
+</g>
+<g stroke="#000">
+<path d="m-165.51 120.66v52.652" fill="#000080"/>
+<circle cx="-165.51" cy="120.66" r="6.4925" fill="#fc0" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<path d="m-181 129.6 15.489-8.9423" fill="#000080"/>
+</g>
+<g>
+<circle cx="-181" cy="129.6" r="6.4925" fill="#fc0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+<circle cx="-165.51" cy="120.66" r="6.4925" fill="url(#radialGradient1844)" style="paint-order:stroke fill markers"/>
+<circle cx="-180.95" cy="111.71" r="6.4925" fill="url(#radialGradient1846)" style="paint-order:stroke fill markers"/>
+<circle cx="-165.51" cy="173.31" r="6.4925" fill="url(#radialGradient1848)" style="paint-order:stroke fill markers"/>
+</g>
+</g>
+<text x="420.84601" y="150.32912" fill="#000000" font-family="'TeX Gyre Adventor'" font-size="14.111px" letter-spacing="0px" stroke-width=".26458" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="420.84601" y="150.32912" text-align="center" style="line-height:0.5">Examples of <tspan font-weight="bold">HCP</tspan></tspan><tspan x="420.84601" y="166.20412" text-align="center" style="line-height:0.5">elements at room</tspan><tspan x="420.84601" y="182.07912" text-align="center" style="line-height:0.5">temperature:</tspan></text>
+</g>
+<rect transform="scale(-1,1)" x="-505.5" y="2.5" width="503" height="280.75" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5" style="paint-order:stroke fill markers"/>
+</svg>
