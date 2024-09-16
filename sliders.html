@@ -671,82 +671,626 @@ $$</p>
 <p class="text"><img class="image" alt="هگزاگونال" src="images/mp46-47.png" /></p></section>
 <section id="slide-47" class="slide"><h3>اندیس‌های بلوری (صفحات)</h3>
 <p class="text"><img class="image" alt="اندیس صفحات" src="images/mp48.png" /></p></section>
-<section id="slide-48" class="slide"><h3>ساختار بلوری فلزات</h3>
-<p class="text">اغلب فلزات به صورت یکی از ساختارهای ساده زیر متبلور می‌شوند:</p>
-<ol class="list">
-<li><strong>مکعبی</strong></li>
-<li>مکعب ساده (Simple Cubic - SC)</li>
-<li>مکعب مرکز دار (Body Centered Cubic - BCC)</li>
-<li>مکعب با وجوه مرکزدار (Face Centered Cubic - FCC)</li>
-<li><strong>هگزاگونال فشرده</strong>  </li>
-<li>(Hexagonal Closed Pack - HCP)</li>
-</ol>
-<p class="text"><img class="image" alt="فلزات بلوری" src="images/mp49.png" /></p></section>
-<section id="slide-49" class="slide"><p class="text"><img class="image" alt="فلزات بلوری1" src="images/mp50.svg" /></p></section>
-<section id="slide-50" class="slide"><h3>سیستم مکعبی ساده (SC)</h3>
-<p>در این سیستم، اتم‌ها در گوشه‌های مکعب قرار دارند.<br />
-هر اتم در گوشه مکعب به 8 سلول تعلق دارد.<br />
-سهم هر سلول از اتم‌های واقع در رئوس، یک هشتم است.</p>
-<p class="text"><img class="image" alt="سیستم مکعبی ساده " src="images/mp51.png" /></p></section>
-<section id="slide-51" class="slide"><h3>سیستم مکعبی ساده (SC)</h3>
-<p><strong>کرات سخت (Hard-Ball Model):</strong><br />
-مدل ساختار کره‌های سخت در یک بلور فلزی.<br />
-شعاع ($ R $) هر کره نصف فاصله مراکز دو اتم چسبیده به هم است.<br />
-محاسبه شعاع اتمی بر اساس یال مکعب (پارامتر شبکه - Lattice Parameter) انجام می‌شود.<br />
-اگر یال شبکه در مکعبی ساده $ a $ باشد:</p>
-<p class="text">در این صورت، حجم شبکه خواهد بود:</p>
-<p>$$
-V = a^3
-$$</p>
-<p class="text"><img class="image" alt="سیستم مکعبی ساده " src="images/mp52-53.png" /></p></section>
-<section id="slide-52" class="slide"><h3>عدد همسایگی</h3>
-<p>عدد همسایگی به تعداد نزدیک‌ترین اتم‌های همسایه به یک اتم در شبکه اشاره دارد.<br />
-در شبکه مکعبی ساده (SC)، هر اتم دارای 6 اتم همسایه نزدیک است.</p>
-<p class="text"><img class="image" alt="عدد همسایگی" src="images/mp54.png" /></p></section>
-<section id="slide-53" class="slide"><h3>ضریب تراکم اتمی</h3>
-<p class="text">نسبت حجم اتم‌ها به حجم سلول واحد، ضریب تراکم اتمی (Atomic Packing Factor - APF) نامیده می‌شود.</p>
-<p class="text"><img class="image" alt="ضریب تراکم" src="images/mp55.png" /></p></section>
-<section id="slide-54" class="slide"><h3>تراکم چگالی صفحه‌ای</h3>
-<p>تراکم چگالی صفحه‌ای (Plane Packing Density - PPD) به کسری از مساحت یک صفحه اتمی که توسط اتم‌ها اشغال شده اشاره دارد.<br />
-برای مثال، در سیستم SC، سه صفحه متراکم وجود دارد.<br />
-محاسبه تراکم چگالی صفحه‌ای برای صفحه $[100]$ در سیستم SC:</p>
-<p>$$
-PPD_{[100]} = \frac{4 \times \frac{1}{4} \times \pi R^2}{a^2} = \frac{\pi R^2}{(2R)^2} = 0.785
-$$</p>
-<p>این یعنی 78.5% از مساحت صفحه $[100]$ توسط اتم‌ها اشغال شده است.
-<img class="image" alt="تراکم چگالی" src="images/mp56.png" /></p></section>
-<section id="slide-55" class="slide"><h3>تراکم چگالی خطی</h3>
-<p class="text">جهات فشرده و متراکم به جهاتی گفته می‌شود که در آن‌ها اتم‌ها با یکدیگر مماس هستند. در سیستم مکعبی ساده (SC)، یال‌های مکعب، جهات فشرده ساختار هستند. در این سیستم، سه جهت متراکم داریم.</p>
-<p class="text">تأثیر تراکم اتمی کم بر سیستم مکعبی:</p>
+<section id="slide-48" class="slide"><h3>مقدمه‌ای بر ساختار بلوری فلزات</h3>
 <ul class="list">
-<li>این ساختار پرانرژی است.</li>
-<li>رخداد این نوع ساختار بلوری نادر است (عنصر پلونیوم $ \text{Po} $ و اکسیژن و فلوئور در حالت جامد).</li>
+<li><strong>ساختار بلوری فلزات:</strong></li>
+<li>اغلب فلزات به یکی از ساختارهای زیر متبلور می‌شوند:<ul class="list">
+<li><strong>مکعبی:</strong></li>
+<li>مکعب ساده (SC)</li>
+<li>مکعب مرکز دار (BCC)</li>
+<li>مکعب با وجوه مرکزدار (FCC)</li>
+<li><strong>هگزاگونال فشرده (HCP)</strong></li>
 </ul>
-<p class="text">شبکه بلوری مکعبی ساده سدیم کلرید (NaCl) یک جامد یونی است. هر یون توسط 6 یون غیر هم‌نام احاطه شده است.</p></section>
-<section id="slide-56" class="slide"><h3>سیستم مکعبی مرکزدار (BCC)</h3>
-<p class="text">در سیستم مکعبی مرکزدار (Body-Centered Cubic - BCC)، هر اتم واقع در گوشه مکعب به 8 سلول تعلق دارد. سهم هر سلول از اتم‌های واقع در رئوس، یک هشتم است. اتم مرکزی فقط به همان سلول تعلق دارد، بنابراین در کل سهم هر سلول 2 اتم است.</p>
-<p class="text"><img class="image" alt="سیستم مکعبی مرکزدار " src="images/mp57.png" /></p></section>
-<section id="slide-57" class="slide"><h3>سیستم مکعبی مرکزدار (BCC)</h3>
-<p class="text">در ساختار BCC، اتم مرکزی با اتم‌های واقع در گوشه‌ها در یک راستا قرار دارند. چهار قطر مکعب $\langle 111 \rangle$ جهات فشرده ساختار هستند و شش صفحه ${110}$ صفحات متراکم این سیستم هستند. </p>
-<p class="text">اتم مرکزی و اتم‌های گوشه‌ها شباهت دارند، و چیدمان صفحات اتمی در این ساختار به صورت ABABAB… است. </p>
-<p class="text">در ساختار مکعبی مرکزدار، اگر اندازه یال شبکه $ a $ باشد، شعاع اتمی $ R $ در BCC با اندازه یال شبکه $ a $ رابطه دارد:</p>
+</li>
+<li><strong>تصویر:</strong> نمایش انواع ساختارهای بلوری (فلزات بلوری)</li>
+</ul>
+<p class="text"><img class="image" alt="فلزات بلوری" src="images/mp49.png" /></p></section>
+<section id="slide-49" class="slide"><h3>سیستم مکعبی ساده (SC)</h3>
+<ul class="list">
+<li><strong>ویژگی‌های ساختاری سیستم SC:</strong></li>
+<li><strong>موقعیت اتم‌ها:</strong> اتم‌ها در گوشه‌های مکعب قرار دارند.</li>
+<li><strong>عدد همسایگی:</strong> هر اتم دارای ۶ اتم همسایه نزدیک است.</li>
+<li><strong>مدل کرات سخت (Hard-Ball Model):</strong> شعاع هر کره نصف فاصله مراکز دو اتم چسبیده به هم است.</li>
+<li>
+<p class="text"><strong>حجم شبکه:</strong></p>
+<ul class="list">
+<li>اگر یال شبکه (a) باشد، حجم شبکه خواهد بود:</li>
+</ul>
 <p>$$
-(4R)^2 = a^2 + (a\sqrt{2})^2 \Rightarrow a = \frac{4R}{\sqrt{3}}
+  V = a^3
+  $$</p>
+</li>
+<li>
+<p class="text"><strong>تصویر:</strong> سیستم مکعبی ساده (SC)</p>
+</li>
+</ul>
+<p class="text"><img class="image" alt="سیستم مکعبی ساده" src="images/mp51.png" /></p></section>
+<section id="slide-50" class="slide"><h3>تراکم و عدد همسایگی در SC</h3>
+<ul class="list">
+<li><strong>ضریب تراکم اتمی (APF):</strong> نسبت حجم اتم‌ها به حجم سلول واحد.</li>
+<li><strong>تراکم چگالی صفحه‌ای (PPD):</strong></li>
+<li>برای صفحه ( [100] ) در سیستم SC:
+    $$
+    PPD_{[100]} = \frac{\pi R^2}{(2R)^2} = 0.785
+    $$</li>
+</ul>
+<p class="text"><img class="image" alt="تراکم چگالی" src="images/mp56.png" /></p>
+<ul class="list">
+<li><strong>جهات فشرده:</strong> یال‌های مکعب جهات فشرده ساختار هستند.</li>
+<li><strong>نمونه:</strong> شبکه بلوری مکعبی ساده سدیم کلرید (NaCl)</li>
+</ul>
+<p class="text"><img class="image" alt="تراکم چگالی" src="images/mp59.png" /></p></section>
+<section id="slide-51" class="slide"><h3>سیستم مکعبی مرکزدار (BCC)</h3>
+<ul class="list">
+<li><strong>ویژگی‌های ساختاری سیستم BCC:</strong></li>
+<li><strong>موقعیت اتم‌ها:</strong> هر اتم گوشه به ۸ سلول تعلق دارد.</li>
+<li><strong>سهم اتم مرکزی:</strong> اتم مرکزی فقط به همان سلول تعلق دارد.</li>
+<li><strong>کل تعداد اتم‌ها:</strong> ۲ اتم در هر سلول واحد.</li>
+</ul>
+<p class="text"><img class="image" alt="سیستم مکعبی مرکزدار" src="images/mp57.png" /></p></section>
+<section id="slide-52" class="slide"><h3>سیستم مکعبی مرکزدار (BCC)</h3>
+<ul class="list">
+<li><strong>ساختار داخلی BCC:</strong></li>
+<li><strong>جهات و صفحات فشرده:</strong><ul class="list">
+<li>قطرهای مکعب ( \langle 111\rangle ) جهات فشرده</li>
+<li>صفحات ( {110} ) صفحات متراکم</li>
+</ul>
+</li>
+<li>
+<p class="text"><strong>رابطه شعاع اتمی با یال شبکه:</strong></p>
+<p>$$
+a = \frac{4R}{\sqrt{3}}
 $$</p>
-<p class="text">این رابطه نشان‌دهنده ارتباط بین شعاع اتمی و اندازه یال شبکه در ساختار مکعبی مرکزدار است.</p>
-<p class="text"><img class="image" alt="سیستم مکعبی مرکزدار " src="images/mp58.png" /></p></section>
-<section id="slide-58" class="slide"></section>
+</li>
+<li>
+<p class="text"><strong>ضریب تراکم اتمی (APF):</strong></p>
+<p>$$
+APF = 0.68
+$$</p>
+</li>
+</ul>
+<p class="text"><img class="image" alt="سیستم مکعبی مرکزدار" src="images/mp58.png" /></p></section>
+<section id="slide-53" class="slide"><h3>سیستم مکعبی با وجوه مرکزدار (FCC)</h3>
+<ul class="list">
+<li><strong>ویژگی‌های ساختاری سیستم FCC:</strong></li>
+<li>
+<p class="text"><strong>تعداد اتم‌ها در هر سلول:</strong></p>
+<ul class="list">
+<li>هر اتم گوشه به ۸ سلول تعلق دارد.</li>
+<li>هر اتم در مرکز هر وجه به ۲ سلول مجاور تعلق دارد.</li>
+<li>در کل ۴ اتم در هر سلول واحد.</li>
+</ul>
+<p>$$
+\begin{rcases}
+8 \times \frac{1}{8} = 1\
+6 \times \frac{1}{2} = 3
+\end{rcases}
+\Rightarrow  1 + 3 = 4
+$$</p>
+</li>
+<li>
+<p class="text"><strong>ویژگی‌های فیزیکی:</strong></p>
+<ul class="list">
+<li>وجود ۴ صفحه فشرده و ۳ جهت فشرده در هر صفحه.</li>
+<li>تأثیر این ساختار بر خواص فیزیکی فلزات (مانند قابلیت تغییر شکل بالا).</li>
+<li>بیشترین فشردگی به این ساختار اختصاص دارد</li>
+</ul>
+</li>
+<li>
+<p class="text"><strong>مثال‌ها:</strong> آلومینیوم (Al)، مس (Cu)، طلا (Au)</p>
+</li>
+</ul>
+<p class="text"><img class="image" alt="سیستم مکعبی با وجوه مرکزدار" src="images/mp41.png" /></p></section>
+<section id="slide-54" class="slide"><h3>ساختار مکعبی با وجوه مرکزدار (FCC)</h3>
+<p class="text"><strong>ضریب تراکم اتمی و چگالی صفحه‌ای در FCC:</strong></p>
+<ul class="list">
+<li>
+<p><strong>APF (Atomic Packing Factor):</strong>
+  $$
+  APF = 0.74
+  $$</p>
+</li>
+<li>
+<p><strong>PPD[100] (Plane Packing Density):</strong>
+  $$
+  PPD_{[100]} = \frac{\pi R^2 + 4 \times \frac{1}{4} \times \pi R^2}{a^2} = \frac{2 \pi R^2}{\left( \frac{4R}{\sqrt{2}} \right)^2} = 0.785
+  $$</p>
+</li>
+</ul>
+<p><strong>تصاویر مرتبط:</strong>
+- <img class="image" alt="" src="images/mp60.png" />
+- <img class="image" alt="" src="images/mp61.png" /></p></section>
+<section id="slide-55" class="slide"><h3>ترتیب چیدمان در ساختار FCC</h3>
+<ul class="list">
+<li><strong>توالی چیدمان:</strong> ABCABC...</li>
+<li><strong>نمایش دو بعدی:</strong></li>
+</ul>
+<p class="text"><img class="image" alt="FCC Stacking Sequence" src="images/mp62.png" /></p>
+<ul class="list">
+<li><strong>سلول واحد FCC:</strong></li>
+</ul>
+<p class="text"><img class="image" alt="FCC Unit Cell" src="images/mp63.png" /></p></section>
+<section id="slide-56" class="slide"><h3>تصاویر تکمیلی ساختار FCC</h3>
+<ul class="list">
+<li><img class="image" alt="" src="images/mp64.jpg" /></li>
+<li><img class="image" alt="" src="images/mp65.png" /></li>
+</ul></section>
+<section id="slide-57" class="slide"><h3>چیدمان صفحات اتمی در ساختار FCC</h3>
+<ul class="list">
+<li><strong>توالی چیدمان متوالی صفحات اتمی:</strong> ABCABCABC</li>
+</ul>
+<p class="text"><strong>تصویر مربوطه:</strong></p>
+<ul class="list">
+<li><img class="image" alt="چیدمان متوالی صفحات اتمی FCC" src="images/mp66.jpg" /></li>
+</ul></section>
+<section id="slide-58" class="slide"><h3>ساختار هگزاگونال فشرده (HCP)</h3>
+<p class="text"><strong>ویژگی‌های ساختاری:</strong></p>
+<ul class="list">
+<li>در ساختار HCP، اتم‌های صفحه بالایی سلول دقیقاً روی اتم‌های صفحه پایینی قرار دارند، اما اتم‌های صفحه میانی در موقعیت متفاوتی هستند.</li>
+<li><strong>توالی چیدمان:</strong> ABAB...</li>
+<li><strong>نمایش سه‌بعدی و دو‌بعدی:</strong> (تصاویر مرتبط در دسترس نیستند، لطفاً در صورت وجود اضافه کنید)</li>
+</ul>
+<p class="text"><strong>ضریب تراکم اتمی و صفحه‌ای در HCP:</strong></p>
+<ul class="list">
+<li><strong>APF:</strong>
+  $$
+  APF = 0.74
+  $$</li>
+<li><strong>PPF[0001]:</strong>
+  $$
+  PPF_{[0001]} = 0.92
+  $$</li>
+</ul></section>
+<section id="slide-59" class="slide"><h3>ویژگی‌های اضافی ساختار HCP</h3>
+<ul class="list">
+<li><strong>صفحه قاعده بلور:</strong> دارای بیشترین فشردگی اتمی است و مشابه صفحه اکتاهدرال در FCC دارای 3 جهت فشرده است.</li>
+<li><strong>عدد همسایگی در FCC و HCP:</strong> برابر 12 است.</li>
+<li><strong>تعداد اتم‌ها در سلول واحد HCP:</strong>
+  $$
+  \left(12 \times \frac{1}{6}\right) + \left(2 \times \frac{1}{2}\right) + 3 = 6
+  $$</li>
+</ul></section>
+<section id="slide-60" class="slide"><h3>مقایسه ساختارهای FCC و HCP</h3>
+<p class="text"><strong>شباهت‌ها:</strong></p>
+<ul class="list">
+<li><strong>عدد همسایگی:</strong> هر دو برابر 12.</li>
+<li><strong>ضریب تراکم اتمی:</strong> هر دو برابر 0.74.</li>
+<li><strong>ضریب تراکم صفحه‌ای در صفحات فشرده:</strong>
+  $$
+  PPF_{[0001]} = PPF_{[111]} = 0.92
+  $$</li>
+</ul>
+<p class="text"><strong>تفاوت‌ها:</strong></p>
+<ul class="list">
+<li><strong>توالی چیدمان:</strong></li>
+<li>FCC: ABCABC...</li>
+<li>HCP: ABAB...</li>
+</ul>
+<p class="text"><strong>نکته:</strong> یک جابجایی عرضی در یکی از صفحات فشرده می‌تواند ساختار را از HCP به FCC یا بالعکس تغییر دهد.</p></section>
+<section id="slide-61" class="slide"><h3>نقص در چیدمان صفحات (Stacking Faults)</h3>
+<ul class="list">
+<li><strong>تعریف:</strong> زمانی که توالی چیدمان صفحات اتمی در یک بلور ناقص یا ناپیوسته باشد.</li>
+<li><strong>مثال:</strong> تبدیل توالی ABCABC به ABCA...CABCA.</li>
+<li><strong>انواع نقص‌ها:</strong></li>
+<li><strong>ذاتی:</strong> با حذف بخشی از یک صفحه فشرده ایجاد می‌شود.</li>
+<li><strong>عارضی:</strong> با اضافه شدن بخشی از یک صفحه فشرده ایجاد می‌شود.</li>
+</ul>
+<p class="text"><strong>تاثیرات دما:</strong></p>
+<ul class="list">
+<li>تغییر ساختمان اتمی از HCP به FCC یا بالعکس در حین گرمایش یا سرمایش برخی فلزات با ایجاد نقص در چیدمان صفحات اتمی امکان‌پذیر است.</li>
+<li><strong>مثال:</strong> استحاله آلوتروپیک فلز کبالت در 420 درجه سانتی‌گراد.</li>
+</ul></section>
+<section id="slide-62" class="slide"><h3>مقایسه آرایش اتمی در ساختارهای کریستالی فلزات</h3>
+<table class="table">
+<thead>
+<tr>
+<th>ساختار</th>
+<th>تعداد اتم در سلول واحد</th>
+<th>عدد همسایگی</th>
+<th>تعداد جهات متراکم</th>
+<th>تعداد صفحات متراکم</th>
+<th>تراکم فضایی</th>
+<th>رابطه شعاع اتمی و پارامتر شبکه (a)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SC</td>
+<td>1</td>
+<td>6</td>
+<td>$3 \langle 100 \rangle$</td>
+<td>${100}$</td>
+<td>0.52</td>
+<td>$a = 2R$</td>
+</tr>
+<tr>
+<td>BCC</td>
+<td>2</td>
+<td>8</td>
+<td>$4 \langle 111 \rangle$</td>
+<td>$6 {110}$</td>
+<td>0.68</td>
+<td>$a = \frac{4R}{\sqrt{3}}$</td>
+</tr>
+<tr>
+<td>FCC</td>
+<td>4</td>
+<td>12</td>
+<td>$6 \langle 110 \rangle$</td>
+<td>$4 {111}$</td>
+<td>0.74</td>
+<td>$a = \frac{4R}{\sqrt{2}}$</td>
+</tr>
+<tr>
+<td>HCP</td>
+<td>6</td>
+<td>12</td>
+<td>$3 \langle 11\bar{2}0 \rangle$</td>
+<td>$1 (0001)$</td>
+<td>0.74</td>
+<td>$a = 2R$</td>
+</tr>
+</tbody>
+</table></section>
+<section id="slide-63" class="slide"><h3>ساختار بلوری عناصر فلزی</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Face-centered Cubic (FCC)</th>
+<th>Hexagonal Close-packed (HCP)</th>
+<th>Body-centered Cubic (BCC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>آلومینیوم (Al)</td>
+<td>منیزیم (Mg)</td>
+<td>آهن (Fe) (زیر 911.5°C و بین 1396 تا 1538°C)</td>
+</tr>
+<tr>
+<td>مس (Cu)</td>
+<td>روی (Zn)</td>
+<td>تیتانیوم (Ti) (بین 882 تا 1670°C)</td>
+</tr>
+<tr>
+<td>نقره (Ag)</td>
+<td>کادمیوم (Cd)</td>
+<td>تنگستن (W)</td>
+</tr>
+<tr>
+<td>طلا (Au)</td>
+<td>زیرکونیوم (Zr) (زیر 863°C)</td>
+<td>وانادیوم (V)</td>
+</tr>
+<tr>
+<td>نیکل (Ni)</td>
+<td>بریلیوم (Be)</td>
+<td>مولیبدن (Mo)</td>
+</tr>
+<tr>
+<td>سرب (Pb)</td>
+<td></td>
+<td>فلزات قلیایی (Li, Na, K, Rb, Cs)</td>
+</tr>
+<tr>
+<td>پلاتین (Pt)</td>
+<td></td>
+<td>کروم (Cr)</td>
+</tr>
+</tbody>
+</table></section>
+<section id="slide-64" class="slide"><h3>اندازه شعاع اتمی برخی از فلزات</h3>
+<table class="table">
+<thead>
+<tr>
+<th>فلز</th>
+<th>ساختار کریستالی</th>
+<th>شعاع اتمی (nm)</th>
+<th>فلز</th>
+<th>ساختار کریستالی</th>
+<th>شعاع اتمی (nm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>آلومینیوم</td>
+<td>FCC</td>
+<td>0.1431</td>
+<td>مولیبدن</td>
+<td>BCC</td>
+<td>0.1363</td>
+</tr>
+<tr>
+<td>کادمیوم</td>
+<td>HCP</td>
+<td>0.1490</td>
+<td>نیکل</td>
+<td>FCC</td>
+<td>0.1246</td>
+</tr>
+<tr>
+<td>کروم</td>
+<td>BCC</td>
+<td>0.1249</td>
+<td>پلاتین</td>
+<td>FCC</td>
+<td>0.1387</td>
+</tr>
+<tr>
+<td>کبالت</td>
+<td>HCP</td>
+<td>0.1253</td>
+<td>نقره</td>
+<td>FCC</td>
+<td>0.1445</td>
+</tr>
+<tr>
+<td>مس</td>
+<td>FCC</td>
+<td>0.1278</td>
+<td>تانتالوم</td>
+<td>BCC</td>
+<td>0.1430</td>
+</tr>
+<tr>
+<td>طلا</td>
+<td>FCC</td>
+<td>0.1442</td>
+<td>تیتانیوم $(\alpha)$</td>
+<td>HCP</td>
+<td>0.1445</td>
+</tr>
+<tr>
+<td>آهن $(\alpha)$</td>
+<td>BCC</td>
+<td>0.1241</td>
+<td>تنگستن</td>
+<td>BCC</td>
+<td>0.1371</td>
+</tr>
+<tr>
+<td>سرب</td>
+<td>FCC</td>
+<td>0.1750</td>
+<td>روی</td>
+<td>HCP</td>
+<td>0.1332</td>
+</tr>
+</tbody>
+</table>
+<p class="text"><strong>توضیحات:</strong></p>
+<ul class="list">
+<li>1 نانومتر (nm) برابر با $10^{-9}$ متر است. برای تبدیل به آنگستروم (Å)، مقدار نانومتر را در 10 ضرب کنید.</li>
+</ul></section>
+<section id="slide-65" class="slide"><h3>محاسبه دانسیته تئوریک فلزات</h3>
+<p><strong>رابطه کلی:</strong>
+$$
+\rho = \frac{n \times A}{V_c \times N_A}
+$$</p>
+<p class="text"><strong>متغیرها:</strong></p>
+<ul class="list">
+<li>$n$: تعداد اتم‌ها در سلول واحد</li>
+<li>$A$: وزن اتمی (g/mol)</li>
+<li>$V_c$: حجم سلول واحد ($cm^3$)</li>
+<li>$N_A$: عدد آووگادرو ($6.022 \times 10^{23} mol^{-1}$)</li>
+</ul>
+<p class="text"><strong>مثال برای مس (Cu):</strong></p>
+<ul class="list">
+<li><strong>داده‌ها:</strong></li>
+<li>ساختار بلوری: FCC (4 اتم در سلول واحد)</li>
+<li>وزن اتمی: 63.55 g/mol</li>
+<li>
+<p class="text">شعاع اتمی: 0.128 nm</p>
+</li>
+<li>
+<p class="text"><strong>محاسبات:</strong></p>
+</li>
+<li>پارامتر شبکه:
+    $$
+    a = \frac{4R}{\sqrt{2}} = \frac{4 \times 0.128}{\sqrt{2}} = 0.361 nm = 3.61 \times 10^{-8} cm
+    $$</li>
+<li>حجم سلول واحد:
+    $$
+    V_c = a^3 = (3.61 \times 10^{-8})^3 = 4.72 \times 10^{-23} cm^3
+    $$</li>
+<li>دانسیته:
+    $$
+    \rho = \frac{4 \times 63.55}{4.72 \times 10^{-23} \times 6.022 \times 10^{23}} = 8.89 g/cm^3
+    $$</li>
+</ul>
+<p class="text"><strong>نکته:</strong> دانسیته تئوریک معمولاً بیشتر از دانسیته واقعی است به دلیل وجود نقص‌ها و فضای خالی در ساختار واقعی.</p></section>
+<section id="slide-66" class="slide"><h3>ناهمسانگردی (Anisotropy)</h3>
+<p class="text"><strong>تعریف:</strong></p>
+<ul class="list">
+<li>اگر خواص یک ماده مستقل از جهت باشد، به آن <strong>همسانگرد (Isotropic)</strong> گفته می‌شود. در غیر این صورت، ماده <strong>ناهمسانگرد (Anisotropic)</strong> است.</li>
+</ul>
+<p class="text"><strong>ویژگی‌ها:</strong></p>
+<ul class="list">
+<li>خواص فیزیکی بلورها معمولاً تابعی از جهت بلوری هستند، زیرا فشردگی و فاصله اتم‌ها در جهات مختلف متفاوت است.</li>
+<li><strong>مثال در بلور BCC:</strong></li>
+<li>فاصله اتم‌ها در سه جهت اصلی:
+    $$
+    a,\ \sqrt{2}a,\ \sqrt{\frac{3}{2}}a
+    $$</li>
+</ul>
+<p class="text"><strong>پلی‌کریستال‌ها:</strong></p>
+<ul class="list">
+<li>بیشتر مواد مهندسی <strong>پلی‌کریستال</strong> هستند که هر دانه آن یک تک‌کریستال است.</li>
+<li>اگر دانه‌ها به صورت تصادفی قرار گرفته باشند، خواص ماده به صورت همسانگرد مشاهده می‌شود.</li>
+</ul></section>
+<section id="slide-67" class="slide"><h3>مدول الاستیسیته (Elastic Modulus)</h3>
+<p class="text"><strong>رابطه:</strong></p>
+<p>$$
+\sigma = E \times \varepsilon
+$$</p>
+<p class="text"><strong>متغیرها:</strong></p>
+<ul class="list">
+<li>$\sigma$: تنش (Stress)</li>
+<li>$E$: مدول الاستیسیته</li>
+<li>$\varepsilon$: کرنش (Strain)</li>
+</ul>
+<p class="text"><strong>مثال از ناهمسانگردی مکانیکی:</strong></p>
+<ul class="list">
+<li>در آهن BCC، مدول الاستیک تابع جهت کشش است:
+  $$
+  E_{[111]} = 2E_{[100]}
+  $$</li>
+<li>به دلیل جاذبه اتمی بیشتر در جهات فشرده‌تر، مدول الاستیک در این جهات بیشتر است.</li>
+</ul></section>
+<section id="slide-68" class="slide"><h3>عوامل موثر بر استحکام فلزات</h3>
+<p class="text"><strong>مقاومت مواد بلوری:</strong></p>
+<ul class="list">
+<li><strong>نقص‌های بلوری:</strong> مقاومت مواد بلوری را به طور قابل توجهی تحت تاثیر قرار می‌دهند. هر گونه نقص در ساختار بلوری (مانند نقص‌های نقطه‌ای، نقص‌های خطی یا نقص‌های صفحه‌ای) می‌تواند تاثیر زیادی بر روی خواص مکانیکی ماده داشته باشد.</li>
+</ul>
+<p class="text"><strong>دسته‌بندی نقص‌ها:</strong></p>
+<ul class="list">
+<li><strong>نقص‌های نقطه‌ای:</strong> شامل جابجایی اتم‌ها، حفره‌ها و ناخالصی‌های بینابینی است.</li>
+<li><strong>نقص‌های خطی:</strong> شامل نابه‌جایی‌ها (Dislocations) می‌شود.</li>
+<li><strong>نقص‌های صفحه‌ای:</strong> شامل نقص‌های چیدمان صفحات، دوگانگی‌های مکانیکی، و مرزهای دانه است.</li>
+</ul></section>
+<section id="slide-69" class="slide"><h3>نا‌به‌جایی‌ها (Dislocations)</h3>
+<p class="text"><strong>تعریف و مفهوم:</strong></p>
+<ul class="list">
+<li>نا‌به‌جایی به عنوان نقصی در ساختار بلوری شناخته می‌شود که منجر به تغییر در چیدمان منظم اتم‌ها در یک بلور می‌شود.</li>
+</ul>
+<p class="text"><strong>انواع نابه‌جایی‌ها:</strong></p>
+<ol class="list">
+<li><strong>نا‌به‌جایی لبه‌ای (Edge Dislocation):</strong></li>
+<li>در این نوع، یک صفحه از اتم‌ها به طور ناقص به درون بلور وارد شده و باعث انحراف در نظم بلوری می‌شود.</li>
+<li>
+<p class="text"><strong>تصویر مرتبط:</strong> (در دسترس نیست، لطفاً در صورت وجود اضافه کنید)</p>
+</li>
+<li>
+<p class="text"><strong>نا‌به‌جایی پیچی (Screw Dislocation):</strong></p>
+</li>
+<li>یک خط از اتم‌ها در یک جهت خاص به نحوی جابجا شده که یک شکل پیچ مانند در ساختار بلوری ایجاد می‌کند.</li>
+<li>
+<p class="text"><strong>تصویر مرتبط:</strong> (در دسترس نیست، لطفاً در صورت وجود اضافه کنید)</p>
+</li>
+<li>
+<p class="text"><strong>نا‌به‌جایی مخلوط (Mixed Dislocation):</strong></p>
+</li>
+<li>ترکیبی از دو نوع نابه‌جایی لبه‌ای و پیچی است.</li>
+</ol>
+<p class="text"><strong>اثر نابه‌جایی‌ها:</strong></p>
+<ul class="list">
+<li>نابه‌جایی‌ها از عواملی هستند که باعث کاهش استحکام بلورها می‌شوند. حضور نابه‌جایی‌ها باعث ایجاد لغزش بین صفحات بلوری می‌شود که در نهایت منجر به تغییر شکل پلاستیک می‌شود.</li>
+</ul></section>
+<section id="slide-70" class="slide"><h3>مفاهیم مرتبط با نابه‌جایی‌ها</h3>
+<h4>بردار برگرز (Burgers Vector)</h4>
+<ul class="list">
+<li><strong>تعریف:</strong> برداری که میزان و جهت تغییر چیدمان اتم‌ها در یک نابه‌جایی را نشان می‌دهد.</li>
+<li><strong>ویژگی‌ها:</strong> بردار برگرز به نابه‌جایی‌ها وابسته است و در ساختارهای بلوری مختلف، اندازه و جهت‌های مختلفی دارد.</li>
+<li><strong>تصویر مربوطه:</strong> (در دسترس نیست، لطفاً در صورت وجود اضافه کنید)</li>
+</ul>
+<h4>دانسیته نابه‌جایی‌ها</h4>
+<ul class="list">
+<li><strong>تعریف:</strong> تعداد نابه‌جایی‌ها در واحد حجم یا سطح.</li>
+<li><strong>واحد:</strong> $cm^{-2}$</li>
+<li><strong>اثر:</strong> افزایش دانسیته نابه‌جایی‌ها می‌تواند منجر به افزایش استحکام ماده شود، زیرا حرکت نابه‌جایی‌ها با یکدیگر باعث کاهش حرکت کلی آن‌ها می‌شود.</li>
+</ul></section>
+<section id="slide-71" class="slide"><h3>تنش تسلیم (Yield Stress)</h3>
+<p><strong>رابطه تنش تسلیم با دانسیته نابه‌جایی‌ها:</strong>
+$$
+\tau = \tau_0 + k\sqrt{\rho}
+$$</p>
+<ul class="list">
+<li><strong>متغیرها:</strong></li>
+<li>$\tau$: تنش تسلیم</li>
+<li>$\tau_0$: تنش پایه</li>
+<li>$k$: ثابت ماده</li>
+<li>$\rho$: دانسیته نابه‌جایی‌ها</li>
+</ul>
+<p class="text"><strong>مثال:</strong> در فلزات، افزایش دانسیته نابه‌جایی‌ها منجر به افزایش استحکام تسلیم می‌شود. این پدیده به عنوان اثر <strong>تقویت کار (Work Hardening)</strong> شناخته می‌شود.</p></section>
+<section id="slide-72" class="slide"><h3>انواع مکانیزم‌های تقویت (Strengthening Mechanisms)</h3>
+<ol class="list">
+<li><strong>تقویت با کاهش اندازه دانه‌ها:</strong></li>
+<li><strong>رابطه هال-پچ (Hall-Petch):</strong>
+     $$
+     \sigma_y = \sigma_0 + k \frac{1}{\sqrt{d}}
+     $$</li>
+<li><strong>متغیرها:</strong><ul class="list">
+<li>$\sigma_y$: تنش تسلیم</li>
+<li>$\sigma_0$: تنش پایه</li>
+<li>$k$: ثابت ماده</li>
+<li>$d$: قطر دانه‌ها</li>
+</ul>
+</li>
+<li>
+<p class="text"><strong>مفهوم:</strong> با کاهش اندازه دانه‌ها، مرزهای دانه‌ها افزایش می‌یابد که باعث جلوگیری از حرکت نابه‌جایی‌ها می‌شود و در نتیجه استحکام ماده افزایش می‌یابد.</p>
+</li>
+<li>
+<p class="text"><strong>تقویت با محلول‌های جامد:</strong></p>
+</li>
+<li>
+<p class="text"><strong>مفهوم:</strong> افزودن عناصر آلیاژی به یک فلز پایه می‌تواند باعث ایجاد اعوجاج در شبکه بلوری شود که منجر به مقاومت بیشتر در برابر حرکت نابه‌جایی‌ها می‌شود.</p>
+</li>
+<li>
+<p class="text"><strong>تقویت با رسوب‌گذاری (Precipitation Hardening):</strong></p>
+</li>
+<li>
+<p class="text"><strong>مفهوم:</strong> در این روش، ذرات کوچک و سخت (رسوبات) در داخل فلز پراکنده می‌شوند که حرکت نابه‌جایی‌ها را دشوار می‌کند.</p>
+</li>
+<li>
+<p class="text"><strong>تقویت با سردکاری (Work Hardening):</strong></p>
+</li>
+<li><strong>مفهوم:</strong> افزایش دانسیته نابه‌جایی‌ها از طریق تغییر شکل پلاستیک باعث افزایش استحکام ماده می‌شود. این فرآیند به عنوان <strong>سخت‌شدگی کرنشی</strong> نیز شناخته می‌شود.</li>
+</ol></section>
+<section id="slide-73" class="slide"><h3>تاثیر سردکاری بر ساختار بلوری</h3>
+<p class="text"><strong>مراحل سردکاری:</strong></p>
+<ul class="list">
+<li><strong>کرنش و افزایش دانسیته نابه‌جایی‌ها:</strong></li>
+<li>
+<p class="text">با اعمال نیرو به فلز و ایجاد تغییر شکل پلاستیک، دانسیته نابه‌جایی‌ها افزایش می‌یابد.</p>
+</li>
+<li>
+<p class="text"><strong>افزایش استحکام و سختی:</strong></p>
+</li>
+<li>
+<p class="text">با افزایش دانسیته نابه‌جایی‌ها، مقاومت فلز در برابر تغییر شکل بیشتر می‌شود که به عنوان <strong>افزایش سختی و استحکام</strong> شناخته می‌شود.</p>
+</li>
+<li>
+<p class="text"><strong>کاهش انعطاف‌پذیری:</strong></p>
+</li>
+<li>افزایش سردکاری باعث کاهش انعطاف‌پذیری فلز می‌شود.</li>
+</ul>
+<p class="text"><strong>نمودار تنش-کرنش برای سردکاری:</strong></p>
+<ul class="list">
+<li>نمودار مرتبط: (در دسترس نیست، لطفاً در صورت وجود اضافه کنید)</li>
+</ul></section>
+<section id="slide-74" class="slide"><h3>مکانیزم‌های بازیابی و بازپخت (Recovery and Recrystallization)</h3>
+<ol class="list">
+<li><strong>بازیابی (Recovery):</strong></li>
+<li>
+<p class="text"><strong>مفهوم:</strong> در این مرحله، نابه‌جایی‌ها بازآرایی می‌شوند و تنش‌های داخلی کاهش می‌یابند، اما دانه‌های جدید تشکیل نمی‌شوند.</p>
+</li>
+<li>
+<p class="text"><strong>بازپخت (Recrystallization):</strong></p>
+</li>
+<li>
+<p class="text"><strong>مفهوم:</strong> در این مرحله، دانه‌های جدید و بدون نابه‌جایی در دماهای بالا تشکیل می‌شوند که باعث کاهش سختی و افزایش انعطاف‌پذیری ماده می‌شود.</p>
+</li>
+<li>
+<p class="text"><strong>رشد دانه (Grain Growth):</strong></p>
+</li>
+<li><strong>مفهوم:</strong> پس از بازپخت، اگر ماده در دمای بالا باقی بماند، دانه‌های جدید شروع به رشد می‌کنند که ممکن است منجر به کاهش استحکام ماده شود.</li>
+</ol>
+<p class="text"><strong>دیاگرام بازیابی، بازپخت و رشد دانه:</strong></p>
+<ul class="list">
+<li><strong>دیاگرام مرتبط:</strong> (در دسترس نیست، لطفاً در صورت وجود اضافه کنید)</li>
+</ul></section>
+<section id="slide-75" class="slide"></section>
     </div>
   </div>
   <div class="navigation">
-    <input type="number" id="slideNumberInput" min="1" max="58">
-    <span id="totalSlides">از 58</span>
+    <input type="number" id="slideNumberInput" min="1" max="75">
+    <span id="totalSlides">از 75</span>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
   <script>
     Reveal.initialize();
     
-    const totalSlides = 58;
+    const totalSlides = 75;
     const input = document.getElementById('slideNumberInput');
 
     // تنظیم ورودی شماره اسلاید فعلی
