@@ -1,0 +1,210 @@
+/* استایل‌های سفارشی */
+html, body {
+    font-family: 'Vazir', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+.reveal .slides {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    direction: ltr;  /* قرار دادن کل اسلایدر به صورت چپ به راست */
+}
+.reveal .navigate-left,
+.reveal .navigate-right {
+    display: none;  /* مخفی کردن فلش‌های پیش‌فرض Reveal.js */
+}
+.slide {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: right; /* متن‌ها به صورت راست‌چین */
+    box-sizing: border-box;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    max-height: 100vh; /* جلوگیری از بروز اسکرول عمودی */
+}
+.text {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* اندازه فونت برای عناوین */
+.slide h1, .slide h2, .slide h3, .slide h4 {
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.slide h1 {
+    font-size: 68px;
+}
+
+.slide h2 {
+    font-size: 36px;
+}
+
+.slide h3 {
+    font-size: 30px;
+}
+
+.slide h4 {
+    font-size: 24px;
+}
+
+/* تنظیمات برای لیست‌ها */
+.list {
+    margin: 10px auto;
+    font-size: 22px;
+    color: #666;
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.list ol {
+    list-style-type: decimal;
+}
+
+.list ul {
+    list-style-type: disc;
+}
+
+/* استایل لینک‌ها */
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+.image {
+    max-width: 100%; /* اطمینان از تناسب تصویر با صفحه */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+/* استایل برای جداول */
+.table {
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+.math-container {
+    direction: ltr;  /* فرمول‌ها به صورت چپ به راست */
+    text-align: left;
+    margin: 20px 0;
+}
+p {
+    margin: 20px 0;
+}
+
+/* استایل‌های جدید برای بخش ناوبری */
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* اضافه کردن z-index بالا برای قرارگیری روی اسلاید */
+    background-color: rgba(255, 255, 255, 0.8); /* شفافیت پس‌زمینه */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه برای ظاهر بهتر */
+}
+.navigation button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #e4e4e4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.navigation input {
+    width: 45px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+.navigation input[type="number"] {
+    -moz-appearance: textfield;
+}
+.navigation input::-webkit-outer-spin-button,
+.navigation input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.navigation span {
+    font-size: 16px;
+    color: #333;
+}
+
+/* افکت‌های تعویض اسلاید */
+.reveal .slides section {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.reveal .slides section.present {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* تنظیمات برای دستگاه‌های کوچک */
+@media only screen and (max-width: 600px) {
+  .slide {
+    padding: 20px;
+  }
+  
+  .slide h1 {
+    font-size: 36px;
+  }
+
+  .slide h2 {
+    font-size: 28px;
+  }
+
+  .slide h3 {
+    font-size: 24px;
+  }
+
+  .text, .list {
+    font-size: 18px;
+  }
+}

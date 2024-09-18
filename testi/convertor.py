@@ -6,14 +6,14 @@ import re
 with open('slides.md', 'r', encoding='utf-8') as f:
     md_content = f.read()
 
-# تفکیک صفحات بر اساس '---'
+# تفکیک صفحات بر اساس '^^^'
 slides = md_content.split('^^^')
 
 # تبدیل Markdown به HTML و شناسایی انواع محتوا
 html_pages = []
 for i, slide in enumerate(slides):
     html_slide = markdown.markdown(
-        slide, extensions=['fenced_code', 'tables', 'attr_list'])
+        slide, extensions=['fenced_code', 'tables', 'attr_list', 'nl2br'])
 
     # افزودن کلاس‌های مناسب به انواع محتوا
     html_slide = re.sub(

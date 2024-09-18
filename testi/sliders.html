@@ -1,0 +1,3137 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Presentation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+
+  <!-- پشتیبانی از KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false},
+                  {left: '\(', right: '\)', display: false},
+                  {left: '\[', right: '\]', display: true}
+              ],
+              ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          });"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="slide-1" class="slide">
+        <h1>خواص مواد مهندسی</h1>
+        <p class="text"><strong>دکتر اعظم بیگی خردمند</strong></p>
+      </section>
+      <section id="slide-2" class="slide">
+        <h2>منابع</h2>
+        <ol class="list">
+          <li>W. F. Smith, <em>Principles of Materials Science and Engineering</em>, 3rd Edition, McGraw Hill, 1996.
+          </li>
+          <li>K. G. Budinski and M. K. Budinski, <em>Engineering Materials: Properties and Selection</em>, 7th Edition,
+            Prentice Hall, 2002.</li>
+        </ol>
+      </section>
+      <section id="slide-3" class="slide">
+        <h2>فصل اول</h2>
+      </section>
+      <section id="slide-4" class="slide">
+        <h3>تاریخچه</h3>
+        <ul class="list">
+          <li>متالورژی به عنوان صنعت مادر حدود 6-7 هزار سال پیش شکل گرفت.</li>
+          <li>مس اولین فلزی بود که به صورت خالص استخراج شد.</li>
+        </ul>
+        <p class="text"><img class="image" alt="تاریخه" src="images/mp1.jpg" /></p>
+      </section>
+      <section id="slide-5" class="slide">
+        <h3>انواع مواد مهندسی</h3>
+        <p class="text"><strong>فلزات:</strong></p>
+        <ul class="list">
+          <li>رسانای خوب حرارت و الکتریسیته</li>
+          <li>شکل‌پذیر (به دلیل پیوند فلزی)</li>
+        </ul>
+        <p class="text"><strong>سرامیک‌ها:</strong></p>
+        <ul class="list">
+          <li>پیوندهای کووالانسی و یونی</li>
+          <li>سختی و مقاومت حرارتی بالا</li>
+        </ul>
+        <p class="text"><strong>پلیمرها:</strong></p>
+        <ul class="list">
+          <li>تشکیل شده از مولکول‌های بزرگ و طویل</li>
+        </ul>
+      </section>
+      <section id="slide-6" class="slide">
+        <h3>فلزها</h3>
+        <ul class="list">
+          <li>چیدمان اتمی منظم و فشرده</li>
+          <li>چگالی بالا</li>
+          <li>صلبیت</li>
+          <li>استحکام</li>
+          <li>انعطاف‌پذیری</li>
+          <li>مقاومت به رشد ترک</li>
+          <li>هدایت گرمایی</li>
+          <li>هدایت الکتریکی</li>
+          <li>عدم انتقال نور</li>
+          <li>بیشترین کاربرد در مهندسی</li>
+        </ul>
+        <p class="text"><img class="image" alt="فلز ها" src="images/mp2.jpg" /></p>
+      </section>
+      <section id="slide-7" class="slide">
+        <h3>فلزات آهنی</h3>
+        <ul class="list">
+          <li>چُدن‌ها: آلیاژهای آهن-کربن با کمتر از 2% کربن</li>
+          <li>چُدن سفید</li>
+          <li>چُدن‌های گرافیتی</li>
+          <li>چُدن خاکستری</li>
+          <li>چُدن داکتیل (نشکن)</li>
+          <li>چُدن مالیبل (چکشخوار)</li>
+          <li>فولادها: آلیاژهای آهن-کربن با بیشتر از 2% کربن</li>
+          <li>ساده کربنی</li>
+          <li>کم آلیاژ</li>
+          <li>زنگ نزن</li>
+          <li>ابزار</li>
+        </ul>
+      </section>
+      <section id="slide-8" class="slide">
+        <h3>سرامیک‌ها</h3>
+        <ul class="list">
+          <li>تُرد</li>
+          <li>مقاومت دمایی</li>
+          <li>انعطاف‌پذیری کم</li>
+          <li>مقاومت شیمیایی</li>
+          <li>عایق جریان</li>
+          <li>استثنا: برخی الکتروسرامیک‌ها رسانا هستند (در ساخت ترانزیستورها، یکسو کننده‌ها، و ICها)</li>
+        </ul>
+        <p class="text"><img class="image" alt="سرامیک ها" src="images/mp3.jpg" /></p>
+      </section>
+      <section id="slide-9" class="slide">
+        <h3>کاربرد سرامیک‌ها</h3>
+        <ul class="list">
+          <li>مصالح ساختمانی</li>
+          <li>شیشه‌ها و شیشه‌های هوشمند</li>
+          <li>ساینده‌ها</li>
+          <li>مته‌ها و ابزار برش</li>
+          <li>سیمان‌ها</li>
+          <li>سرامیک‌های پوششی</li>
+          <li>بیوسرامیک‌ها</li>
+          <li>فیلترها</li>
+          <li>کاتالیست‌ها</li>
+          <li>الکتروسرامیک‌ها</li>
+        </ul>
+      </section>
+      <section id="slide-10" class="slide">
+        <h3>پلیمرها</h3>
+        <ul class="list">
+          <li>مقاومت دمایی</li>
+          <li>تُرد در دمای زیر صفر</li>
+          <li>شکل‌پذیر در دمای بالا</li>
+          <li>متلاشی در دمای خیلی بالا</li>
+          <li>کم چگال</li>
+          <li>عایق جریان</li>
+          <li>پایداری شیمیایی در دمای محیط</li>
+        </ul>
+        <p class="text"><img class="image" alt="پلیمر ها" src="images/mp4.jpg" /></p>
+      </section>
+      <section id="slide-11" class="slide">
+        <h3>مقایسه سه ماده اصلی</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ویژگی</th>
+              <th>سرامیک</th>
+              <th>فلز</th>
+              <th>پلیمر</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>سختی</td>
+              <td>بسیار بالا</td>
+              <td>متوسط</td>
+              <td>کم</td>
+            </tr>
+            <tr>
+              <td>مدول الاستیسیته</td>
+              <td>بالا</td>
+              <td>متوسط</td>
+              <td>پایین</td>
+            </tr>
+            <tr>
+              <td>استحکام در دمای بالا</td>
+              <td>بسیار بالا</td>
+              <td>بالا</td>
+              <td>پایین</td>
+            </tr>
+            <tr>
+              <td>انبساط حرارتی</td>
+              <td>کم</td>
+              <td>متوسط</td>
+              <td>زیاد</td>
+            </tr>
+            <tr>
+              <td>شکل‌پذیری</td>
+              <td>کم</td>
+              <td>زیاد</td>
+              <td>زیاد</td>
+            </tr>
+            <tr>
+              <td>مقاومت به خوردگی</td>
+              <td>بسیار بالا</td>
+              <td>بسته به نوع</td>
+              <td>متوسط تا زیاد</td>
+            </tr>
+            <tr>
+              <td>مقاومت به سایش</td>
+              <td>بالا</td>
+              <td>متوسط</td>
+              <td>کم</td>
+            </tr>
+            <tr>
+              <td>رسانایی الکتریکی</td>
+              <td>کم</td>
+              <td>بسیار بالا</td>
+              <td>بسیار کم</td>
+            </tr>
+            <tr>
+              <td>چگالی</td>
+              <td>بالا</td>
+              <td>بالا</td>
+              <td>کم</td>
+            </tr>
+            <tr>
+              <td>رسانایی حرارتی</td>
+              <td>کم</td>
+              <td>بالا</td>
+              <td>بسیار کم</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-12" class="slide">
+        <h3>کامپوزیت‌ها</h3>
+        <ul class="list">
+          <li>اجزاء مواد کامپوزیتی از نظر شکل و ترکیب شیمیایی متفاوت هستند.</li>
+          <li>اجزاء در یکدیگر حل نمی‌شوند (مخلوط می‌شوند).</li>
+          <li>ایجاد موادی با خواص جدید.</li>
+          <li>دارای خواص بهتر نسبت به اجزاء اولیه.</li>
+        </ul>
+        <p><img class="image" alt="کامپوزیت ها" src="images/mp5.jpg" />
+          <img class="image" alt="کامپوزیت ها" src="images/mp6.png" />
+        </p>
+      </section>
+      <section id="slide-13" class="slide">
+        <h3>مواد مدرن</h3>
+        <ul class="list">
+          <li>نیمه‌هادی‌ها</li>
+          <li>مواد زیستی</li>
+          <li>مواد هوشمند</li>
+          <li>مواد نانو </li>
+        </ul>
+        <p><img class="image" alt="مواد مدرن" src="images/mp7.jpg" />
+          <img class="image" alt="مواد مدرن" src="images/mp8.jpg" />
+        </p>
+      </section>
+      <section id="slide-14" class="slide">
+        <h3>مواد هوشمند بر اساس محرک‌ها</h3>
+        <ul class="list">
+          <li>آلیاژ حافظه شکلی</li>
+          <li>سرامیک پیزوالکتریک</li>
+          <li>مواد مغناطیسی</li>
+          <li>مواد الکترو/مغناطیسی </li>
+        </ul>
+        <p class="text"><img class="image" alt="مواد هوشمند" src="images/mp9.png" /></p>
+      </section>
+      <section id="slide-15" class="slide">
+        <h3>محورهای اصلی علم مواد</h3>
+        <ul class="list">
+          <li>فرایند</li>
+          <li>ساختار</li>
+          <li>خواص</li>
+          <li>کارایی </li>
+        </ul>
+        <p class="text"><img class="image" alt="محورهای اصلی علم مواد" src="images/mp10.png" /></p>
+      </section>
+      <section id="slide-16" class="slide">
+        <h3>تأثیر محورهای اصلی بر هم</h3>
+        <ul class="list">
+          <li>علم مواد به بررسی ارتباط بین چهار عنصر می‌پردازد:</li>
+          <li>ساختار تابعی از فرایند ساخت است.</li>
+          <li>عملکرد تابعی از ویژگی‌های ماده است.</li>
+        </ul>
+        <p class="text">برای مثال، تأثیر فرایند در ساختار، ویژگی و عملکرد در برابر نور.</p>
+        <p class="text"><img class="image" alt="تأثیر محورهای اصلی بر هم" src="images/mp11.png" /></p>
+      </section>
+      <section id="slide-17" class="slide">
+        <h3>تأثیر فرایند ساخت در آلومینیم اکسید</h3>
+        <ul class="list">
+          <li>یک قرص تک‌بلور و شفاف</li>
+          <li>یک قرص چندبلوری نیمه‌کدر</li>
+          <li>یک قرص چندبلوری کاملاً مات</li>
+        </ul>
+        <p class="text"><img class="image" alt="آلومینیم اکسید" src="images/mp12.png" /></p>
+      </section>
+      <section id="slide-18" class="slide">
+        <h3>چرا علم مواد؟</h3>
+        <p class="text">برای موفقیت به عنوان مهندس، باید اطلاعاتی درباره ساختار و ویژگی‌های مواد و تأثیر آن‌ها در فرایند
+          ساخت برای دستیابی به عملکرد بهتر داشته باشیم.</p>
+        <p class="text"><img class="image" alt="Question mark" src="images/mp13.png" /></p>
+      </section>
+      <section id="slide-19" class="slide">
+        <h3>سطوح ساختار مواد</h3>
+        <p class="text"><img class="image" alt="سطوح ساختار مواد" src="images/mp14.png" /></p>
+      </section>
+      <section id="slide-20" class="slide">
+        <h3>حساسیت به ریزساختار</h3>
+        <p class="text"><strong>خواص غیر حساس:</strong></p>
+        <ul class="list">
+          <li>دانسیته</li>
+          <li>مدول یانگ</li>
+          <li>ضریب انبساط حرارتی</li>
+          <li>گرمای ویژه</li>
+        </ul>
+        <p class="text"><strong>خواص حساس:</strong></p>
+        <ul class="list">
+          <li>استحکام تسلیم</li>
+          <li>استحکام کششی</li>
+          <li>شکل‌پذیری</li>
+          <li>چقرمگی شکست</li>
+          <li>استحکام خستگی</li>
+          <li>استحکام خزشی</li>
+        </ul>
+        <p class="text"><img class="image" alt="حساسیت به ریزساختار" src="images/mp15.png" /></p>
+      </section>
+      <section id="slide-21" class="slide">
+        <h3>انواع خواص مواد</h3>
+        <ul class="list">
+          <li>مکانیکی</li>
+          <li>الکتریکی</li>
+          <li>حرارتی</li>
+          <li>مغناطیسی</li>
+          <li>نوری</li>
+          <li>استهلاکی</li>
+        </ul>
+        <p class="text"><img class="image" alt="انواع خواص مواد" src="images/mp16.jpg" /></p>
+      </section>
+      <section id="slide-22" class="slide">
+        <h3>ساختار اتمی</h3>
+        <p class="text"><strong>اتم:</strong></p>
+        <ul class="list">
+          <li>پروتون (مثبت)</li>
+          <li>نوترون (خنثی)</li>
+          <li>الکترون (منفی)</li>
+        </ul>
+        <p class="text"><img class="image" alt="اتم" src="images/mp17.png" /></p>
+        <p class="text"><strong>نمایش ساختار هسته‌ای اتم:</strong></p>
+        <ul class="list">
+          <li>عدد اتمی ($Z$): تعداد پروتون‌ها</li>
+          <li>عدد جرمی ($A$): تعداد پروتون‌ها + نوترون‌ها</li>
+        </ul>
+        <p class="text">
+        <div class="math-container">$$A = Z + N$$</div>
+        </p>
+        <ul class="list">
+          <li>عدد آووگادرو ($N_A$):</li>
+        </ul>
+        <p class="text">
+        <div class="math-container">$$N_A = 6.02 \times 10^{23}$$</div>
+        </p>
+        <p class="text"><img class="image" alt="آووگادرو" src="images/mp18.jpg" /></p>
+      </section>
+      <section id="slide-23" class="slide">
+        <h3>ساختار الکترونی</h3>
+        <p class="text"><strong>والانس (n):</strong></p>
+        <ul class="list">
+          <li>تعداد الکترون‌های لایه آخر</li>
+          <li>تعیین‌کننده خواص شیمیایی</li>
+        </ul>
+      </section>
+      <section id="slide-24" class="slide">
+        <h3>دسته‌بندی بر اساس والانس</h3>
+        <p class="text"><strong>الکترونگاتیویته:</strong></p>
+        <ul class="list">
+          <li>تمایل به جذب الکترون (الکترونگاتیو) مثل نافلزات</li>
+          <li>تمایل به از دست دادن الکترون (الکتروپوزیتیو) مثل فلزات</li>
+        </ul>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>n</th>
+              <th>نوع</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1, 2, 3</td>
+              <td>فلز</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>شبه فلز</td>
+            </tr>
+            <tr>
+              <td>5, 6, 7</td>
+              <td>نافلز</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>گاز نجیب</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text"><strong>جدول تناوبی:</strong></p>
+        <ul class="list">
+          <li>اساس چیدمان: آرایش الکترونی عناصر</li>
+        </ul>
+        <p class="text"><img class="image" alt="ساختار الکترونی" src="images/mp19.png" /></p>
+      </section>
+      <section id="slide-25" class="slide">
+        <h3>پیوندهای بین اتمی</h3>
+        <p class="text"><strong>پیوندهای اولیه (اصلی) (پیوند قوی):</strong></p>
+        <ul class="list">
+          <li>یونی</li>
+          <li>کووالانسی</li>
+          <li>فلزی</li>
+        </ul>
+        <p><img class="image" alt="یونی" src="images/mp22.svg" />
+          <img class="image" alt="کوالانسی" src="images/mp21.jpg" />
+          <img class="image" alt="فلزی" src="images/mp20.png" />
+        </p>
+        <p class="text"><strong>پیوندهای ثانویه (فرعی) (پیوند نسبتاً ضعیف):</strong></p>
+        <ul class="list">
+          <li>واندروالس</li>
+          <li>هیدروژنی</li>
+        </ul>
+        <p><img class="image" alt="هیدروژنی" src="images/mp23.svg" />
+          <img class="image" alt="واندروالس" src="images/mp24.png" />
+        </p>
+        <p class="text"><strong>نکته:</strong> در این پیوندها انتقال و اشتراک الکترون وجود ندارد.</p>
+      </section>
+      <section id="slide-26" class="slide">
+        <h3>پیوند فلزی</h3>
+        <ul class="list">
+          <li>در فلزات و آلیاژها</li>
+          <li>مشخصه: الکترون آزاد</li>
+          <li>مدل: "دریای الکترون آزاد"</li>
+          <li>ماهیت: غیرجهت‌دار</li>
+          <li>عامل اتصال: جاذبه بین الکترون‌های آزاد و هسته‌های یونی با بار مثبت</li>
+        </ul>
+        <p class="text"><img class="image" alt="پیوند فلزی" src="images/mp25.png" /></p>
+        <p class="text"><strong>نکته 1:</strong> در مدل دریای الکترون آزاد، الکترون‌های آزاد به اتم‌های خاص تعلق ندارند.
+        </p>
+        <p class="text"><strong>نکته 2:</strong> الکترون‌های غیر والانس باقیمانده و هسته اتم، تشکیل هسته‌های یونی با بار
+          خالص مثبت را می‌دهند که در دریای الکترون شناورند.</p>
+      </section>
+      <section id="slide-27" class="slide">
+        <h3>پیوند یونی</h3>
+        <ul class="list">
+          <li>در بسیاری از سرامیک‌ها و ترکیباتی که شامل یک الکترونگاتیو و یک الکتروپوزیتیو هستند</li>
+          <li>مشخصه: انتقال و داد و ستد الکترون‌ها</li>
+          <li>ماهیت: غیرجهت‌دار</li>
+          <li>عامل اتصال: جاذبه الکترواستاتیکی بین یون‌های مثبت و منفی</li>
+          <li>عنصر فلزی با دادن الکترون لایه ظرفیت به نافلز، به هر دو عنصر امکان رسیدن به آرایش گاز پایدار را می‌دهد.
+          </li>
+          <li>هر چه اختلاف الکترونگاتیو (فلز-غیرفلز) بیشتر باشد، پیوند یونی قوی‌تر یا انرژی پیوند بیشتر است.</li>
+        </ul>
+        <p class="text"><img class="image" alt="پیوند یونی" src="images/mp26.png" /></p>
+      </section>
+      <section id="slide-28" class="slide">
+        <h3>ویژگی‌ها پیوند یونی</h3>
+        <ul class="list">
+          <li>سخت</li>
+          <li>شکننده</li>
+          <li>عایق</li>
+          <li>نقطه ذوب بالا</li>
+          <li>عدم قابلیت تغییر شکل پلاستیک</li>
+          <li>هدایت الکتریکی بسیار کم (در حالت مذاب و توسط یون‌ها)</li>
+        </ul>
+      </section>
+      <section id="slide-29" class="slide">
+        <h3>پیوند کووالانسی</h3>
+        <ul class="list">
+          <li>در الماس، سیلیکون و ژرمانیوم</li>
+          <li>بین دو غیر فلز یا بین هیدروژن و یک غیر فلز</li>
+          <li>مشخصه: شراکت الکترون‌ها</li>
+          <li>ماهیت: جهت‌دار</li>
+          <li>عامل اتصال: نزدیک شدن دو هسته موجب ایجاد اربیتال الکترونی جدید شامل الکترون‌های شراکت گذاشته شده می‌شود.
+          </li>
+          <li>به علت نامتقارن بودن شکل اربیتال‌ها، قدرت پیوند بین اتمی در تمام جهات یکسان نیست.</li>
+        </ul>
+        <p class="text"><img class="image" alt="پیوند کووالانسی" src="images/mp27.png" /></p>
+      </section>
+      <section id="slide-30" class="slide">
+        <h3>ویژگی‌ها پیوند کووالانسی</h3>
+        <ul class="list">
+          <li>ترد</li>
+          <li>چکش‌خواری ضعیف</li>
+          <li>سختی بسیار زیاد (الماس ≠ بیسموت)</li>
+          <li>نقطه ذوب بسیار بالا</li>
+          <li>عایق الکتریکی (برای حرکت الکترون باید پیوند شکسته شود که به دما و انرژی زیاد نیاز دارد)</li>
+        </ul>
+        <p class="text"><img class="image" alt="پیوند کووالانسی" src="images/mp28.png" /></p>
+      </section>
+      <section id="slide-31" class="slide">
+        <h3>پیوند واندروالس</h3>
+        <ul class="list">
+          <li>بین گازهای ایده‌آل (مانند آرگون، نئون) یا مولکول‌های پایدار مانند متان و مواد آلی دیگر در حالت مایع یا
+            جامد</li>
+          <li>ارتباطی به الکترون‌های ظرفیت ندارد</li>
+          <li>عامل اتصال: دو قطبی‌های مولکولی یا اتمی است که به صورت دائم یا موقتی به وجود می‌آیند.</li>
+        </ul>
+        <p class="text"><img class="image" alt="پیوند واندروالس" src="images/mp29.png" /></p>
+      </section>
+      <section id="slide-32" class="slide">
+        <h3>ویژگی‌ها پیوند واندروالس</h3>
+        <ul class="list">
+          <li>پیوند ضعیف</li>
+          <li>در اثر ارتعاشات حرارتی از بین خواهند رفت</li>
+        </ul>
+        <p class="text"><img class="image" alt="پیوند واندروالس" src="images/mp30.png" /></p>
+      </section>
+      <section id="slide-33" class="slide">
+        <h3>پیوند هیدروژنی</h3>
+        <ul class="list">
+          <li>در مولکول‌های غیر آلی (مانند آب) و آلی (مانند DNA)</li>
+          <li>عامل اتصال: همراه شدن هیدروژن با یکی از عناصر با الکترونگاتیوی بالا (اکسیژن، نیتروژن، فلوئور)</li>
+        </ul>
+        <p class="text"><img class="image" alt="پیوند هیدروژنی" src="images/mp31.png" /></p>
+      </section>
+      <section id="slide-34" class="slide">
+        <h3>ویژگی‌ها پیوند هیدروژنی</h3>
+        <ul class="list">
+          <li>پیوند ضعیف</li>
+          <li>در اثر ارتعاشات حرارتی از بین خواهند رفت</li>
+        </ul>
+      </section>
+      <section id="slide-35" class="slide">
+        <h3>پیوندهای هیبریدی (ترکیبی)</h3>
+        <ul class="list">
+          <li>در بسیاری از مواد، پیوندهای بین اتمی ترکیبی از پیوندهای اولیه یا ثانویه است.</li>
+        </ul>
+        <p class="text"><img class="image" alt="پیوند هیبریدی" src="images/mp32.png" /></p>
+      </section>
+      <section id="slide-36" class="slide">
+        <h3>انرژی پیوند بخش اول</h3>
+        <ul class="list">
+          <li>منحنی تغییرات نیروی بین اتمی (و انرژی پتانسیل) بر حسب فاصله بین اتمی</li>
+          <li>با نزدیک شدن دو اتم به هم؛ دو نوع نیروی بین اتمی (جاذبه و دافعه) بین آن‌ها شکل می‌گیرد.</li>
+          <li>نیروی جاذبه: وابسته به نوع پیوند اتمی از نیروی بین مراکز با بار مثبت و منفی است.</li>
+          <li>نیروی دافعه: هم‌پوشانی الکترون‌های لایه آخر که با نزدیک شدن دو اتم، افزایش می‌یابد.</li>
+          <li>نیروی خالص: مجموع این دو نیرو است.</li>
+        </ul>
+        <p class="text"><strong>نکته:</strong> هنگامی که نیروی خالص برابر صفر شود، اتم‌ها در فاصله تعادل قرار دارند.</p>
+      </section>
+      <section id="slide-37" class="slide">
+        <h3>انرژی پیوند بخش دوم</h3>
+        <p class="text"><img class="image" alt="انرژی پیوند" src="images/mp33.jpg" /></p>
+      </section>
+      <section id="slide-38" class="slide">
+        <h3>انرژی پیوند بخش سوم</h3>
+        <p class="text"><strong>نکته:</strong> مهم‌ترین مشخصه منحنی انرژی پیوند، نقطه مینیمم آن است. انرژی متناظر با
+          فاصله تعادلی، انرژی پیوند است. انرژی پیوندی حداقل انرژی برای جدا کردن یا شکستن پیوند است.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نوع پیوند</th>
+              <th>انرژی پیوند $(kJ/mol)$</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>یونی</td>
+              <td>$625-1550$</td>
+            </tr>
+            <tr>
+              <td>کووالانسی</td>
+              <td>$520-1250$</td>
+            </tr>
+            <tr>
+              <td>فلزی</td>
+              <td>$100-800$</td>
+            </tr>
+            <tr>
+              <td>واندروالسی</td>
+              <td>$&lt; 40$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-39" class="slide">
+        <h3>انرژی پیوند بخش چهارم</h3>
+        <p class="text"><strong>افزایش انرژی پیوند:</strong></p>
+        <ul class="list">
+          <li>دماي ذوب افزايش می‌یابد</li>
+          <li>مدول یانگ افزایش می‌یابد</li>
+          <li>ضریب انبساط حرارتی کاهش می‌یابد</li>
+        </ul>
+        <p class="text"><img class="image" alt="انرژی پیوند" src="images/mp34.jpg" /></p>
+      </section>
+      <section id="slide-40" class="slide">
+        <h3>انرژی پیوند بخش پنجم</h3>
+        <p class="text"><strong>در مقیاس اتمی:</strong> مقدار مدول یانگ تابعی از مقاومت پیوند اتمی در برابر تغییر فاصله
+          تعادلی اتم‌هاست. مدول یانگ متناسب با شیب نمودار نیروهای بین اتمی بر حسب فاصله در نقطه تعادلی است:</p>
+        <p>$$
+          aE \propto - \left(\frac{dF}{dr_0}\right)_{r = r_0}
+          $$</p>
+      </section>
+      <section id="slide-41" class="slide">
+        <h2>فصل دوم</h2>
+      </section>
+      <section id="slide-42" class="slide">
+        <h3>نظم اتمی</h3>
+        <ol class="list">
+          <li><strong>بی نظم</strong>: مانند گازها</li>
+          <li><strong>کریستال</strong>: نظم بلند دامنه، عدد همسایگی ثابت، نظم تکرار شونده (آرایش پریودی) طی انجماد</li>
+          <li><strong>آمورف</strong>: نظم کم دامنه، عدد همسایگی متغیر، نظم تا چند فاصله اتمی حفظ می‌شود، سریع سرد کردن
+            مذاب با سرعت بالا برای تولید آمورف فلزی</li>
+        </ol>
+        <p class="text"><img class="image" alt="نظم اتمی" src="images/mp35.png" /></p>
+      </section>
+      <section id="slide-43" class="slide">
+        <h3>ساختار کریستالی</h3>
+        <p class="text"><strong>کریستال</strong>: مجموعه اتم‌هایی که با نظم معین در تمام حجم توزیع شده‌اند. از اتصال
+          فرضی مرکز اتم‌ها، سیستم سه‌بعدی شامل تعداد زیادی متوازی‌السطوح که شبکه بلوری را تشکیل می‌دهند، ایجاد می‌شود.
+          کوچک‌ترین متوازی‌السطوح تکرار شونده در تمام سه جهت، حجم بلور را سلول واحد کویند می‌نامند.</p>
+        <p class="text"><img class="image" alt="ساختار کریستالی" src="images/mp36.png" /></p>
+      </section>
+      <section id="slide-44" class="slide">
+        <h3>سیستم‌های بلوری</h3>
+        <p class="text">دسته‌بندی برای راحتی ساختارهای بلوری بر مبنای شکل سلول واحد یا آرایش اتمی گروه است. این روش فقط
+          بر پایه شکل سلول واحد بدون توجه به موقعیت اتم‌ها در سلول واحد است. در این روش یک سیستم مختصاتی برقرار می‌شود
+          که شامل:</p>
+        <ol class="list">
+          <li>طول بردار در امتداد محور</li>
+          <li>طول بردار در امتداد محور</li>
+          <li>طول بردار در امتداد محور</li>
+          <li>زاویه بین بردارها و</li>
+          <li>زاویه بین بردارها و</li>
+          <li>زاویه بین بردارها و</li>
+        </ol>
+        <p class="text"><img class="image" alt="سیستم‌های بلوری" src="images/mp37.png" /></p>
+      </section>
+      <section id="slide-45" class="slide">
+        <h3>سیستم‌های بلوری</h3>
+        <p class="text">هفت ترکیب احتمالی وجود دارد که هرکدام یک سیستم بلوری یا سیستم تبلور جداگانه را مشخص می‌کنند که
+          ۱۴ حالت به وجود می‌آید و به ۱۴ شبکه براوه معروفند:</p>
+        <ul class="list">
+          <li>مکعبی</li>
+          <li>تتراگونال</li>
+          <li>هگزاگونال</li>
+          <li>ارتورمبیک</li>
+          <li>رمبوهدرال</li>
+          <li>مونوکلینیك</li>
+          <li>تری‌کلینیك</li>
+        </ul>
+        <p class="text"><img class="image" alt="سیستم‌های بلوری" src="images/mp38.jpg" /></p>
+      </section>
+      <section id="slide-46" class="slide">
+        <h3>سیستم‌های بلوری</h3>
+        <p class="text">بیشتر فلزات از سیستم‌های مکعبی یا هگزاگونال متبلور می‌شوند.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>حالت‌های مکعبی</th>
+              <th>انگلیسی</th>
+              <th>اختصار</th>
+              <th>شکل</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>مکعبی ساده</td>
+              <td>Simple Cubic</td>
+              <td>SC</td>
+              <td><img class="image" alt="SC" src="images/mp39.png" /></td>
+            </tr>
+            <tr>
+              <td>مکعبی مرکزدار</td>
+              <td>Body Centered Cubic</td>
+              <td>BCC</td>
+              <td><img class="image" alt="BCC" src="images/mp40.png" /></td>
+            </tr>
+            <tr>
+              <td>مکعبی با سطوح مرکز دار</td>
+              <td>Face Centered Cubic</td>
+              <td>FCC</td>
+              <td><img class="image" alt="FCC" src="images/mp41.png" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-47" class="slide">
+        <h3>اندیس‌های بلوری (جهات)</h3>
+        <p class="text">جهات و صفحات بلوری در فضا توسط علائمی به نام اندیس‌های بلوری تعریف می‌گردند. عموماً از سیستم
+          میلر برای اندیس‌گذاری صفحات و جهات بلوری استفاده می‌شود.</p>
+        <p class="text"><strong>روش تعیین اندیس‌های جهات در شبکه مکعبی:</strong></p>
+        <ul class="list">
+          <li>از مبدا مختصات برداری به موازات جهت مورد نظر رسم می‌شود.</li>
+          <li>مؤلفه‌های بردار بر روی سه محور مختصات تعیین می‌شوند.</li>
+          <li>مؤلفه‌های بردار به کوچک‌ترین اعداد صحیح تبدیل می‌شوند.</li>
+        </ul>
+        <p class="text"><img class="image" alt="اندیس" src="images/mp42.png" /></p>
+      </section>
+      <section id="slide-48" class="slide">
+        <h3>اندیس‌های بلوری (صفحات)</h3>
+        <p class="text"><strong>روش تعیین اندیس‌های صفحات در شبکه مکعبی:</strong></p>
+        <ol class="list">
+          <li>نقاط تقاطع صفحه مورد نظر با محورهای مختصات را مشخص کنید.</li>
+          <li>معکوس مختصات نقاط تقاطع با محورها را محاسبه کنید.</li>
+          <li>این مقادیر را به کوچک‌ترین اعداد صحیح تبدیل کنید تا اندیس‌های میلر صفحه به دست آید.</li>
+        </ol>
+      </section>
+      <section id="slide-49" class="slide">
+        <h3>اندیس‌های بلوری (صفحات)</h3>
+        <p class="text"><strong>اندیس میلر</strong> یک جهت در براکت و به صورت $[hkl]$ نشان داده می‌شود، اما تمام جهات
+          هم‌نوع به صورت $\langle hkl \rangle$ نمایش داده می‌شوند. به عنوان مثال، اندیس جهات قطری در مکعب به شکل
+          $\langle 111 \rangle$ نشان داده می‌شود که شامل چهار جهت زیر است:</p>
+        <p>$$
+          [\bar{1}11], [1\bar{1}1], [11\bar{1}], [111]
+          $$</p>
+        <p class="text"><img class="image" alt="صفحات" src="images/mp43.jpg" /></p>
+      </section>
+      <section id="slide-50" class="slide">
+        <h3>اندیس‌های بلوری (صفحات)</h3>
+        <p class="text">اندیس میلر یک صفحه در پرانتز و به صورت $(hkl)$ نشان داده می‌شود. اما تمام صفحات هم‌نوع به صورت
+          ${hkl}$ نمایش داده می‌شوند. به عنوان مثال، اندیس صفحات اکتاهدرال در مکعب به شکل ${111}$ نشان داده می‌شود که
+          شامل چهار صفحه زیر است:</p>
+        <p>$$
+          (1\bar{1}1), (\bar{1}11), (11\bar{1}), (\bar{1}\bar{1}\bar{1})
+          $$</p>
+        <p class="text"><img class="image" alt="صفحات" src="images/mp44.jpg" /></p>
+      </section>
+      <section id="slide-51" class="slide">
+        <p class="text"><img class="image" alt="صفحات" src="images/mp45.png" /></p>
+      </section>
+      <section id="slide-52" class="slide">
+        <h3>اندیس‌های بلوری (صفحات)</h3>
+        <p><strong>نکته مهم:</strong><br />
+          اندیس میلر یک صفحه و جهت عمود بر آن صفحه یکسان هستند.<br />
+          به عنوان مثال، اندیس وجه مکعب که عمود بر محور $ [100] $ است، برابر با $ (100) $ است و اندیس محور $ [100] $ نیز
+          برابر با $ (100) $ است. همچنین، اندیس صفحه اکتاهدرال در مکعب $ (111) $ و اندیس قطر مکعب که عمود بر آن است نیز
+          $ [111] $ است.</p>
+      </section>
+      <section id="slide-53" class="slide">
+        <h3>اندیس‌های بلوری (صفحات) در شبکه هگزاگونال</h3>
+        <p><strong>نکته:</strong><br />
+          اندیس میلر صفحات و جهات در بلورهای هگزاگونال به صورت چهار رقمی بیان می‌شود و همواره به فرم $ (hkil) $ است. در
+          اینجا $ h $، $ k $ و $ i $ مربوط به سه محور در صفحه پایه هستند و $ l $ به محور عمود بر صفحه پایه اشاره دارد.
+          رابطه زیر بین $ h $ و $ k $ و $ i $ برقرار است:</p>
+        <p>$$
+          i = -(h + k)
+          $$</p>
+        <p class="text"><img class="image" alt="هگزاگونال" src="images/mp46-47.png" /></p>
+      </section>
+      <section id="slide-54" class="slide">
+        <h3>اندیس‌های بلوری (صفحات)</h3>
+        <p class="text"><img class="image" alt="اندیس صفحات" src="images/mp48.png" /></p>
+      </section>
+      <section id="slide-55" class="slide">
+        <h3>مقدمه‌ای بر ساختار بلوری فلزات</h3>
+        <ul class="list">
+          <li><strong>ساختار بلوری فلزات:</strong></li>
+          <li>اغلب فلزات به یکی از ساختارهای زیر متبلور می‌شوند:<ul class="list">
+              <li><strong>مکعبی:</strong></li>
+              <li>مکعب ساده (SC)</li>
+              <li>مکعب مرکز دار (BCC)</li>
+              <li>مکعب با وجوه مرکزدار (FCC)</li>
+              <li><strong>هگزاگونال فشرده (HCP)</strong></li>
+            </ul>
+          </li>
+          <li><strong>تصویر:</strong> نمایش انواع ساختارهای بلوری (فلزات بلوری)</li>
+        </ul>
+        <p class="text"><img class="image" alt="فلزات بلوری" src="images/mp49.png" /></p>
+      </section>
+      <section id="slide-56" class="slide">
+        <h3>سیستم مکعبی ساده (SC)</h3>
+        <ul class="list">
+          <li><strong>ویژگی‌های ساختاری سیستم SC:</strong></li>
+          <li><strong>موقعیت اتم‌ها:</strong> اتم‌ها در گوشه‌های مکعب قرار دارند.</li>
+          <li><strong>عدد همسایگی:</strong> هر اتم دارای ۶ اتم همسایه نزدیک است.</li>
+          <li><strong>مدل کرات سخت (Hard-Ball Model):</strong> شعاع هر کره نصف فاصله مراکز دو اتم چسبیده به هم است.</li>
+          <li>
+            <p class="text"><strong>حجم شبکه:</strong></p>
+            <ul class="list">
+              <li>اگر یال شبکه (a) باشد، حجم شبکه خواهد بود:</li>
+            </ul>
+            <p>$$
+              V = a^3
+              $$</p>
+          </li>
+          <li>
+            <p class="text"><strong>تصویر:</strong> سیستم مکعبی ساده (SC)</p>
+          </li>
+        </ul>
+        <p class="text"><img class="image" alt="سیستم مکعبی ساده" src="images/mp51.png" /></p>
+      </section>
+      <section id="slide-57" class="slide">
+        <h3>تراکم و عدد همسایگی در SC</h3>
+        <ul class="list">
+          <li><strong>ضریب تراکم اتمی (APF):</strong> نسبت حجم اتم‌ها به حجم سلول واحد.</li>
+          <li><strong>تراکم چگالی صفحه‌ای (PPD):</strong></li>
+          <li>برای صفحه ( [100] ) در سیستم SC:
+            $$
+            PPD_{[100]} = \frac{\pi R^2}{(2R)^2} = 0.785
+            $$</li>
+        </ul>
+        <p class="text"><img class="image" alt="تراکم چگالی" src="images/mp56.png" /></p>
+        <ul class="list">
+          <li><strong>جهات فشرده:</strong> یال‌های مکعب جهات فشرده ساختار هستند.</li>
+          <li><strong>نمونه:</strong> شبکه بلوری مکعبی ساده سدیم کلرید (NaCl)</li>
+        </ul>
+        <p class="text"><img class="image" alt="تراکم چگالی" src="images/mp59.png" /></p>
+      </section>
+      <section id="slide-58" class="slide">
+        <h3>سیستم مکعبی مرکزدار (BCC)</h3>
+        <ul class="list">
+          <li><strong>ویژگی‌های ساختاری سیستم BCC:</strong></li>
+          <li><strong>موقعیت اتم‌ها:</strong> هر اتم گوشه به ۸ سلول تعلق دارد.</li>
+          <li><strong>سهم اتم مرکزی:</strong> اتم مرکزی فقط به همان سلول تعلق دارد.</li>
+          <li><strong>کل تعداد اتم‌ها:</strong> ۲ اتم در هر سلول واحد.</li>
+        </ul>
+        <p class="text"><img class="image" alt="سیستم مکعبی مرکزدار" src="images/mp57.png" /></p>
+      </section>
+      <section id="slide-59" class="slide">
+        <h3>سیستم مکعبی مرکزدار (BCC)</h3>
+        <ul class="list">
+          <li><strong>ساختار داخلی BCC:</strong></li>
+          <li><strong>جهات و صفحات فشرده:</strong>
+            <ul class="list">
+              <li>قطرهای مکعب ( \langle 111\rangle ) جهات فشرده</li>
+              <li>صفحات ( {110} ) صفحات متراکم</li>
+            </ul>
+          </li>
+          <li>
+            <p class="text"><strong>رابطه شعاع اتمی با یال شبکه:</strong></p>
+            <p>$$
+              a = \frac{4R}{\sqrt{3}}
+              $$</p>
+          </li>
+          <li>
+            <p class="text"><strong>ضریب تراکم اتمی (APF):</strong></p>
+            <p>$$
+              APF = 0.68
+              $$</p>
+          </li>
+        </ul>
+        <p class="text"><img class="image" alt="سیستم مکعبی مرکزدار" src="images/mp58.png" /></p>
+      </section>
+      <section id="slide-60" class="slide">
+        <h3>سیستم مکعبی با وجوه مرکزدار (FCC)</h3>
+        <ul class="list">
+          <li><strong>ویژگی‌های ساختاری سیستم FCC:</strong></li>
+          <li>
+            <p class="text"><strong>تعداد اتم‌ها در هر سلول:</strong></p>
+            <ul class="list">
+              <li>هر اتم گوشه به ۸ سلول تعلق دارد.</li>
+              <li>هر اتم در مرکز هر وجه به ۲ سلول مجاور تعلق دارد.</li>
+              <li>در کل ۴ اتم در هر سلول واحد.</li>
+            </ul>
+            <p>$$
+              \begin{rcases}
+              8 \times \frac{1}{8} = 1\
+              6 \times \frac{1}{2} = 3
+              \end{rcases}
+              \Rightarrow 1 + 3 = 4
+              $$</p>
+          </li>
+          <li>
+            <p class="text"><strong>ویژگی‌های فیزیکی:</strong></p>
+            <ul class="list">
+              <li>وجود ۴ صفحه فشرده و ۳ جهت فشرده در هر صفحه.</li>
+              <li>تأثیر این ساختار بر خواص فیزیکی فلزات (مانند قابلیت تغییر شکل بالا).</li>
+              <li>بیشترین فشردگی به این ساختار اختصاص دارد</li>
+            </ul>
+          </li>
+          <li>
+            <p class="text"><strong>مثال‌ها:</strong> آلومینیوم (Al)، مس (Cu)، طلا (Au)</p>
+          </li>
+        </ul>
+        <p class="text"><img class="image" alt="سیستم مکعبی با وجوه مرکزدار" src="images/mp41.png" /></p>
+      </section>
+      <section id="slide-61" class="slide">
+        <h3>ساختار مکعبی با وجوه مرکزدار (FCC)</h3>
+        <p class="text"><strong>ضریب تراکم اتمی و چگالی صفحه‌ای در FCC:</strong></p>
+        <ul class="list">
+          <li>
+            <p><strong>APF (Atomic Packing Factor):</strong>
+              $$
+              APF = 0.74
+              $$</p>
+          </li>
+          <li>
+            <p><strong>PPD[100] (Plane Packing Density):</strong>
+              $$
+              PPD_{[100]} = \frac{\pi R^2 + 4 \times \frac{1}{4} \times \pi R^2}{a^2} = \frac{2 \pi R^2}{\left(
+              \frac{4R}{\sqrt{2}} \right)^2} = 0.785
+              $$</p>
+          </li>
+        </ul>
+        <p><strong>تصاویر مرتبط:</strong>
+          - <img class="image" alt="" src="images/mp60.png" />
+          - <img class="image" alt="" src="images/mp61.png" /></p>
+      </section>
+      <section id="slide-62" class="slide">
+        <h3>ترتیب چیدمان در ساختار FCC</h3>
+        <ul class="list">
+          <li><strong>توالی چیدمان:</strong> ABCABC...</li>
+          <li><strong>نمایش دو بعدی:</strong></li>
+        </ul>
+        <p class="text"><img class="image" alt="FCC Stacking Sequence" src="images/mp62.png" /></p>
+        <ul class="list">
+          <li><strong>سلول واحد FCC:</strong></li>
+        </ul>
+        <p class="text"><img class="image" alt="FCC Unit Cell" src="images/mp63.png" /></p>
+      </section>
+      <section id="slide-63" class="slide">
+        <h3>تصاویر تکمیلی ساختار FCC</h3>
+        <ul class="list">
+          <li><img class="image" alt="" src="images/mp64.jpg" /></li>
+          <li><img class="image" alt="" src="images/mp65.png" /></li>
+        </ul>
+      </section>
+      <section id="slide-64" class="slide">
+        <h3>چیدمان صفحات اتمی در ساختار FCC</h3>
+        <ul class="list">
+          <li><strong>توالی چیدمان متوالی صفحات اتمی:</strong> ABCABCABC</li>
+        </ul>
+        <p class="text"><strong>تصویر مربوطه:</strong></p>
+        <ul class="list">
+          <li><img class="image" alt="چیدمان متوالی صفحات اتمی FCC" src="images/mp66.jpg" /></li>
+        </ul>
+      </section>
+      <section id="slide-65" class="slide">
+        <h3>ساختار هگزاگونال فشرده (HCP)</h3>
+        <p class="text"><strong>ویژگی‌های ساختاری:</strong></p>
+        <ul class="list">
+          <li>در ساختار HCP، اتم‌های صفحه بالایی سلول دقیقاً روی اتم‌های صفحه پایینی قرار دارند، اما اتم‌های صفحه میانی
+            در موقعیت متفاوتی هستند.</li>
+          <li><strong>توالی چیدمان:</strong> ABAB...</li>
+          <li><strong>نمایش سه‌بعدی و دو‌بعدی:</strong> (تصاویر مرتبط در دسترس نیستند، لطفاً در صورت وجود اضافه کنید)
+          </li>
+        </ul>
+        <p class="text"><strong>ضریب تراکم اتمی و صفحه‌ای در HCP:</strong></p>
+        <ul class="list">
+          <li><strong>APF:</strong>
+            $$
+            APF = 0.74
+            $$</li>
+          <li><strong>PPF[0001]:</strong>
+            $$
+            PPF_{[0001]} = 0.92
+            $$</li>
+        </ul>
+      </section>
+      <section id="slide-66" class="slide">
+        <h3>ویژگی‌های اضافی ساختار HCP</h3>
+        <ul class="list">
+          <li><strong>صفحه قاعده بلور:</strong> دارای بیشترین فشردگی اتمی است و مشابه صفحه اکتاهدرال در FCC دارای 3 جهت
+            فشرده است.</li>
+          <li><strong>عدد همسایگی در FCC و HCP:</strong> برابر 12 است.</li>
+          <li><strong>تعداد اتم‌ها در سلول واحد HCP:</strong>
+            $$
+            \left(12 \times \frac{1}{6}\right) + \left(2 \times \frac{1}{2}\right) + 3 = 6
+            $$</li>
+        </ul>
+      </section>
+      <section id="slide-67" class="slide">
+        <h3>مقایسه ساختارهای FCC و HCP</h3>
+        <p class="text"><strong>شباهت‌ها:</strong></p>
+        <ul class="list">
+          <li><strong>عدد همسایگی:</strong> هر دو برابر 12.</li>
+          <li><strong>ضریب تراکم اتمی:</strong> هر دو برابر 0.74.</li>
+          <li><strong>ضریب تراکم صفحه‌ای در صفحات فشرده:</strong>
+            $$
+            PPF_{[0001]} = PPF_{[111]} = 0.92
+            $$</li>
+        </ul>
+        <p class="text"><strong>تفاوت‌ها:</strong></p>
+        <ul class="list">
+          <li><strong>توالی چیدمان:</strong></li>
+          <li>FCC: ABCABC...</li>
+          <li>HCP: ABAB...</li>
+        </ul>
+        <p class="text"><strong>نکته:</strong> یک جابجایی عرضی در یکی از صفحات فشرده می‌تواند ساختار را از HCP به FCC یا
+          بالعکس تغییر دهد.</p>
+      </section>
+      <section id="slide-68" class="slide">
+        <h3>نقص در چیدمان صفحات (Stacking Faults)</h3>
+        <ul class="list">
+          <li><strong>تعریف:</strong> زمانی که توالی چیدمان صفحات اتمی در یک بلور ناقص یا ناپیوسته باشد.</li>
+          <li><strong>مثال:</strong> تبدیل توالی ABCABC به ABCA...CABCA.</li>
+          <li><strong>انواع نقص‌ها:</strong></li>
+          <li><strong>ذاتی:</strong> با حذف بخشی از یک صفحه فشرده ایجاد می‌شود.</li>
+          <li><strong>عارضی:</strong> با اضافه شدن بخشی از یک صفحه فشرده ایجاد می‌شود.</li>
+        </ul>
+        <p class="text"><strong>تاثیرات دما:</strong></p>
+        <ul class="list">
+          <li>تغییر ساختمان اتمی از HCP به FCC یا بالعکس در حین گرمایش یا سرمایش برخی فلزات با ایجاد نقص در چیدمان صفحات
+            اتمی امکان‌پذیر است.</li>
+          <li><strong>مثال:</strong> استحاله آلوتروپیک فلز کبالت در 420 درجه سانتی‌گراد.</li>
+        </ul>
+      </section>
+      <section id="slide-69" class="slide">
+        <h3>مقایسه آرایش اتمی در ساختارهای کریستالی فلزات</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ساختار</th>
+              <th>تعداد اتم در سلول واحد</th>
+              <th>عدد همسایگی</th>
+              <th>تعداد جهات متراکم</th>
+              <th>تعداد صفحات متراکم</th>
+              <th>تراکم فضایی</th>
+              <th>رابطه شعاع اتمی و پارامتر شبکه (a)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SC</td>
+              <td>1</td>
+              <td>6</td>
+              <td>$3 \langle 100 \rangle$</td>
+              <td>${100}$</td>
+              <td>0.52</td>
+              <td>$a = 2R$</td>
+            </tr>
+            <tr>
+              <td>BCC</td>
+              <td>2</td>
+              <td>8</td>
+              <td>$4 \langle 111 \rangle$</td>
+              <td>$6 {110}$</td>
+              <td>0.68</td>
+              <td>$a = \frac{4R}{\sqrt{3}}$</td>
+            </tr>
+            <tr>
+              <td>FCC</td>
+              <td>4</td>
+              <td>12</td>
+              <td>$6 \langle 110 \rangle$</td>
+              <td>$4 {111}$</td>
+              <td>0.74</td>
+              <td>$a = \frac{4R}{\sqrt{2}}$</td>
+            </tr>
+            <tr>
+              <td>HCP</td>
+              <td>6</td>
+              <td>12</td>
+              <td>$3 \langle 11\bar{2}0 \rangle$</td>
+              <td>$1 (0001)$</td>
+              <td>0.74</td>
+              <td>$a = 2R$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-70" class="slide">
+        <h3>ساختار بلوری عناصر فلزی</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Face-centered Cubic (FCC)</th>
+              <th>Hexagonal Close-packed (HCP)</th>
+              <th>Body-centered Cubic (BCC)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>آلومینیوم (Al)</td>
+              <td>منیزیم (Mg)</td>
+              <td>آهن (Fe) (زیر 911.5°C و بین 1396 تا 1538°C)</td>
+            </tr>
+            <tr>
+              <td>مس (Cu)</td>
+              <td>روی (Zn)</td>
+              <td>تیتانیوم (Ti) (بین 882 تا 1670°C)</td>
+            </tr>
+            <tr>
+              <td>نقره (Ag)</td>
+              <td>کادمیوم (Cd)</td>
+              <td>تنگستن (W)</td>
+            </tr>
+            <tr>
+              <td>طلا (Au)</td>
+              <td>زیرکونیوم (Zr) (زیر 863°C)</td>
+              <td>وانادیوم (V)</td>
+            </tr>
+            <tr>
+              <td>نیکل (Ni)</td>
+              <td>بریلیوم (Be)</td>
+              <td>مولیبدن (Mo)</td>
+            </tr>
+            <tr>
+              <td>سرب (Pb)</td>
+              <td></td>
+              <td>فلزات قلیایی (Li, Na, K, Rb, Cs)</td>
+            </tr>
+            <tr>
+              <td>پلاتین (Pt)</td>
+              <td></td>
+              <td>کروم (Cr)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-71" class="slide">
+        <h3>اندازه شعاع اتمی برخی از فلزات</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>فلز</th>
+              <th>ساختار کریستالی</th>
+              <th>شعاع اتمی (nm)</th>
+              <th>فلز</th>
+              <th>ساختار کریستالی</th>
+              <th>شعاع اتمی (nm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>آلومینیوم</td>
+              <td>FCC</td>
+              <td>0.1431</td>
+              <td>مولیبدن</td>
+              <td>BCC</td>
+              <td>0.1363</td>
+            </tr>
+            <tr>
+              <td>کادمیوم</td>
+              <td>HCP</td>
+              <td>0.1490</td>
+              <td>نیکل</td>
+              <td>FCC</td>
+              <td>0.1246</td>
+            </tr>
+            <tr>
+              <td>کروم</td>
+              <td>BCC</td>
+              <td>0.1249</td>
+              <td>پلاتین</td>
+              <td>FCC</td>
+              <td>0.1387</td>
+            </tr>
+            <tr>
+              <td>کبالت</td>
+              <td>HCP</td>
+              <td>0.1253</td>
+              <td>نقره</td>
+              <td>FCC</td>
+              <td>0.1445</td>
+            </tr>
+            <tr>
+              <td>مس</td>
+              <td>FCC</td>
+              <td>0.1278</td>
+              <td>تانتالوم</td>
+              <td>BCC</td>
+              <td>0.1430</td>
+            </tr>
+            <tr>
+              <td>طلا</td>
+              <td>FCC</td>
+              <td>0.1442</td>
+              <td>تیتانیوم $(\alpha)$</td>
+              <td>HCP</td>
+              <td>0.1445</td>
+            </tr>
+            <tr>
+              <td>آهن $(\alpha)$</td>
+              <td>BCC</td>
+              <td>0.1241</td>
+              <td>تنگستن</td>
+              <td>BCC</td>
+              <td>0.1371</td>
+            </tr>
+            <tr>
+              <td>سرب</td>
+              <td>FCC</td>
+              <td>0.1750</td>
+              <td>روی</td>
+              <td>HCP</td>
+              <td>0.1332</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text"><strong>توضیحات:</strong></p>
+        <ul class="list">
+          <li>1 نانومتر (nm) برابر با $10^{-9}$ متر است. برای تبدیل به آنگستروم (Å)، مقدار نانومتر را در 10 ضرب کنید.
+          </li>
+        </ul>
+      </section>
+      <section id="slide-72" class="slide">
+        <h3>محاسبه دانسیته تئوریک فلزات</h3>
+        <p><strong>رابطه کلی:</strong>
+          $$
+          \rho = \frac{n \times A}{V_c \times N_A}
+          $$</p>
+        <p class="text"><strong>متغیرها:</strong></p>
+        <ul class="list">
+          <li>$n$: تعداد اتم‌ها در سلول واحد</li>
+          <li>$A$: وزن اتمی (g/mol)</li>
+          <li>$V_c$: حجم سلول واحد ($cm^3$)</li>
+          <li>$N_A$: عدد آووگادرو ($6.022 \times 10^{23} mol^{-1}$)</li>
+        </ul>
+        <p class="text"><strong>مثال برای مس (Cu):</strong></p>
+        <ul class="list">
+          <li><strong>داده‌ها:</strong></li>
+          <li>ساختار بلوری: FCC (4 اتم در سلول واحد)</li>
+          <li>وزن اتمی: 63.55 g/mol</li>
+          <li>
+            <p class="text">شعاع اتمی: 0.128 nm</p>
+          </li>
+          <li>
+            <p class="text"><strong>محاسبات:</strong></p>
+          </li>
+          <li>پارامتر شبکه:
+            $$
+            a = \frac{4R}{\sqrt{2}} = \frac{4 \times 0.128}{\sqrt{2}} = 0.361 nm = 3.61 \times 10^{-8} cm
+            $$</li>
+          <li>حجم سلول واحد:
+            $$
+            V_c = a^3 = (3.61 \times 10^{-8})^3 = 4.72 \times 10^{-23} cm^3
+            $$</li>
+          <li>دانسیته:
+            $$
+            \rho = \frac{4 \times 63.55}{4.72 \times 10^{-23} \times 6.022 \times 10^{23}} = 8.89 g/cm^3
+            $$</li>
+        </ul>
+        <p class="text"><strong>نکته:</strong> دانسیته تئوریک معمولاً بیشتر از دانسیته واقعی است به دلیل وجود نقص‌ها و
+          فضای خالی در ساختار واقعی.</p>
+      </section>
+      <section id="slide-73" class="slide">
+        <h3>ناهمسانگردی (Anisotropy)</h3>
+        <p class="text"><strong>تعریف:</strong></p>
+        <ul class="list">
+          <li>اگر خواص یک ماده مستقل از جهت باشد، به آن <strong>همسانگرد (Isotropic)</strong> گفته می‌شود. در غیر این
+            صورت، ماده <strong>ناهمسانگرد (Anisotropic)</strong> است.</li>
+        </ul>
+        <p class="text"><strong>ویژگی‌ها:</strong></p>
+        <ul class="list">
+          <li>خواص فیزیکی بلورها معمولاً تابعی از جهت بلوری هستند، زیرا فشردگی و فاصله اتم‌ها در جهات مختلف متفاوت است.
+          </li>
+          <li><strong>مثال در بلور BCC:</strong></li>
+          <li>فاصله اتم‌ها در سه جهت اصلی:
+            $$
+            a,\ \sqrt{2}a,\ \sqrt{\frac{3}{2}}a
+            $$</li>
+        </ul>
+        <p class="text"><strong>پلی‌کریستال‌ها:</strong></p>
+        <ul class="list">
+          <li>بیشتر مواد مهندسی <strong>پلی‌کریستال</strong> هستند که هر دانه آن یک تک‌کریستال است.</li>
+          <li>اگر دانه‌ها به صورت تصادفی قرار گرفته باشند، خواص ماده به صورت همسانگرد مشاهده می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-74" class="slide">
+        <h3>مدول الاستیسیته (Elastic Modulus)</h3>
+        <p class="text"><strong>رابطه:</strong></p>
+        <p>$$
+          \sigma = E \times \varepsilon
+          $$</p>
+        <p class="text"><strong>متغیرها:</strong></p>
+        <ul class="list">
+          <li>$\sigma$: تنش (Stress)</li>
+          <li>$E$: مدول الاستیسیته</li>
+          <li>$\varepsilon$: کرنش (Strain)</li>
+        </ul>
+        <p class="text"><strong>مثال از ناهمسانگردی مکانیکی:</strong></p>
+        <ul class="list">
+          <li>در آهن BCC، مدول الاستیک تابع جهت کشش است:
+            $$
+            E_{[111]} = 2E_{[100]}
+            $$</li>
+          <li>به دلیل جاذبه اتمی بیشتر در جهات فشرده‌تر، مدول الاستیک در این جهات بیشتر است.</li>
+        </ul>
+      </section>
+      <section id="slide-75" class="slide">
+        <h3>عوامل موثر بر استحکام فلزات</h3>
+        <p class="text"><strong>مقاومت مواد بلوری:</strong></p>
+        <ul class="list">
+          <li><strong>نقص‌های بلوری:</strong> مقاومت مواد بلوری را به طور قابل توجهی تحت تاثیر قرار می‌دهند. هر گونه نقص
+            در ساختار بلوری (مانند نقص‌های نقطه‌ای، نقص‌های خطی یا نقص‌های صفحه‌ای) می‌تواند تاثیر زیادی بر روی خواص
+            مکانیکی ماده داشته باشد.</li>
+        </ul>
+        <p class="text"><strong>دسته‌بندی نقص‌ها:</strong></p>
+        <ul class="list">
+          <li><strong>نقص‌های نقطه‌ای:</strong> شامل جابجایی اتم‌ها، حفره‌ها و ناخالصی‌های بینابینی است.</li>
+          <li><strong>نقص‌های خطی:</strong> شامل نابه‌جایی‌ها (Dislocations) می‌شود.</li>
+          <li><strong>نقص‌های صفحه‌ای:</strong> شامل نقص‌های چیدمان صفحات، دوگانگی‌های مکانیکی، و مرزهای دانه است.</li>
+        </ul>
+      </section>
+      <section id="slide-76" class="slide">
+        <h3>نا‌به‌جایی‌ها (Dislocations)</h3>
+        <p class="text"><strong>تعریف و مفهوم:</strong></p>
+        <ul class="list">
+          <li>نا‌به‌جایی به عنوان نقصی در ساختار بلوری شناخته می‌شود که منجر به تغییر در چیدمان منظم اتم‌ها در یک بلور
+            می‌شود.</li>
+        </ul>
+        <p class="text"><strong>انواع نابه‌جایی‌ها:</strong></p>
+        <ol class="list">
+          <li><strong>نا‌به‌جایی لبه‌ای (Edge Dislocation):</strong></li>
+          <li>در این نوع، یک صفحه از اتم‌ها به طور ناقص به درون بلور وارد شده و باعث انحراف در نظم بلوری می‌شود.</li>
+          <li>
+            <p class="text"><strong>تصویر مرتبط:</strong> (در دسترس نیست، لطفاً در صورت وجود اضافه کنید)</p>
+          </li>
+          <li>
+            <p class="text"><strong>نا‌به‌جایی پیچی (Screw Dislocation):</strong></p>
+          </li>
+          <li>یک خط از اتم‌ها در یک جهت خاص به نحوی جابجا شده که یک شکل پیچ مانند در ساختار بلوری ایجاد می‌کند.</li>
+          <li>
+            <p class="text"><strong>تصویر مرتبط:</strong> (در دسترس نیست، لطفاً در صورت وجود اضافه کنید)</p>
+          </li>
+          <li>
+            <p class="text"><strong>نا‌به‌جایی مخلوط (Mixed Dislocation):</strong></p>
+          </li>
+          <li>ترکیبی از دو نوع نابه‌جایی لبه‌ای و پیچی است.</li>
+        </ol>
+        <p class="text"><strong>اثر نابه‌جایی‌ها:</strong></p>
+        <ul class="list">
+          <li>نابه‌جایی‌ها از عواملی هستند که باعث کاهش استحکام بلورها می‌شوند. حضور نابه‌جایی‌ها باعث ایجاد لغزش بین
+            صفحات بلوری می‌شود که در نهایت منجر به تغییر شکل پلاستیک می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-77" class="slide">
+        <h3>مفاهیم مرتبط با نابه‌جایی‌ها</h3>
+        <h4>بردار برگرز (Burgers Vector)</h4>
+        <ul class="list">
+          <li><strong>تعریف:</strong> برداری که میزان و جهت تغییر چیدمان اتم‌ها در یک نابه‌جایی را نشان می‌دهد.</li>
+          <li><strong>ویژگی‌ها:</strong> بردار برگرز به نابه‌جایی‌ها وابسته است و در ساختارهای بلوری مختلف، اندازه و
+            جهت‌های مختلفی دارد.</li>
+          <li><strong>تصویر مربوطه:</strong> (در دسترس نیست، لطفاً در صورت وجود اضافه کنید)</li>
+        </ul>
+        <h4>دانسیته نابه‌جایی‌ها</h4>
+        <ul class="list">
+          <li><strong>تعریف:</strong> تعداد نابه‌جایی‌ها در واحد حجم یا سطح.</li>
+          <li><strong>واحد:</strong> $cm^{-2}$</li>
+          <li><strong>اثر:</strong> افزایش دانسیته نابه‌جایی‌ها می‌تواند منجر به افزایش استحکام ماده شود، زیرا حرکت
+            نابه‌جایی‌ها با یکدیگر باعث کاهش حرکت کلی آن‌ها می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-78" class="slide">
+        <h3>تنش تسلیم (Yield Stress)</h3>
+        <p><strong>رابطه تنش تسلیم با دانسیته نابه‌جایی‌ها:</strong>
+          $$
+          \tau = \tau_0 + k\sqrt{\rho}
+          $$</p>
+        <ul class="list">
+          <li><strong>متغیرها:</strong></li>
+          <li>$\tau$: تنش تسلیم</li>
+          <li>$\tau_0$: تنش پایه</li>
+          <li>$k$: ثابت ماده</li>
+          <li>$\rho$: دانسیته نابه‌جایی‌ها</li>
+        </ul>
+        <p class="text"><strong>مثال:</strong> در فلزات، افزایش دانسیته نابه‌جایی‌ها منجر به افزایش استحکام تسلیم
+          می‌شود. این پدیده به عنوان اثر <strong>تقویت کار (Work Hardening)</strong> شناخته می‌شود.</p>
+      </section>
+      <section id="slide-79" class="slide">
+        <h3>ساختارهای بلوری</h3>
+        <h4>1. <strong>ساختار مکعبی ساده (SC)</strong></h4>
+        <ul class="list">
+          <li><strong>تعریف</strong>: در این ساختار، اتم‌ها فقط در گوشه‌های مکعب وجود دارند.</li>
+          <li><strong>جهات فشرده</strong>: $&lt;100&gt;$ (تعداد: 3)</li>
+          <li><strong>صفحات متراکم</strong>: ${100}$</li>
+          <li><strong>تراکم اتمی</strong>: 0.52</li>
+          <li><strong>رابطه شعاع اتمی و a</strong>: $a = 2R$</li>
+        </ul>
+      </section>
+      <section id="slide-80" class="slide">
+        <h3>جدول ویژگی‌های ساختار SC</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ویژگی</th>
+              <th>مقدار</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>تعداد اتم در سلول واحد</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>عدد همسایگی</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>تعداد جهات متراکم</td>
+              <td>3 $&lt;100&gt;$</td>
+            </tr>
+            <tr>
+              <td>تعداد صفحات متراکم</td>
+              <td>${100}$</td>
+            </tr>
+            <tr>
+              <td>تراکم فضایی</td>
+              <td>0.52</td>
+            </tr>
+            <tr>
+              <td>رابطه شعاع اتمی و a</td>
+              <td>$a = 2R$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-81" class="slide">
+        <h3>2. <strong>ساختار مکعبی مرکز دار (BCC)</strong></h3>
+        <ul class="list">
+          <li><strong>تعریف</strong>: در این ساختار، اتم‌ها در گوشه‌های مکعب و مرکز آن قرار دارند.</li>
+          <li><strong>جهات فشرده</strong>: $&lt;111&gt;$ (تعداد: 4)</li>
+          <li><strong>صفحات متراکم</strong>: ${110}$ (تعداد: 6)</li>
+          <li><strong>تراکم اتمی</strong>: 0.68</li>
+          <li><strong>رابطه شعاع اتمی و a</strong>: $a = \frac{4R}{\sqrt{3}}$</li>
+          <li><strong>پراکندگی اتمی</strong>: $PPD_{[100]} = 0.585$</li>
+        </ul>
+      </section>
+      <section id="slide-82" class="slide">
+        <h3>جدول ویژگی‌های ساختار BCC</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ویژگی</th>
+              <th>مقدار</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>تعداد اتم در سلول واحد</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>عدد همسایگی</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>تعداد جهات متراکم</td>
+              <td>4 $&lt;111&gt;$</td>
+            </tr>
+            <tr>
+              <td>تعداد صفحات متراکم</td>
+              <td>${110}$ (6 صفحه)</td>
+            </tr>
+            <tr>
+              <td>تراکم فضایی</td>
+              <td>0.68</td>
+            </tr>
+            <tr>
+              <td>رابطه شعاع اتمی و a</td>
+              <td>$a = \frac{4R}{\sqrt{3}}$</td>
+            </tr>
+            <tr>
+              <td>پراکندگی اتمی</td>
+              <td>$PPD_{[100]} = 0.585$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-83" class="slide">
+        <h3>فرمول‌های مربوط به BCC</h3>
+        <ul class="list">
+          <li><strong>رابطه شعاع اتمی و a</strong>:
+            $$
+            (4R)^2 = a^2 + (a\sqrt{2})^2 \Rightarrow a = \frac{4}{\sqrt{3}}R
+            $$</li>
+          <li><strong>ضریب تراکم اتمی (APF)</strong>:
+            $$
+            APF = \frac{2 \times \frac{4}{3}\pi R^3}{\left(\frac{4}{\sqrt{3}}\right)^3} = 0.68
+            $$</li>
+          <li><strong>پراکندگی صفحه‌ای (PPD)</strong>:
+            $$
+            PPD_{[100]} = \frac{4 \times \frac{1}{4} \times \pi R^2}{a^2} = \frac{4 \times \frac{1}{4} \times \pi
+            R^2}{\left(\frac{4}{\sqrt{3}}R\right)^2} = 0.585
+            $$</li>
+        </ul>
+      </section>
+      <section id="slide-84" class="slide">
+        <h3>ساختار مکعبی با وجوه مرکز دار (FCC)</h3>
+        <ul class="list">
+          <li><strong>تعریف</strong>: در این ساختار، اتم‌ها در گوشه‌ها و مرکز هر وجه مکعب قرار دارند.</li>
+          <li><strong>جهات فشرده</strong>: $&lt;110&gt;$ (تعداد: 6)</li>
+          <li><strong>صفحات متراکم</strong>: ${111}$ (تعداد: 4)</li>
+          <li><strong>تراکم اتمی</strong>: 0.74</li>
+        </ul>
+      </section>
+      <section id="slide-85" class="slide">
+        <h3>ویژگی‌ها و فرمول‌های FCC</h3>
+        <ul class="list">
+          <li><strong>رابطه شعاع اتمی و a</strong>: $a = \frac{4R}{\sqrt{2}}$</li>
+          <li><strong>پراکندگی اتمی</strong>: $PPD_{[100]} = 0.785$</li>
+          <li><strong>چیدمان صفحات</strong>: ABCABC...</li>
+        </ul>
+      </section>
+      <section id="slide-86" class="slide">
+        <h3>جدول ویژگی‌های ساختار FCC</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ویژگی</th>
+              <th>مقدار</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>تعداد اتم در سلول واحد</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>عدد همسایگی</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>تعداد جهات متراکم</td>
+              <td>6 $&lt;110&gt;$</td>
+            </tr>
+            <tr>
+              <td>تعداد صفحات متراکم</td>
+              <td>${111}$ (4 صفحه)</td>
+            </tr>
+            <tr>
+              <td>تراکم فضایی</td>
+              <td>0.74</td>
+            </tr>
+            <tr>
+              <td>رابطه شعاع اتمی و a</td>
+              <td>$a = \frac{4R}{\sqrt{2}}$</td>
+            </tr>
+            <tr>
+              <td>پراکندگی اتمی</td>
+              <td>$PPD_{[100]} = 0.785$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-87" class="slide">
+        <h3>فرمول‌های مربوط به FCC</h3>
+        <ul class="list">
+          <li><strong>ضریب تراکم اتمی (APF)</strong>:
+            $$
+            APF = 0.74
+            $$</li>
+        </ul>
+      </section>
+      <section id="slide-88" class="slide">
+        <h3>پراکندگی صفحه‌ای (PPD) FCC</h3>
+        <p>$$
+          PPD_{[100]} = \frac{\pi R^2 + 4 \times \frac{1}{4} \times \pi R^2}{a^2} = \frac{2 \times \pi
+          R^2}{\left(\frac{4}{\sqrt{2}}\right)^2} = 0.785
+          $$</p>
+      </section>
+      <section id="slide-89" class="slide">
+        <h3>ساختار هگزاگونال فشرده (HCP)</h3>
+        <ul class="list">
+          <li><strong>تعریف</strong>: در این ساختار، اتم‌ها در سه لایه با چیدمان ABAB... قرار دارند.</li>
+          <li><strong>جهات فشرده</strong>: $&lt;1120&gt;$ (تعداد: 3)</li>
+        </ul>
+      </section>
+      <section id="slide-90" class="slide">
+        <h3>ویژگی‌های ساختار HCP</h3>
+        <ul class="list">
+          <li><strong>صفحات متراکم</strong>: ${0001}$ (تعداد: 1)</li>
+          <li><strong>تراکم اتمی</strong>: 0.74</li>
+          <li><strong>رابطه شعاع اتمی و a</strong>: $a = 2R$</li>
+          <li><strong>پراکندگی اتمی</strong>: $PPF_{[0001]} = 0.92$</li>
+        </ul>
+      </section>
+      <section id="slide-91" class="slide">
+        <h3>جدول ویژگی‌های ساختار HCP</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ویژگی</th>
+              <th>مقدار</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>تعداد اتم در سلول واحد</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>عدد همسایگی</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>تعداد جهات متراکم</td>
+              <td>3 $&lt;1120&gt;$</td>
+            </tr>
+            <tr>
+              <td>تعداد صفحات متراکم</td>
+              <td>${0001}$ (1 صفحه)</td>
+            </tr>
+            <tr>
+              <td>تراکم فضایی</td>
+              <td>0.74</td>
+            </tr>
+            <tr>
+              <td>رابطه شعاع اتمی و a</td>
+              <td>$a = 2R$</td>
+            </tr>
+            <tr>
+              <td>پراکندگی اتمی</td>
+              <td>$PPF_{[0001]} = 0.92$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-92" class="slide">
+        <h3>مقایسه سیستم‌های FCC و HCP</h3>
+        <ul class="list">
+          <li><strong>عدد همسایگی</strong>: 12</li>
+          <li><strong>ضریب تراکم اتمی</strong>: 0.74</li>
+          <li><strong>پراکندگی صفحه‌ای</strong>: 0.92</li>
+        </ul>
+      </section>
+      <section id="slide-93" class="slide">
+        <h3>تفاوت در چیدمان صفحات</h3>
+        <ul class="list">
+          <li><strong>چیدمان صفحات</strong>:</li>
+          <li><strong>FCC</strong>: ABCABC...</li>
+          <li><strong>HCP</strong>: ABAB...</li>
+        </ul>
+        <p class="text">این ساختارها از نظر عدد همسایگی، ضریب تراکم اتمی، و پراکندگی صفحه‌ای مشابه هستند، اما در چیدمان
+          صفحات و ویژگی‌های ساختاری تفاوت‌هایی دارند که می‌تواند بر خواص فیزیکی مواد تأثیر بگذارد.</p>
+      </section>
+      <section id="slide-94" class="slide">
+        <h3>محاسبه دانسیته تئوریک فلزات</h3>
+        <p>فرمول عمومی برای محاسبه دانسیته تئوریک به صورت زیر است:
+          $$
+          \rho = \frac{n A}{V_c N_A}
+          $$</p>
+      </section>
+      <section id="slide-95" class="slide">
+        <h3>پارامترهای فرمول دانسیته تئوریک</h3>
+        <ul class="list">
+          <li>$n$: تعداد اتم‌ها در سلول واحد</li>
+          <li>$A$: وزن اتمی (g/mol)</li>
+          <li>$V_c$: حجم سلول واحد ($cm^3$)</li>
+          <li>$N_A$: عدد آووگادرو ($6.02 \times 10^{23} \text{ atoms/mol}$)</li>
+        </ul>
+      </section>
+      <section id="slide-96" class="slide">
+        <h3>مثال برای مس (FCC)</h3>
+        <ul class="list">
+          <li>تعداد اتم در سلول واحد: 4</li>
+          <li>وزن اتمی: 63.55 g/mol</li>
+          <li>شعاع اتمی: 0.128 nm (1 nm = $10^{-7}$ cm)</li>
+          <li>حجم سلول واحد: $a^3$؛ برای FCC، $a = \frac{4R}{\sqrt{2}}$؛ $V_c = 4.75 \times 10^{-23} \text{ cm}^3$</li>
+        </ul>
+      </section>
+      <section id="slide-97" class="slide">
+        <h3>محاسبه دانسیته تئوریک مس</h3>
+        <p>فرمول دانسیته تئوریک:
+          $$
+          \rho_{Cu} = \frac{4 \times 63.55}{\left(\frac{4 \times 0.128 \times 10^{-7}}{\sqrt{2}}\right)^3 \times 6.02
+          \times 10^{23}}
+          $$</p>
+        <p>نتیجه:
+          $$
+          \rho_{Cu} = 8.89 \text{ g/cm}^3
+          $$</p>
+      </section>
+      <section id="slide-98" class="slide">
+        <h3>ناهمسانگردی</h3>
+        <p class="text">خواص فیزیکی بلورها معمولاً به جهت بلوری وابسته است. در ساختار BCC، فواصل اتمی در جهات مختلف
+          متفاوت است، که منجر به خواص فیزیکی متفاوت در جهات مختلف می‌شود.</p>
+      </section>
+      <section id="slide-99" class="slide">
+        <h3>پلی‌کریستال</h3>
+        <p class="text">پلی‌کریستال‌ها (Polycrystalline) موادی هستند که از دانه‌های مختلف کریستالی تشکیل شده‌اند. هر
+          دانه، یک کریستال تک است و این دانه‌ها به طور تصادفی درون ماده قرار گرفته‌اند.</p>
+        <h4>خواص پلی‌کریستال‌ها</h4>
+        <p class="text">این ساختارها به دلیل ویژگی‌های متفاوتی که از یک دانه به دانه دیگر دارند، می‌توانند خواص متنوعی
+          از خود نشان دهند.</p>
+      </section>
+      <section id="slide-100" class="slide">
+        <h3>2. <strong>ناهمسانگردی (Anisotropy) و همسانگردی (Isotropy)</strong></h3>
+        <ul class="list">
+          <li><strong>ناهمسانگردی</strong>: خواصی از یک ماده که به جهت بلوری وابسته است.</li>
+          <li><strong>همسانگردی</strong>: خواصی که در تمامی جهات مشابه است.</li>
+        </ul>
+      </section>
+      <section id="slide-101" class="slide">
+        <h3>مثال‌هایی از ناهمسانگردی و همسانگردی</h3>
+        <ul class="list">
+          <li>در پلی‌کریستال‌ها، به دلیل چیدمان تصادفی دانه‌ها، معمولاً خواص همسانگردی دارند.</li>
+          <li>مدول الاستیسیته می‌تواند در جهات مختلف بلور متفاوت باشد.</li>
+        </ul>
+      </section>
+      <section id="slide-102" class="slide">
+        <h3>3. <strong>مدول الاستیسیته (Elastic Modulus)</strong></h3>
+        <p class="text">مدول الاستیسیته رابطه بین تنش و کرنش را بیان می‌کند:</p>
+        <p>$$
+          \frac{F}{A_0} = E \frac{\Delta L}{L_0}
+          $$</p>
+      </section>
+      <section id="slide-103" class="slide">
+        <h3>متغیرهای فرمول مدول الاستیسیته</h3>
+        <ul class="list">
+          <li>$\frac{F}{A_0}$: تنش</li>
+          <li>$E$: مدول الاستیسیته</li>
+          <li>$\frac{\Delta L}{L_0}$: کرنش</li>
+        </ul>
+      </section>
+      <section id="slide-104" class="slide">
+        <h3>4. <strong>ناهمسانگردی مکانیکی در آهن BCC</strong></h3>
+        <p class="text">مدول الاستیسیته در آهن با ساختار BCC:</p>
+        <p>$$
+          E_{[111]} = 2E_{[100]}
+          $$</p>
+      </section>
+      <section id="slide-105" class="slide">
+        <h3>تأثیر جهت در مدول الاستیسیته آهن BCC</h3>
+        <p class="text">مدول الاستیسیته در جهات فشرده‌تر بیشتر است به دلیل جاذبه بیشتر اتمی.</p>
+      </section>
+      <section id="slide-106" class="slide">
+        <h3>5. <strong>پلی‌مورفی (الوتروپی)</strong></h3>
+        <p class="text">پلی‌مورفی به وجود دو یا چند ساختار کریستالی مختلف برای یک ماده اشاره دارد.</p>
+      </section>
+      <section id="slide-107" class="slide">
+        <h3>مثال برای پلی‌مورفی</h3>
+        <p class="text">آهن می‌تواند به صورت‌های مختلفی مانند آهن آلفا، بتا، و گاما وجود داشته باشد که هرکدام ویژگی‌های
+          مختلفی دارند.</p>
+      </section>
+      <section id="slide-108" class="slide">
+        <h3>6. <strong>تأثیر دما بر حجم آهن خالص</strong></h3>
+        <ul class="list">
+          <li>ساختار FCC از ساختار BCC متراکم‌تر است.</li>
+          <li>چگالی آهن گاما (FCC) بیشتر از آهن آلفا و دلتا (BCC) است.</li>
+        </ul>
+      </section>
+      <section id="slide-109" class="slide">
+        <h3>تغییر حجم در آهن گاما به آلفا</h3>
+        <p class="text">تبدیل آهن گاما به آهن آلفا و دلتا با افزایش حجم همراه است.</p>
+      </section>
+      <section id="slide-110" class="slide">
+        <h3>7. <strong>محاسبه تغییر حجم در استحاله آلوتروپی</strong></h3>
+        <p class="text">مراحل محاسبه تغییر حجم در استحاله آلوتروپی:</p>
+        <ol class="list">
+          <li>محاسبه تعداد اتم‌های ساختار اولیه و نهایی.</li>
+          <li>مقایسه حجم ساختار اولیه و نهایی.</li>
+          <li>محاسبه تغییر حجم:</li>
+        </ol>
+        <p>$$
+          \Delta V = \frac{V_1 - V_0}{V_0} \times 100
+          $$</p>
+      </section>
+      <section id="slide-111" class="slide">
+        <h3>مثال تغییر حجم در تبدیل BCC به FCC</h3>
+        <p class="text">برای تبدیل BCC به FCC:</p>
+        <p>$$
+          \Delta V = \frac{V_{FCC} - 2V_{BCC}}{2V_{BCC}} \times 100
+          $$</p>
+        <p class="text">یا:</p>
+        <p>$$
+          \Delta V = \frac{\frac{V_{FCC}}{n_{FCC}} - \frac{V_{BCC}}{n_{BCC}}}{\frac{V_{BCC}}{n_{BCC}}} \times 100
+          $$</p>
+      </section>
+      <section id="slide-112" class="slide">
+        <h3>8. <strong>چگالی خطی (Linear Density)</strong></h3>
+        <p class="text">چگالی خطی اتمی:</p>
+        <p>$$
+          LD = \frac{\text{تعداد اتم‌ها}}{\text{طول واحد در جهت بردار}}
+          $$</p>
+      </section>
+      <section id="slide-113" class="slide">
+        <h3>مثال چگالی خطی برای آلومینیوم</h3>
+        <p class="text">در جهت [110]:</p>
+        <p>$$
+          LD = \frac{2}{\sqrt{2}a} = 3.5\ nm^{-1}
+          $$</p>
+      </section>
+      <section id="slide-114" class="slide">
+        <h3>9. <strong>چگالی صفحه‌ای (Planar Density)</strong></h3>
+        <p class="text">چگالی صفحه‌ای در صفحه (100) در آهن (BCC):</p>
+        <p>$$
+          a = \frac{4\sqrt{3}}{3}R
+          $$</p>
+      </section>
+      <section id="slide-115" class="slide">
+        <h3>محاسبه چگالی صفحه‌ای (100) در آهن</h3>
+        <p>$$
+          pd = \frac{1}{a^2} = \frac{1}{\left(\frac{4\sqrt{3}}{3}R\right)^2} = 12.1 \frac{atoms}{nm^2}
+          $$</p>
+      </section>
+      <section id="slide-116" class="slide">
+        <h3>محاسبه چگالی صفحه‌ای (111) در آهن</h3>
+        <p>$$
+          area = \sqrt{2}ah = \sqrt{3}a^2 = \frac{16\sqrt{3}}{3} R^2
+          $$</p>
+        <p class="text">چگالی صفحه‌ای:</p>
+        <p>$$
+          pd = \frac{1}{\frac{16\sqrt{3}}{3} R^2} = 7.0 \frac{atoms}{nm^2}
+          $$</p>
+      </section>
+      <section id="slide-117" class="slide">
+        <h3>10. <strong>عدد همسایگی (Coordination Number)</strong></h3>
+        <p class="text">عدد همسایگی: تعداد نزدیکترین اتم‌های همسایه به یک اتم.</p>
+      </section>
+      <section id="slide-118" class="slide">
+        <h3>مقدارهای عدد همسایگی</h3>
+        <p class="text">عدد همسایگی می‌تواند شامل مقادیر مختلف مانند 1، 2، 3، 4، 6، 8 و 12 باشد.</p>
+      </section>
+      <section id="slide-119" class="slide">
+        <h3>11. <strong>فضاهای خالی (Voids)</strong></h3>
+        <p class="text">فضاهای خالی در ساختارهای کریستالی:</p>
+        <ul class="list">
+          <li>فضاهای هشت‌وجهی و چهاروجهی.</li>
+        </ul>
+      </section>
+      <section id="slide-120" class="slide">
+        <h3>12. <strong>نقایص کریستالی</strong></h3>
+        <p class="text">نقایص کریستالی بر خواص ماده تأثیرگذار هستند.</p>
+      </section>
+      <section id="slide-121" class="slide">
+        <h3>دو دسته کلی نقایص کریستالی</h3>
+        <ul class="list">
+          <li><strong>نقایص کریستالی یا ساختاری</strong>: تمام نقاط شبکه توسط اتم‌ها اشغال شده‌اند.</li>
+          <li><strong>کریستال‌های واقعی</strong>: نقاط شبکه ممکن است بی‌نظم باشند.</li>
+        </ul>
+      </section>
+      <section id="slide-122" class="slide">
+        <h2>فصل ۳: نقائص کریستالی</h2>
+      </section>
+      <section id="slide-123" class="slide">
+        <h3>سوالات کلیدی</h3>
+        <ul class="list">
+          <li>مکانیسم انجماد چیست؟</li>
+          <li>انواع نقائص چیست؟</li>
+          <li>عیوب بر خواص چه اثری دارند؟ آیا می‌توان آنها را کنترل کرد؟</li>
+          <li>آیا عیوب مطلوب هستند؟</li>
+        </ul>
+      </section>
+      <section id="slide-124" class="slide">
+        <h3>دسته‌بندی کریستال‌ها</h3>
+        <ol class="list">
+          <li><strong>کریستال‌های کامل یا ایده‌آل:</strong></li>
+          <li>
+            <p class="text">تمام نقاط شبکه در سلول واحد توسط اتم‌ها اشغال شده است.</p>
+          </li>
+          <li>
+            <p class="text"><strong>کریستال‌های واقعی:</strong></p>
+          </li>
+          <li>نقاط شبکه دچار بی‌نظمی موضعی در چیدمان اتم‌ها می‌شوند، که این بی‌نظمی‌ها به عنوان "عیب" شناخته می‌شوند.
+          </li>
+        </ol>
+      </section>
+      <section id="slide-125" class="slide">
+        <h3>مکانیسم انجماد</h3>
+        <ul class="list">
+          <li>شامل دو مرحله است: <strong>جوانه‌زنی</strong> و <strong>رشد جوانه</strong>.<br />
+            در نهایت، مرز دانه‌ای بین کریستال‌ها با چگالی کمتر تشکیل می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-126" class="slide">
+        <h3>طبقه‌بندی عیوب کریستالی بر اساس تعداد ابعاد</h3>
+        <ol class="list">
+          <li><strong>عیوب صفر بعدی (نقطه‌ای):</strong> مانند جای خالی، اتم بین‌نشین، اتم جانشینی.</li>
+          <li><strong>عیوب یک بعدی (خطی):</strong> مانند نابجایی‌ها.</li>
+          <li><strong>عیوب دو بعدی (صفحه‌ای):</strong> مانند مرزهای دانه.</li>
+          <li><strong>عیوب سه بعدی (حجمی):</strong> مانند فاز دوم.</li>
+        </ol>
+      </section>
+      <section id="slide-127" class="slide">
+        <h3>تأثیر عیوب بر خواص مواد</h3>
+        <ol class="list">
+          <li><strong>خواص مکانیکی:</strong> عیوب می‌توانند استحکام آلیاژها را بهبود بخشند.</li>
+          <li><strong>خواص الکتریکی:</strong> ناخالصی‌ها می‌توانند هدایت الکتریکی را کاهش دهند.</li>
+          <li><strong>خواص نوری:</strong> نقائص می‌توانند طول موج نور جذب شده یا منتشر شده را تغییر دهند.</li>
+        </ol>
+      </section>
+      <section id="slide-128" class="slide">
+        <h3>انواع نقائص نقطه‌ای</h3>
+        <ol class="list">
+          <li><strong>جای خالی:</strong> </li>
+          <li>
+            <p class="text">غیاب یک اتم در محل شبکه.</p>
+          </li>
+          <li>
+            <p class="text"><strong>اتم بین‌نشینی:</strong> </p>
+          </li>
+          <li>اتمی که در فضای بین اتم‌های فلز قرار گرفته و میدان تنش فشاری ایجاد می‌کند.</li>
+        </ol>
+      </section>
+      <section id="slide-129" class="slide">
+        <h3>ادامه انواع نقائص نقطه‌ای</h3>
+        <ol class="list">
+          <li><strong>نقص جانشینی:</strong> </li>
+          <li>
+            <p class="text">اتم ناخالصی به جای اتم اصلی فلز قرار می‌گیرد.</p>
+          </li>
+          <li>
+            <p class="text"><strong>نقص شاتکی:</strong> </p>
+          </li>
+          <li>
+            <p class="text">جفت جای خالی آنیونی و کاتیونی، در بلورهای یونی.</p>
+          </li>
+          <li>
+            <p class="text"><strong>نقص فرنکل:</strong> </p>
+          </li>
+          <li>ترکیب یک جای خالی و یک اتم بین‌نشینی.</li>
+        </ol>
+      </section>
+      <section id="slide-130" class="slide">
+        <h3>غلظت تعادلی جای خالی</h3>
+        <ul class="list">
+          <li>وابسته به دما و با استفاده از رابطه زیر محاسبه می‌شود:</li>
+        </ul>
+        <p>$$
+          \frac{N_v}{N} = \exp \left( \frac{-Q_v}{kT} \right)
+          $$</p>
+        <ul class="list">
+          <li><strong>Nv:</strong> تعداد جاهای خالی </li>
+          <li><strong>N:</strong> تعداد مکان‌های بالقوه </li>
+          <li><strong>Qv:</strong> انرژی اکتیواسیون </li>
+          <li><strong>k:</strong> ثابت بولتزمن </li>
+          <li><strong>T:</strong> دما بر حسب کلوین </li>
+        </ul>
+      </section>
+      <section id="slide-131" class="slide">
+        <h3>مثال: غلظت تعادلی جاهای خالی در مس</h3>
+        <p class="text">محاسبه غلظت تعادلی جاهای خالی برای یک سانتی‌متر مکعب مس در دمای 1000 درجه سانتی‌گراد با داده‌های
+          زیر:</p>
+        <ul class="list">
+          <li><strong>ρ = 8.4 g/cm³</strong></li>
+          <li><strong>A = 63.5 g/mol</strong></li>
+          <li><strong>Qv = 0.9 eV/atom</strong></li>
+          <li><strong>NA = 6.02 × 10²³ atoms/mol</strong></li>
+        </ul>
+      </section>
+      <section id="slide-132" class="slide">
+        <h3>نقایص خطی</h3>
+        <ul class="list">
+          <li><strong>نابجایی لبه‌ای:</strong><br />
+            مانند وارد شدن یک نیم‌صفحه اتمی اضافی در بلور است. مشخصه آن <strong>بردار برگرز</strong> است:</li>
+        </ul>
+        <p>$$
+          \mathbf{b} = \frac{[hkl]}{2a}
+          $$</p>
+        <ul class="list">
+          <li>در نابجایی لبه‌ای، بردار برگرز عمود بر خط نابجایی است.</li>
+        </ul>
+      </section>
+      <section id="slide-133" class="slide">
+        <h3>نابجایی پیچشی</h3>
+        <ul class="list">
+          <li>ناشی از حرکت یک بخش بلور نسبت به بخش دیگر.</li>
+          <li>نابجایی پیچشی می‌تواند راستگرد یا چپگرد باشد.</li>
+        </ul>
+      </section>
+      <section id="slide-134" class="slide">
+        <h3>اهمیت نابجایی‌ها</h3>
+        <ul class="list">
+          <li><strong>لغزش:</strong>
+            نابجایی‌ها با حرکت خود موجب <strong>لغزش سطوح کریستالی</strong> و تغییر شکل پلاستیک مواد می‌شوند. سیستم لغزش
+            شامل ترکیب جهت لغزش و صفحه لغزش است.</li>
+        </ul>
+      </section>
+      <section id="slide-135" class="slide">
+        <h3>جدول طبقه‌بندی عیوب کریستالی</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نوع عیب</th>
+              <th>توضیحات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>عیوب صفر بعدی</td>
+              <td>نقص نقطه‌ای: جای خالی، اتم بین‌نشین، اتم جانشینی</td>
+            </tr>
+            <tr>
+              <td>عیوب یک بعدی</td>
+              <td>نابجایی‌ها: لبه‌ای، پیچشی</td>
+            </tr>
+            <tr>
+              <td>عیوب دو بعدی</td>
+              <td>مرزهای دانه‌ای، نقص‌های صفحه‌ای</td>
+            </tr>
+            <tr>
+              <td>عیوب سه بعدی</td>
+              <td>فاز دوم، عیوب حجمی</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-136" class="slide">
+        <h3>نقص در چیدمان لایه‌های اتمی</h3>
+        <ul class="list">
+          <li>در فلزات با ساختار FCC:
+            توالی چیدمان صفحات معمولاً به‌صورت ABCABC است.<br />
+            اگر این توالی به ABCABABABC تغییر کند، نقص ایجاد می‌شود که باعث افزایش استحکام فلز می‌گردد.</li>
+        </ul>
+      </section>
+      <section id="slide-137" class="slide">
+        <h3>مرزهای دوقلویی</h3>
+        <ul class="list">
+          <li>زمانی که یک بخش از بلور نسبت به بخش دیگر تصویر آینه‌ای باشد، "دوقلویی" نامیده می‌شود.</li>
+          <li>دوقلویی در اثر تغییر شکل یا عملیات حرارتی رخ می‌دهد.</li>
+          <li>صفحه تقارن بین دو بخش به عنوان "مرز دوقلویی" شناخته می‌شود.</li>
+          <li>مرز دوقلویی مانعی برای لغزش است و به افزایش استحکام فلز کمک می‌کند.</li>
+        </ul>
+      </section>
+      <section id="slide-138" class="slide">
+        <h3>نقایص حجمی</h3>
+        <p class="text">نقایص حجمی در مواد به دو دسته تقسیم می‌شوند:</p>
+        <ol class="list">
+          <li><strong>نقایص حجمی میکروسکوپی:</strong> شامل حفره‌های کوچک داخلی، حفره‌های سطحی، رسوبات، ترک‌های مویی.
+          </li>
+          <li><strong>نقایص حجمی ماکروسکوپی:</strong> شامل حفره‌ها و ترک‌های بزرگ‌تر.</li>
+        </ol>
+      </section>
+      <section id="slide-139" class="slide">
+        <h3>تعریف آلیاژ</h3>
+        <ul class="list">
+          <li>آلیاژ ترکیبی از دو یا چند عنصر شیمیایی است که حداقل یکی از آن‌ها فلز باشد.</li>
+          <li><strong>سیستم آلیاژی:</strong> به ترکیب آلیاژهایی که از عناصر مختلف تشکیل می‌شوند، گفته می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-140" class="slide">
+        <h3>ساختار آلیاژها</h3>
+        <ul class="list">
+          <li>در حالت تعادلی، گرم و سرد کردن آلیاژ باید آهسته باشد تا زمان کافی برای تغییرات فاز وجود داشته باشد.</li>
+          <li>در حالت جامد، فلزات سه نوع فاز دارند:</li>
+          <li><strong>فلزات خالص</strong></li>
+          <li><strong>آلیاژها یا ترکیبات واسطه</strong></li>
+          <li><strong>محلول‌های جامد</strong></li>
+        </ul>
+      </section>
+      <section id="slide-141" class="slide">
+        <h3>فازهای آلیاژی</h3>
+        <ul class="list">
+          <li>فاز بخشی از سیستم با ترکیب و خواص همگن است.</li>
+          <li><strong>فاز با نقطه ذوب متجانس:</strong> فازهایی که منحنی سرد شدن آن‌ها مانند فلزات خالص است و دارای نقطه
+            ذوب و انجماد ثابتی هستند.</li>
+        </ul>
+      </section>
+      <section id="slide-142" class="slide">
+        <h3>ترکیبات واسطه</h3>
+        <p class="text">ترکیبات واسطه به سه دسته تقسیم می‌شوند:</p>
+        <ol class="list">
+          <li><strong>ترکیبات بین‌فلزی یا ظرفیتی:</strong> ترکیبات فلزات غیرمشابه از نظر شیمیایی.</li>
+          <li><strong>ترکیبات بین‌نشینی:</strong> ترکیبات بین فلزات واسطه مثل تیتانیوم و کروم.</li>
+          <li><strong>ترکیبات الکترونی:</strong> طبق قانون هیوم و روتاری، ترکیب اتم‌ها با نسبت الکترون‌های ظرفیت.</li>
+        </ol>
+      </section>
+      <section id="slide-143" class="slide">
+        <h3>قانون هیوم و روتاری</h3>
+        <ul class="list">
+          <li>دو اتم با نسبت مشخص از تعداد الکترون‌های ظرفیت ترکیب می‌شوند.</li>
+          <li>مثال: ترکیب نقره و روی به نسبت 2 به 1.</li>
+        </ul>
+      </section>
+      <section id="slide-144" class="slide">
+        <h3>محلول‌های جامد</h3>
+        <ul class="list">
+          <li><strong>بخش‌های محلول جامد:</strong></li>
+          <li><strong>اتم‌های محلول</strong></li>
+          <li><strong>اتم‌های حلال</strong></li>
+        </ul>
+      </section>
+      <section id="slide-145" class="slide">
+        <h3>انواع محلول‌های جامد</h3>
+      </section>
+      <section id="slide-146" class="slide">
+        <h3>محلول جامد جانشینی</h3>
+        <ul class="list">
+          <li>اتم‌های محلول در ساختار کریستالی اتم‌های حلال جایگزین می‌شوند.</li>
+          <li>مثال: آلیاژهای نقره-طلا.</li>
+        </ul>
+      </section>
+      <section id="slide-147" class="slide">
+        <h3>محلول جامد بین‌نشینی</h3>
+        <ul class="list">
+          <li>اتم‌های کوچک در فضاهای بین اتم‌های حلال قرار می‌گیرند.</li>
+          <li>مثال: محلول‌های کربن در آهن.</li>
+        </ul>
+      </section>
+      <section id="slide-148" class="slide">
+        <h3>عوامل تأثیرگذار بر تشکیل محلول‌های جامد</h3>
+        <ul class="list">
+          <li><strong>ساختار بلوری</strong>: تاثیر ساختار بلوری بر حل‌شوندگی.</li>
+          <li><strong>اندازه نسبی اتم‌ها</strong>: میزان تطابق اندازه اتم‌ها.</li>
+          <li><strong>تمایل شیمیایی</strong>: میل شیمیایی بین اتم‌ها.</li>
+          <li><strong>ظرفیت نسبی</strong>: ظرفیت اتم‌ها برای حل شدن در یکدیگر.</li>
+        </ul>
+      </section>
+      <section id="slide-149" class="slide">
+        <h3>آزمایش کشش</h3>
+        <ul class="list">
+          <li><strong>آماده‌سازی نمونه</strong>: مطابق با استاندارد مشخص.</li>
+          <li><strong>بستن نمونه</strong>: به فک‌های دستگاه کشش.</li>
+          <li><strong>اعمال نیروی کششی</strong>: تا زمان شکست.</li>
+          <li><strong>ثبت نیرو و تغییر طول</strong>: در هر لحظه.</li>
+          <li><strong>رسم نمودار تنش-کرنش</strong>: با استفاده از داده‌ها.</li>
+        </ul>
+      </section>
+      <section id="slide-150" class="slide">
+        <h3>مفاهیم مرتبط با تنش و کرنش</h3>
+        <ul class="list">
+          <li><strong>تنش مهندسی (S)</strong>: نسبت نیرو به سطح مقطع اولیه.</li>
+          <li><strong>کرنش مهندسی (e)</strong>: نسبت تغییرات طول به طول اولیه.</li>
+          <li><strong>تنش حقیقی (σ)</strong>: نسبت نیرو به سطح مقطع لحظه‌ای.</li>
+          <li><strong>کرنش حقیقی (ε)</strong>: نسبت تغییرات طول به طول لحظه‌ای.</li>
+        </ul>
+      </section>
+      <section id="slide-151" class="slide">
+        <h3>روابط مهم</h3>
+        <ul class="list">
+          <li><strong>تنش و کرنش مهندسی و حقیقی</strong>:</li>
+          <li>$ \varepsilon = \ln(1 + e) $</li>
+          <li>$ \sigma = S \times \exp(\varepsilon) $</li>
+        </ul>
+      </section>
+      <section id="slide-152" class="slide">
+        <h3>بخش‌های نمودار تنش-کرنش</h3>
+        <ul class="list">
+          <li><strong>کرنش الاستیک</strong>: تغییر طول نسبی در محدوده الاستیک.</li>
+          <li><strong>کرنش یکنواخت</strong>: از نقطه شروع تغییرشکل پلاستیک تا نقطه تنش ماکزیمم.</li>
+          <li><strong>کرنش غیر یکنواخت</strong>: از نقطه حداکثر تنش تا شکست.</li>
+        </ul>
+      </section>
+      <section id="slide-153" class="slide">
+        <h3>خواص کششی</h3>
+        <ul class="list">
+          <li><strong>استحکام تسلیم (Yield Strength)</strong>: تنشی که تغییر شکل پلاستیک آغاز می‌شود.</li>
+          <li><strong>استحکام کششی (Tensile Strength)</strong>: تنش در نقطه حداکثر منحنی تنش-کرنش.</li>
+          <li><strong>مدول الاستیک یا مدول یانگ (E)</strong>: شیب منحنی در ناحیه الاستیک.</li>
+        </ul>
+      </section>
+      <section id="slide-154" class="slide">
+        <h3>خواص دیگر</h3>
+        <ul class="list">
+          <li><strong>نرمی</strong>: میزان تغییر شکل پلاستیکی قبل از شکست.</li>
+          <li><strong>نسبت پواسون</strong>: نسبت بین کرنش طولی و عرضی.</li>
+          <li><strong>قابلیت جهندگی</strong>: میزان انرژی ذخیره‌شده در تغییر شکل الاستیک.</li>
+          <li><strong>تافنس (چقرمگی)</strong>: قابلیت جذب انرژی قبل از شکست.</li>
+        </ul>
+      </section>
+      <section id="slide-155" class="slide">
+        <h3>آزمایش فشار</h3>
+        <ul class="list">
+          <li>استفاده برای مواد ترد مانند چدن‌ها و سرامیک‌ها.</li>
+          <li>تنش فشاری ممکن است بیشتر از تنش کششی باشد.</li>
+        </ul>
+      </section>
+      <section id="slide-156" class="slide">
+        <h3>خزش و خستگی</h3>
+        <ul class="list">
+          <li><strong>خزش</strong>: تغییر شکل پلاستیک مداوم در اثر دما و بار ثابت.</li>
+          <li><strong>خستگی</strong>: شکست در اثر تنش‌های متناوب کمتر از تنش تئوریک شکست.</li>
+        </ul>
+      </section>
+      <section id="slide-157" class="slide">
+        <h3>سختی</h3>
+        <ul class="list">
+          <li><strong>سختی</strong>: مقاومت در برابر فرورفتگی یا خراش.</li>
+          <li><strong>روش‌های اندازه‌گیری</strong>: راکول، برینل، و ویکرز.</li>
+          <li><strong>روش برینل</strong>: نسبت نیروی اعمالی به سطح فرورفتگی حاصل از نافذ کروی.</li>
+        </ul>
+      </section>
+      <section id="slide-158" class="slide">
+        <h3>سختی راکول</h3>
+      </section>
+      <section id="slide-159" class="slide">
+        <h3>روش اندازه‌گیری سختی به روش راکول</h3>
+        <ul class="list">
+          <li><strong>اصل کار</strong>: سختی براساس عمق فرورفتگی اندازه‌گیری می‌شود.</li>
+          <li><strong>مراحل</strong>:</li>
+          <li>بار اولیه (10 کیلوگرم) به سطح نمونه اعمال می‌شود.</li>
+          <li>بار اصلی (60 تا 150 کیلوگرم) به نمونه اعمال می‌شود.</li>
+          <li>عدد سختی از عقربه دستگاه خوانده می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-160" class="slide">
+        <h3>نافذها</h3>
+        <ul class="list">
+          <li><strong>مخروط الماسی</strong> با زاویه رأس 120 درجه.</li>
+          <li><strong>گلوله‌های فولادی</strong> با قطرهای 1/16، 1/8، 1/4 و 1/2 اینچ.</li>
+        </ul>
+      </section>
+      <section id="slide-161" class="slide">
+        <h3>بارها</h3>
+        <ul class="list">
+          <li><strong>سختی‌سنجی عادی</strong>: بارهای ثانویه 60، 100 و 150 کیلوگرم و بار اولیه 10 کیلوگرم.</li>
+          <li><strong>سختی‌سنجی سطحی</strong>: بارهای ثانویه 15، 30 و 45 کیلوگرم و بار اولیه 3 کیلوگرم.</li>
+        </ul>
+      </section>
+      <section id="slide-162" class="slide">
+        <h3>مقیاس‌های رایج راکول</h3>
+        <ul class="list">
+          <li><strong>RB</strong>: نافذ کره فولادی با قطر 1/16 اینچ و بار 100 کیلوگرم.</li>
+          <li><strong>RC</strong>: نافذ مخروط الماسی و بار 150 کیلوگرم.</li>
+        </ul>
+      </section>
+      <section id="slide-163" class="slide">
+        <h3>مزایای روش راکول</h3>
+        <ul class="list">
+          <li>تشخیص تغییرات کوچک سختی در فولاد سخت شده.</li>
+          <li>سرعت بالا.</li>
+          <li>کاهش خطای انسانی.</li>
+          <li>نیاز کم به آماده‌سازی سطح نمونه.</li>
+          <li>کوچک بودن اندازه فرورفتگی.</li>
+        </ul>
+      </section>
+      <section id="slide-164" class="slide">
+        <h3>سختی ویکرز</h3>
+      </section>
+      <section id="slide-165" class="slide">
+        <h3>روش اندازه‌گیری سختی به روش ویکرز</h3>
+        <ul class="list">
+          <li><strong>اصل کار</strong>: سختی بر اساس سطح فرورفتگی محاسبه می‌شود.</li>
+          <li><strong>مراحل</strong>:</li>
+          <li>نافذ هرم مربعی شکل بر روی سطح نمونه فشار داده می‌شود.</li>
+          <li>قطر مربعی که ایجاد می‌شود با میکروسکوپ اندازه‌گیری می‌شود.</li>
+          <li><strong>رابطه</strong>:
+            $$
+            HV = 1.8564 \frac{F}{d^2}
+            $$
+            که $F$ نیرو (کیلوگرم) و $d$ قطر فرورفتگی (میلی‌متر) است.</li>
+        </ul>
+      </section>
+      <section id="slide-166" class="slide">
+        <h3>مزایای روش ویکرز</h3>
+        <ul class="list">
+          <li>مناسب برای اندازه‌گیری سختی ورق‌های نازک و قطعات ضخیم.</li>
+        </ul>
+      </section>
+      <section id="slide-167" class="slide">
+        <h3>معایب روش ویکرز</h3>
+        <ul class="list">
+          <li>سرعت کم آزمایش.</li>
+          <li>نیاز به آماده‌سازی دقیق سطح نمونه.</li>
+          <li>امکان خطا در تعیین طول قطر.</li>
+        </ul>
+      </section>
+      <section id="slide-168" class="slide">
+        <h3>نافذ ویکرز</h3>
+        <ul class="list">
+          <li><strong>هرم الماسی</strong> با زاویه رأس 136 درجه.</li>
+        </ul>
+      </section>
+      <section id="slide-169" class="slide">
+        <h3>بارها</h3>
+        <ul class="list">
+          <li>بین 1 تا 100 کیلوگرم بسته به سختی ماده و اندازه مجاز فرورفتگی.</li>
+        </ul>
+      </section>
+      <section id="slide-170" class="slide">
+        <h2>خواص حرارتی مواد</h2>
+      </section>
+      <section id="slide-171" class="slide">
+        <h3>ظرفیت گرمایی و ظرفیت گرمایی ویژه</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ویژگی</th>
+              <th>توضیحات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>ظرفیت گرمایی</strong></td>
+              <td>قابلیت یک ماده برای جذب انرژی.</td>
+            </tr>
+            <tr>
+              <td><strong>ظرفیت گرمایی ویژه</strong></td>
+              <td>مقدار انرژی لازم برای افزایش دمای یک گرم از ماده به میزان یک درجه سانتی‌گراد.</td>
+            </tr>
+            <tr>
+              <td><strong>فرمول ظرفیت گرمایی ویژه</strong></td>
+              <td>$ C = \frac{\delta Q}{\delta T} $</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-172" class="slide">
+        <h3>دمای دیبای ($\theta_D$)</h3>
+        <ul class="list">
+          <li>دمای خاصی که پس از آن ظرفیت گرمایی به مقدار ثابت می‌رسد.</li>
+        </ul>
+      </section>
+      <section id="slide-173" class="slide">
+        <h3>پدیده‌های فیزیکی</h3>
+        <ul class="list">
+          <li><strong>امواج مکانیکی و الکترومغناطیسی</strong>: مانند امواج صوتی و پرتوهای X.</li>
+          <li><strong>امواج مکانیکی</strong>: در شبکه‌های اتمی با کوپل شدن ارتعاشات اتم‌ها به وجود می‌آیند.</li>
+        </ul>
+      </section>
+      <section id="slide-174" class="slide">
+        <h3>فونون‌ها</h3>
+        <ul class="list">
+          <li><strong>تعریف</strong>: بسته‌های انرژی کوانتومی امواج مکانیکی.</li>
+          <li><strong>عملکرد</strong>: انتشار فونون‌ها به معنای جابجایی امواج و انتقال انرژی است که موجب هدایت گرمایی
+            می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-175" class="slide">
+        <h3>مکانیزم‌های انتقال حرارت در دماهای بالا</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>دما</th>
+              <th>مکانیسم غالب</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>بالاتر از 1200°C</strong></td>
+              <td>انتقال از طریق تابش (پدیده فوتونی)</td>
+            </tr>
+            <tr>
+              <td><strong>دماهای معمولی</strong></td>
+              <td>صندلی تابش کم، در دمای بالا تابش قابل مشاهده است</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-176" class="slide">
+        <h3>مقایسه ظرفیت گرمایی مواد</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ماده</th>
+              <th>ظرفیت گرمایی (C)</th>
+              <th>علت ظرفیت گرمایی بالا</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>پلیمرها</strong></td>
+              <td>بالا</td>
+              <td>جذب انرژی توسط زنجیره‌های پلیمری</td>
+            </tr>
+            <tr>
+              <td><strong>سرامیک‌ها</strong></td>
+              <td>متوسط</td>
+              <td>ساختار مستحکم و پیوندهای قوی یونی و کووالانسی</td>
+            </tr>
+            <tr>
+              <td><strong>فلزات</strong></td>
+              <td>کم</td>
+              <td>وجود الکترون‌های آزاد برای انتقال انرژی</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-177" class="slide">
+        <h3>چرا ظرفیت گرمایی پلیمرها بالاتر است؟</h3>
+        <ul class="list">
+          <li>ساختار زنجیره‌ای پلیمرها قادر به جذب انرژی زیاد و تغییر شکل است.</li>
+          <li>زنجیره‌های پلیمری به همراه پیوندهای بین اتمی در جذب انرژی موثرند.</li>
+        </ul>
+      </section>
+      <section id="slide-178" class="slide">
+        <h3>مقایسه انبساط حرارتی مواد</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ماده</th>
+              <th>ضریب انبساط حرارتی</th>
+              <th>علت ضریب انبساط بالا</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>پلیمرها</strong></td>
+              <td>زیاد</td>
+              <td>پیوندهای ضعیف‌تر، نمودار نامتقارن</td>
+            </tr>
+            <tr>
+              <td><strong>فلزات</strong></td>
+              <td>متوسط</td>
+              <td>پیوندهای قوی‌تر</td>
+            </tr>
+            <tr>
+              <td><strong>سرامیک‌ها</strong></td>
+              <td>کم</td>
+              <td>پیوندهای یونی و کووالانسی قوی‌تر</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-179" class="slide">
+        <h3>هدایت حرارتی مواد</h3>
+        <ul class="list">
+          <li><strong>فلزات</strong>: بهترین هدایت حرارتی (مناسب برای رادیاتور)</li>
+          <li><strong>سرامیک‌ها و پلیمرها</strong>: هدایت کمتر (پلیمرها به عنوان عایق حرارتی استفاده می‌شوند)</li>
+        </ul>
+      </section>
+      <section id="slide-180" class="slide">
+        <h3>مقایسه هدایت حرارتی مواد</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ماده</th>
+              <th>هدایت حرارتی</th>
+              <th>کاربرد</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>فلزات</strong></td>
+              <td>زیاد</td>
+              <td>رادیاتور، اتو</td>
+            </tr>
+            <tr>
+              <td><strong>سرامیک‌ها</strong></td>
+              <td>متوسط</td>
+              <td>نگهداری دما (مثل ظروف آرام‌پز)</td>
+            </tr>
+            <tr>
+              <td><strong>پلیمرها</strong></td>
+              <td>کم</td>
+              <td>عایق حرارتی (مثل یونولیت و پلاستیک)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-181" class="slide">
+        <h3>خواص حرارتی الکترون آزاد</h3>
+      </section>
+      <section id="slide-182" class="slide">
+        <h3>افزایش انرژی الکترون آزاد</h3>
+        <ul class="list">
+          <li>الکترون‌های آزاد با جذب انرژی، انرژی خود را افزایش می‌دهند.</li>
+          <li>این فرایند در فلزات مکانیسم جذب انرژی را تقویت می‌کند.</li>
+        </ul>
+      </section>
+      <section id="slide-183" class="slide">
+        <h3>ظرفیت گرمایی</h3>
+        <ul class="list">
+          <li>ظرفیت گرمایی فلزات عمدتاً به ارتعاشات اتمی مربوط است که به شکل افزایش انرژی الکترون‌های آزاد مشاهده
+            می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-184" class="slide">
+        <h3>انبساط حرارتی</h3>
+        <ul class="list">
+          <li>انرژی پیوندها در فلزات بسیار قوی است، بنابراین انبساط حرارتی در آن‌ها کمتر است.</li>
+        </ul>
+      </section>
+      <section id="slide-185" class="slide">
+        <h3>خواص هدایت حرارتی فلزات</h3>
+        <ul class="list">
+          <li><strong>هدایت گرمایی</strong>: الکترون‌های آزاد با جذب انرژی، حرکت بیشتری می‌کنند که منجر به هدایت گرمایی
+            می‌شود.</li>
+          <li><strong>خواص الکتریکی و هدایت گرمایی</strong>: الکترون آزاد در فلزات نقش مهمی در این خواص ایفا می‌کند.
+          </li>
+          <li><strong>مکانیسم انتقال حرارت</strong>: فلزات با مکانیسم جابجایی الکترون آزاد حرارت را منتقل می‌کنند که
+            همان مکانیسم جریان الکتریکی است.</li>
+        </ul>
+      </section>
+      <section id="slide-186" class="slide">
+        <h3>مقایسه مواد</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>مواد</th>
+              <th>مکانیسم انتقال حرارت</th>
+              <th>مکانیسم مکانیکی</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>فلزات</strong></td>
+              <td>جابجایی الکترون آزاد</td>
+              <td>رفتار پلاستیک و انعطاف‌پذیری</td>
+            </tr>
+            <tr>
+              <td><strong>سرامیک‌ها</strong></td>
+              <td>ارتعاشات اتمی (بدون الکترون آزاد)</td>
+              <td>ترد و شکننده</td>
+            </tr>
+            <tr>
+              <td><strong>پلیمرها</strong></td>
+              <td>جذب انرژی در زنجیره‌های پلیمری</td>
+              <td>رفتار پلاستیک محدود</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-187" class="slide">
+        <h3>تنش حرارتی (Stress Thermal)</h3>
+        <ul class="list">
+          <li><strong>تنش حرارتی</strong>: حرارت وارد شده به ماده تنش‌هایی را القا می‌کند که ممکن است منجر به تغییرات
+            مکانیکی یا شکست شود.</li>
+          <li><strong>ایجاد تنش حرارتی</strong>: در صورت اختلاف دما یا سرد و گرم شدن ناگهانی، تنش‌های حرارتی ایجاد
+            می‌شوند که می‌تواند منجر به ترک‌خوردگی شود.</li>
+        </ul>
+      </section>
+      <section id="slide-188" class="slide">
+        <h3>شوک حرارتی (Thermal Shock)</h3>
+        <ul class="list">
+          <li><strong>تعریف</strong>: شوک حرارتی به معنای تغییر ناگهانی دما است که ممکن است فراتر از مقاومت ماده باشد و
+            منجر به شکست شود.</li>
+          <li><strong>مواد ترد</strong>: مانند سرامیک‌ها که تحت شوک حرارتی ممکن است به سرعت بشکنند چون تنها ناحیه
+            الاستیک دارند و فاقد رفتار پلاستیک هستند.</li>
+        </ul>
+      </section>
+      <section id="slide-189" class="slide">
+        <h3>مقاومت در برابر شوک حرارتی (Thermal Shock Resistance)</h3>
+        <ul class="list">
+          <li><strong>فاکتورهای موثر</strong>: مقاومت ماده در برابر شوک حرارتی به فاکتورهایی مانند ضریب انبساط حرارتی،
+            مدول یانگ، و ضریب هدایت حرارتی بستگی دارد.</li>
+          <li>برای مواد ترد مانند سرامیک‌ها، تنش فشاری می‌تواند از رشد ترک‌ها جلوگیری کرده و مقاومت را افزایش دهد.</li>
+        </ul>
+      </section>
+      <section id="slide-190" class="slide">
+        <h3>Quench (سرد کردن ناگهانی)</h3>
+        <ul class="list">
+          <li><strong>فرایند Quench</strong>: سرد کردن ناگهانی ماده از دمای بالا (مانند 900 درجه به 50 درجه) که منجر به
+            تنش‌های سطحی و درونی می‌شود.</li>
+          <li><strong>تنش کششی در سطح</strong>: این تنش به دلیل اختلاف در سرعت سرمایش بین سطح و داخل ماده ایجاد می‌شود.
+          </li>
+        </ul>
+      </section>
+      <section id="slide-191" class="slide">
+        <h3>Toughness (چقرمگی)</h3>
+        <ul class="list">
+          <li><strong>تعریف</strong>: چقرمگی به میزان انرژی که یک ماده به ازای واحد حجم می‌تواند جذب کند تا دچار شکست
+            شود گفته می‌شود.</li>
+          <li><strong>ویژگی‌های مواد Tough</strong>: مواد Tough می‌توانند انرژی بیشتری جذب کرده و مقاومت بالاتری در
+            برابر شکست داشته باشند.</li>
+        </ul>
+      </section>
+      <section id="slide-192" class="slide">
+        <h2>خواص الکتریکی</h2>
+      </section>
+      <section id="slide-193" class="slide">
+        <h3>قانون اهم</h3>
+        <ul class="list">
+          <li>رابطه‌ی معناداری بین ولتاژ، جریان الکتریکی و مقاومت وجود دارد که این تناسب از مقاومت الکتریکی نشأت
+            می‌گیرد.</li>
+          <li><strong>فرمول قانون اهم</strong>:</li>
+        </ul>
+        <p>$$
+          \Delta v = IR
+          $$</p>
+        <ul class="list">
+          <li>هر چه مقاومت کمتر یا بیشتر شود، جریان به ازای یک ولتاژ مشخص کم یا زیاد می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-194" class="slide">
+        <h3>مفاهیم</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نماد</th>
+              <th>معنی</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$I$</td>
+              <td>شدت جریان (آمپر)</td>
+            </tr>
+            <tr>
+              <td>$R$</td>
+              <td>مقاومت الکتریکی (اهم)</td>
+            </tr>
+            <tr>
+              <td>$\Delta v$</td>
+              <td>ولتاژ الکتریکی (ولت)</td>
+            </tr>
+            <tr>
+              <td><strong>توضیح</strong></td>
+              <td>اختلاف ولتاژ در هر فاصله‌ای یک میدان الکتریکی به وجود می‌آورد.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-195" class="slide">
+        <h3>پاسخ ماده به میدان الکتریکی</h3>
+        <ul class="list">
+          <li>میدان الکتریکی محرک است و با ماده برهمکنش می‌کند، ماده با رسانایی، عایقی یا رفتاری بینابینی پاسخ می‌دهد.
+          </li>
+        </ul>
+      </section>
+      <section id="slide-196" class="slide">
+        <h3>مقاومت ویژه (Resistivity)</h3>
+        <ul class="list">
+          <li>وقتی که فاصله و ابعاد وارد مقاومت شوند، مقاومت به مقاومت ویژه وابسته می‌شود.</li>
+          <li><strong>فرمول‌ها</strong>:</li>
+        </ul>
+        <p>$$
+          \sigma = \frac{1}{\rho}, \quad R = \frac{\rho L}{A}
+          $$</p>
+        <p class="text">که در آن $ \rho $ مقاومت ویژه و $ \sigma $ هدایت الکتریکی است.</p>
+      </section>
+      <section id="slide-197" class="slide">
+        <h3>ساختار مواد و هدایت الکتریکی</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نوع ماده</th>
+              <th>توضیحات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>الکترون‌ها</strong></td>
+              <td>در فلزات، الکترون‌های آزاد نقش مهمی در هدایت الکتریکی و حرارتی دارند. هر چه تعداد الکترون‌های آزاد
+                بیشتر باشد، هدایت حرارتی و الکتریکی فلز بیشتر است.</td>
+            </tr>
+            <tr>
+              <td><strong>یون‌ها</strong></td>
+              <td>در سرامیک‌ها الکترون آزاد وجود ندارد و یون‌ها نقش هدایت الکتریکی را به عهده دارند. در جامدات یون‌ها
+                تحرک کمتری نسبت به الکترون‌ها دارند، ولی در محلول‌ها حرکت بیشتری دارند.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-198" class="slide">
+        <h3>مقایسه خواص الکتریکی مواد</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ماده</th>
+              <th>ویژگی‌ها</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>فلزات</strong></td>
+              <td>دارای پیوند فلزی و الکترون‌های آزاد هستند، که به راحتی جابجا شده و باعث هدایت الکتریکی بالا می‌شوند.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>سرامیک‌ها</strong></td>
+              <td>به دلیل پیوند یونی-کووالانسی قوی، فاقد الکترون‌های آزاد و جریان الکتریکی در شرایط معمول عایق هستند.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>پلیمرها</strong></td>
+              <td>فاقد الکترون‌های آزاد و دارای یون‌های سبک غیر فلزی هستند، که رسانایی کمتری دارند.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-199" class="slide">
+        <h3>نیمه‌هادی‌ها</h3>
+        <ul class="list">
+          <li>در نیمه‌هادی‌ها هدایت الکتریکی به دلیل عبور الکترون‌ها از نوار ظرفیت به نوار هدایت رخ می‌دهد.</li>
+          <li>هدایت الکتریکی نیمه‌هادی‌ها وابسته به دما است و با افزایش دما، هدایت آنها افزایش می‌یابد.</li>
+        </ul>
+      </section>
+      <section id="slide-200" class="slide">
+        <h3>نوارهای انرژی</h3>
+        <ul class="list">
+          <li>نوار ظرفیت (Valence Band) و نوار هدایت (Conduction Band) دو نوار اصلی در ساختار مواد هستند.</li>
+          <li><strong>فاصله بین نوار ظرفیت و نوار هدایت (Gap)</strong>:</li>
+          <li>اگر فاصله کوچک باشد، ماده رسانا است.</li>
+          <li>اگر فاصله بزرگ باشد، ماده عایق است.</li>
+        </ul>
+      </section>
+      <section id="slide-201" class="slide">
+        <h3>فلزات انتقالی</h3>
+        <ul class="list">
+          <li>الکترون‌ها به راحتی می‌توانند با تحریک حرارتی یا الکتریکی از ترازهای پر به ترازهای خالی بروند، که این منجر
+            به هدایت الکتریکی بالا در فلزات می‌شود.</li>
+        </ul>
+      </section>
+      <section id="slide-202" class="slide">
+        <h3>مقایسه رسانه‌ها از نظر هدایت</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ماده</th>
+              <th>ویژگی هدایت</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>پلیمر</strong></td>
+              <td>کم‌ترین هدایت</td>
+            </tr>
+            <tr>
+              <td><strong>سرامیک</strong></td>
+              <td>هدایت متوسط</td>
+            </tr>
+            <tr>
+              <td><strong>نیمه هادی</strong></td>
+              <td>هدایت بالا</td>
+            </tr>
+            <tr>
+              <td><strong>فلز</strong></td>
+              <td>بیشترین هدایت</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-203" class="slide">
+        <h3>حفره-الکترون</h3>
+        <ul class="list">
+          <li>وقتی الکترونی از نوار ظرفیت به نوار هدایت می‌رود، حفره‌ای در نوار ظرفیت باقی می‌ماند. این حفره‌ها معادل
+            بار مثبت هستند و ماهیت الکتریکی مهمی دارند.</li>
+        </ul>
+        <p class="text"><strong>حفره (Hole)</strong></p>
+        <ul class="list">
+          <li><strong>تعریف</strong>: حفره از نظر قدر مطلق معادل بار الکترون و از نظر علامت مثبت است. </li>
+          <li>وقتی میدان الکتریکی اعمال می‌شود، دو عامل در هدایت دخالت دارند:</li>
+          <li>الکترون‌هایی که در جهت میدان حرکت می‌کنند.</li>
+          <li>حفره‌ها که در جهت عکس میدان حرکت می‌کنند.</li>
+        </ul>
+      </section>
+      <section id="slide-204" class="slide">
+        <h3>هدایت الکتریکی (Electrical Conductivity)</h3>
+        <p class="text">
+        <div class="math-container">$$ \sigma = n e \mu_e $$</div>
+        </p>
+        <p class="text"><strong>پارامترها</strong></p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>پارامتر</th>
+              <th>توضیحات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$ n $</td>
+              <td>جمعیت موجودات که قابلیت انتقال بار دارند.</td>
+            </tr>
+            <tr>
+              <td>$ e $</td>
+              <td>بار الکتریکی که حفره‌ها به اندازه الکترون با علامت مخالف بار دارند.</td>
+            </tr>
+            <tr>
+              <td>$ \mu_e $</td>
+              <td>قابلیت تحرک الکترون‌ها.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text"><strong>رفتار الکترون‌ها</strong></p>
+        <ul class="list">
+          <li>الکترون‌ها مسیر خود را مستقیم طی نمی‌کنند و مدام مسیرشان تغییر می‌کند، به دلیل برخورد با موانع.</li>
+        </ul>
+      </section>
+      <section id="slide-205" class="slide">
+        <h3>سرعت دریفت (Drift Velocity)</h3>
+        <ul class="list">
+          <li><strong>تعریف</strong>: سرعت دریفت در یک ذره الکترون در شرایط عادی به سرعت نور نزدیک می‌شود.</li>
+        </ul>
+        <p>$$
+          v_d = \mu_e E
+          $$</p>
+        <ul class="list">
+          <li><strong>توضیحات</strong>:</li>
+          <li>سرعت دریفت برآیند حرکت الکترون است و بسیار کندتر از سرعت امواج الکترومغناطیس است.</li>
+          <li>کاهش نقص‌ها و عیوب موجب افزایش سرعت دریفت و بهبود هدایت الکتریکی می‌شود.</li>
+        </ul>
+        <p class="text"><strong>رفتار حفره‌ها و الکترون‌ها</strong></p>
+        <ul class="list">
+          <li>رفتار حفره‌ها و الکترون‌ها به دلیل قدرت تحرک متفاوتشان و میزان انحراف از مسیر اصلی متفاوت است.</li>
+        </ul>
+      </section>
+      <section id="slide-206" class="slide">
+        <h3>عوامل موثر بر مقاومت ویژه (ρ_total)</h3>
+        <p class="text">
+        <div class="math-container">$$ \rho_{total} = \rho_t + \rho_i + \rho_d $$</div>
+        </p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>عامل</th>
+              <th>توضیحات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$ \rho_t $</td>
+              <td>مقاومت تحت تاثیر دما</td>
+            </tr>
+            <tr>
+              <td>$ \rho_i $</td>
+              <td>مقاومت تحت تاثیر میزان ناخالصی‌ها</td>
+            </tr>
+            <tr>
+              <td>$ \rho_d $</td>
+              <td>مقاومت تحت تاثیر تغییر شکل</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-207" class="slide">
+        <h3>تاثیر دما، ناخالصی و تغییر شکل</h3>
+        <h4>تاثیرات در دمای معین</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نوع</th>
+              <th>تاثیرات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>مس خالص</strong></td>
+              <td>مقاومت 1 است</td>
+            </tr>
+            <tr>
+              <td><strong>مس با ناخالصی نیکل</strong></td>
+              <td>مقاومت 2.5 است</td>
+            </tr>
+            <tr>
+              <td><strong>مس با ناخالصی‌های بیشتر</strong></td>
+              <td>مقاومت 3.5 است</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>تاثیرات در تغییر شکل</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نوع</th>
+              <th>تاثیرات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>مس خالص بدون تغییر فرم</strong></td>
+              <td>مقاومت 1.5 است</td>
+            </tr>
+            <tr>
+              <td><strong>مس خالص با تغییر شکل</strong></td>
+              <td>مقاومت 3.5 است</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-208" class="slide">
+        <h3>نیمه هادی‌ها</h3>
+        <p class="text"><strong>هدایت الکتریکی در نیمه هادی‌های ذاتی:</strong></p>
+        <p class="text">
+        <div class="math-container">$$ \sigma = n e \mu_e + p e \mu_h $$</div>
+        </p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نوع ماده</th>
+              <th>فرمول</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>حفره</strong></td>
+              <td>$ \sigma_h = p e \mu_h $</td>
+            </tr>
+            <tr>
+              <td><strong>الکترون</strong></td>
+              <td>$ \sigma_e = n e \mu_e $</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text"><strong>نیمه هادی‌های غیر ذاتی (Doped Semiconductors):</strong></p>
+        <ul class="list">
+          <li><strong>نوع-n (n-type):</strong></li>
+          <li>حضور الکترون‌های آزاد که مسبب هدایت هستند.</li>
+          <li>
+            <p class="text">$ \sigma \approx n e \mu_e $</p>
+          </li>
+          <li>
+            <p class="text"><strong>نوع-p (p-type):</strong></p>
+          </li>
+          <li>مکانیزم حفره هدایت را ایجاد می‌کند.</li>
+          <li>$ \sigma \approx p e \mu_h $</li>
+        </ul>
+      </section>
+      <section id="slide-209" class="slide">
+        <h3>ترانزیستور</h3>
+        <p class="text"><strong>تعریف:</strong> در کنار هم قرار دادن نوع-n و نوع-p یک دیود به وجود می‌آورد که خاصیت
+          یک‌سو کنندگی دارد.</p>
+        <p class="text"><strong>ترانزیستور:</strong> برای تقویت جریان‌ها و افزایش شدت و قدرت و فرکانس بالا در الکترونیک
+          کاربرد دارد.</p>
+      </section>
+      <section id="slide-210" class="slide">
+        <h2>خواص زیستی</h2>
+      </section>
+      <section id="slide-211" class="slide">
+        <h3>خواص زیستی مواد مهندسی</h3>
+        <p class="text"><strong>تعریف:</strong> خواص زیستی مواد مهندسی شامل کاربرد مواد در محیط بیولوژیک بدن انسان است.
+        </p>
+      </section>
+      <section id="slide-212" class="slide">
+        <h3>موارد استفاده</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>مورد استفاده</th>
+              <th>مورد استفاده</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>جایگزینی مفاصل</td>
+              <td>دستگاه ترمیم پوست</td>
+            </tr>
+            <tr>
+              <td>صفحات استخوانی</td>
+              <td>مکانیسم دارو رسانی</td>
+            </tr>
+            <tr>
+              <td>سیمان استخوانی</td>
+              <td>ایمپلنت سینه</td>
+            </tr>
+            <tr>
+              <td>پروتز ایمپلنت دندانی</td>
+              <td>پیوند عروق</td>
+            </tr>
+            <tr>
+              <td>تاندون و رباط مصنوعی</td>
+              <td>بخیه‌های جراحی</td>
+            </tr>
+            <tr>
+              <td>پروتز رگ‌های خونی</td>
+              <td>مواد پایدار</td>
+            </tr>
+            <tr>
+              <td>دریچه قلب</td>
+              <td>استنت‌ها</td>
+            </tr>
+            <tr>
+              <td>مجراهای عصبی</td>
+              <td>پین و پیچ برای تثبیت شکستگی</td>
+            </tr>
+            <tr>
+              <td>مش جراحی</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-213" class="slide">
+        <h3>برهمکنش مواد در بدن</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نوع ماده</th>
+              <th>توضیحات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>سمی (Toxic)</strong></td>
+              <td>ماده مورد نظر بافت اطرافش و سلول‌ها را سمی و از بین می‌برد.</td>
+            </tr>
+            <tr>
+              <td><strong>نزدیک به خنثی (Nearly Inert)</strong></td>
+              <td>ماده در محیط بدن واکنشی نشان نمی‌دهد و تقریباً خنثی است.</td>
+            </tr>
+            <tr>
+              <td><strong>زیست فعال (Bioactive)</strong></td>
+              <td>ماده با بدن واکنش می‌دهد اما این واکنش سمی نیست و می‌تواند مفید باشد.</td>
+            </tr>
+            <tr>
+              <td><strong>قابل تجزیه (Degradable)</strong></td>
+              <td>ماده فعال است و در زمان طولانی تجزیه می‌شود و پس از عملکردش حذف می‌شود.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-214" class="slide">
+        <h3>ویژگی‌های اصلی مواد مهندسی بایو</h3>
+        <ol class="list">
+          <li><strong>زیست سازگاری (Biocompatibility)</strong></li>
+          <li><strong>ویژگی‌ها و خواص مکانیکی</strong></li>
+          <li><strong>قابلیت فراوری و فناوری ساخت (Processability)</strong></li>
+        </ol>
+        <p class="text"><strong>رتبه‌بندی:</strong></p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ویژگی</th>
+              <th>سرامیک‌ها</th>
+              <th>پلیمرها</th>
+              <th>فلزات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>زیست سازگاری</strong></td>
+              <td>بالا</td>
+              <td>متوسط</td>
+              <td>کم</td>
+            </tr>
+            <tr>
+              <td><strong>مکانیکی</strong></td>
+              <td>کم</td>
+              <td>متوسط</td>
+              <td>بالا</td>
+            </tr>
+            <tr>
+              <td><strong>قابلیت فراوری</strong></td>
+              <td>متوسط</td>
+              <td>بالا</td>
+              <td>کم</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text"><strong>یادآوری:</strong> نابجایی‌ها مسئول تغییر شکل پلاستیک هستند و حرکت نابجایی‌ها به شکل‌های
+          مختلف سبب تغییر شکل پلاستیک می‌شود.</p>
+      </section>
+      <section id="slide-215" class="slide">
+        <h3>حرکت نابجایی در فلزات و مواد دیگر</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نوع ماده</th>
+              <th>توضیحات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>فلزات</strong></td>
+              <td>- اتصال غیر جهت دار: اتم‌ها به صورت غیر جهت دار به یکدیگر متصل می‌شوند.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>- وجود صفحات متراکم برای لغزش: صفحات متراکم (مانند صفحات [111] در سیستم FCC) وجود دارند.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>- چگالی نابجایی‌ها: در حدود $10^3$ تا $10^{10}$ نابجایی در هر میلی‌متر مربع است.</td>
+            </tr>
+            <tr>
+              <td><strong>سرامیک‌های کووالنت</strong></td>
+              <td>- اتصال جهت دار: اتصال اتم‌ها به صورت جهت دار است.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>- عدم وجود صفحات متراکم برای لغزش: صفحات متراکم وجود ندارد و حرکت نابجایی‌ها مشکل‌تر است.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>- چگالی نابجایی‌ها: در حدود $0.1$ تا $1$ نابجایی در هر میلی‌متر مربع است.</td>
+            </tr>
+            <tr>
+              <td><strong>سرامیک‌های یونی</strong></td>
+              <td>- نیاز به اجتناب از بارهای مثبت و منفی: نابجایی‌ها باید از بارهای مثبت و منفی اجتناب کنند.</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>- عدم وجود صفحات متراکم برای لغزش: مشابه سرامیک‌های کووالنت، این مواد نیز فاقد صفحات متراکم هستند.
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>- چگالی نابجایی‌ها: در حدود $10^2$ تا $10^4$ نابجایی در هر میلی‌متر مربع است.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-216" class="slide">
+        <h3>کرنش شبکه اطراف نابجایی‌ها</h3>
+        <ul class="list">
+          <li><strong>نواحی تحت فشار (تیره) و نواحی تحت کشش (رنگی) اطراف نابجایی‌ها:</strong> نابجایی‌ها باعث ایجاد
+            کرنش‌های متفاوت در اطراف خود می‌شوند. نواحی تحت فشار و کشش موجب تغییر خواص مکانیکی ماده می‌شوند.</li>
+        </ul>
+      </section>
+      <section id="slide-217" class="slide">
+        <h3>انواع نابجایی‌ها</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>نوع نابجایی</th>
+              <th>توضیحات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>نابجایی لبه‌ای</strong></td>
+              <td>با اضافه کردن یا حذف لایه‌ای از اتم‌ها در شبکه کریستالی ایجاد می‌شود.</td>
+            </tr>
+            <tr>
+              <td><strong>نابجایی پیچی</strong></td>
+              <td>نتیجه پیچ خوردگی در لایه‌های اتمی است و منجر به کرنش برشی خالص می‌شود.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="slide-218" class="slide">
+        <h3>تعامل نابجایی‌ها</h3>
+        <ul class="list">
+          <li><strong>نابجایی‌های موافق همدیگر را دفع می‌کنند و نابجایی‌های مخالف همدیگر را جذب می‌کنند.</strong></li>
+          <li><strong>نابجایی‌ها ممکن است پشت موانع انباشته شوند و یا با یکدیگر تکمیل شوند، که منجر به تغییر شکل پلاستیک
+              می‌شود.</strong></li>
+        </ul>
+      </section>
+      <section id="slide-219" class="slide">
+        <h3>سیستم‌های لغزش در فلزات</h3>
+        <ul class="list">
+          <li><strong>سیستم لغزش:</strong> یک سیستم لغزش شامل صفحه متراکم و جهت متراکم است. به عنوان مثال، در سیستم FCC،
+            صفحات لغزش متراکم در [111] و جهت‌های متراکم در &lt;110&gt; قرار دارند.</li>
+          <li><strong>تعداد سیستم‌های لغزش:</strong> در سیستم FCC، 12 سیستم لغزش وجود دارد که شامل 4 دسته صفحه موازی و 3
+            جهت متراکم در هر صفحه است.</li>
+        </ul>
+      </section>
+      <section id="slide-220" class="slide">
+        <h3>تنش و حرکت نابجایی</h3>
+        <ul class="list">
+          <li><strong>تنش برشی بحرانی ($\tau_{CRSS}$):</strong> مقدار حداقل تنش برشی لازم برای شروع حرکت نابجایی.</li>
+          <li><strong>حرکت نابجایی در تک کریستال:</strong> در صورت اعمال تنش کششی یا فشاری، نابجایی‌ها در جهت مناسب شروع
+            به حرکت می‌کنند.</li>
+        </ul>
+      </section>
+      <section id="slide-221" class="slide">
+        <h3>روش‌های مقاوم‌سازی</h3>
+        <ol class="list">
+          <li><strong>کاهش اندازه دانه:</strong> اندازه دانه کوچک‌تر موجب افزایش موانع برای حرکت نابجایی‌ها و افزایش
+            استحکام می‌شود.</li>
+          <li><strong>آلیاژسازی با محلول جامد:</strong> افزودن ناخالصی‌ها به شبکه کریستالی موجب ایجاد تنش‌های اضافی و
+            ممانعت از حرکت نابجایی‌ها می‌شود.</li>
+          <li><strong>کارسرد (کرنش سختی):</strong> اعمال کرنش به فلز موجب افزایش چگالی نابجایی‌ها و در نتیجه افزایش
+            استحکام می‌شود.</li>
+        </ol>
+      </section>
+      <section id="slide-222" class="slide">
+        <h3>تغییر شکل و بازیابی</h3>
+        <ul class="list">
+          <li><strong>تغییر شکل پلاستیک:</strong> تغییر فرم در فلزات به دلیل حرکت نابجایی‌ها انجام می‌شود.</li>
+          <li><strong>بازیابی و تبلور مجدد:</strong> در طی بازیابی، انرژی کرنشی نابجایی‌ها آزاد می‌شود و تعداد
+            نابجایی‌ها کاهش می‌یابد. تبلور مجدد منجر به تشکیل دانه‌های جدید با چگالی نابجایی کمتر می‌شود.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <div class="navigation">
+    <input type="number" id="slideNumberInput" min="1" max="222">
+    <span id="totalSlides">از 222</span>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script>
+    Reveal.initialize();
+
+    const totalSlides = 222;
+    const input = document.getElementById('slideNumberInput');
+
+    // تنظیم ورودی شماره اسلاید فعلی
+    Reveal.on('slidechanged', function (event) {
+      input.value = event.indexh + 1;
+    });
+
+    // جستجو و حرکت به اسلاید بر اساس شماره
+    input.addEventListener('change', function () {
+      const persianNumbers = '۰۱۲۳۴۵۶۷۸۹';
+
+      // حذف فاصله‌های اضافی
+      let slideNumber = input.value.trim().split('').map(c => persianNumbers.includes(c) ? persianNumbers.indexOf(c) : c).join('');
+      slideNumber = parseInt(slideNumber);
+
+      if (!isNaN(slideNumber) && slideNumber >= 1 && slideNumber <= totalSlides) {
+        Reveal.slide(slideNumber - 1);
+      } else {
+        alert('شماره اسلاید معتبر نیست');
+        input.value = Reveal.getIndices().h + 1;
+      }
+    });
+
+    // مقداردهی اولیه ورودی شماره اسلاید
+    input.value = Reveal.getIndices().h + 1;
+
+  </script>
+</body>
+
+</html>

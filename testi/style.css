@@ -1,0 +1,226 @@
+/* استایل کلی برای صفحه */
+html, body {
+    font-family: 'Vazir', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    line-height: 1.8;
+    overflow-x: hidden; /* فقط از اسکرول افقی جلوگیری شود */
+}
+
+/* تنظیمات مربوط به Reveal.js */
+.reveal .slides {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    direction: rtl; /* راست‌چین برای مطابقت با سایر بخش‌ها */
+}
+
+/* استایل کلی اسلایدها */
+.slide {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: right;
+    box-sizing: border-box;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* max-width: 90vw; تنظیم برای جلوگیری از بروز اسکرول افقی */
+    max-height: 100vh; /* جلوگیری از بروز اسکرول عمودی */
+}
+
+/* اندازه فونت برای عناوین */
+.slide h1, .slide h2, .slide h3, .slide h4 {
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.slide h1 {
+    font-size: 68px;
+}
+
+.slide h2 {
+    font-size: 36px;
+}
+
+.slide h3 {
+    font-size: 30px;
+}
+
+.slide h4 {
+    font-size: 24px;
+}
+
+/* تنظیمات برای متن‌ها */
+.text {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* تنظیمات برای لیست‌ها */
+.list {
+    margin: 10px auto;
+    font-size: 22px;
+    color: #666;
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.list ol {
+    list-style-type: decimal;
+}
+
+.list ul {
+    list-style-type: disc;
+}
+
+/* استایل لینک‌ها */
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+/* استایل برای تصاویر */
+.image {
+    max-width: 100%; /* اطمینان از تناسب تصویر با صفحه */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* استایل برای جداول */
+.table {
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+/* استایل برای فرمول‌های ریاضی */
+.math-container {
+    direction: ltr;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* استایل برای ناوبری */
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation button {
+    margin: 0 5px;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    opacity: 0.8;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation button:hover {
+    background-color: hsl(211, 100%, 35%);
+    color: #ffffff;
+}
+
+.navigation input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.navigation span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* افکت‌های تعویض اسلاید */
+.reveal .slides section {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.reveal .slides section.present {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* پنهان کردن فلش‌های ناوبری پیش‌فرض */
+.controls-arrow {
+    display: none;    
+}
+
+/* تنظیمات برای دستگاه‌های کوچک */
+@media only screen and (max-width: 600px) {
+  .slide {
+    padding: 20px;
+  }
+  
+  .slide h1 {
+    font-size: 36px;
+  }
+
+  .slide h2 {
+    font-size: 28px;
+  }
+
+  .slide h3 {
+    font-size: 24px;
+  }
+
+  .text, .list {
+    font-size: 18px;
+  }
+}
