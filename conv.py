@@ -130,7 +130,7 @@ output_html = template.render(content="\n".join(
     html_pages), totalSlides=len(slides))
 
 # ذخیره HTML خروجی
-with open('sliders.html', 'w', encoding='utf-8') as f:
+with open('index.html', 'w', encoding='utf-8') as f:
     f.write(output_html)
 
-print("Conversion completed. Check the 'sliders.html' file.")
+print("Conversion completed. Check the 'index.html' file.")
