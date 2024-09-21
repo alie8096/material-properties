@@ -1,6 +1,24 @@
+/* Font for h1 */
+@font-face {
+    font-family: 'Lalezar';
+    src: url(fonts/Lalezar-Regular.ttf);
+}
+
+/* Font for all text */
+@font-face {
+    font-family: 'Sahel';
+    src: url(fonts/Sahel-Bold.woff);
+}
+
+.container {
+    height: 100%;
+}
+
 /* استایل‌های سفارشی */
 html, body {
-    font-family: 'Vazir', sans-serif;
+    /* font-family: 'Vazir', sans-serif; */
+
+    font-family: 'Sahel';
     background-color: #f7f7f7;
     color: #333;
     direction: rtl;
@@ -12,74 +30,149 @@ html, body {
     line-height: 1.8;
     overflow-x: hidden;
 }
+
+.intro-container {
+    width: fit-content;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 0 auto;
+}
+
 .reveal .slides {
+    width: 75vw;
     height: 100vh;
     display: grid;
     place-items: center;
-    direction: ltr;  /* قرار دادن کل اسلایدر به صورت چپ به راست */
+    direction: rtl;  /* قرار دادن کل اسلایدر به صورت چپ به راست */
 }
+
+.reveal .slides section {
+    direction: rtl;
+    text-align: right;
+}
+
+section {
+    max-height: 90vh;
+    height: 90vh;
+    max-width: 90vw;
+    width: 90vw;
+}
+
+/* مخفی کردن فلش‌های پیش‌فرض Reveal.js */
 .reveal .navigate-left,
 .reveal .navigate-right {
-    display: none;  /* مخفی کردن فلش‌های پیش‌فرض Reveal.js */
-}
-.slide {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    text-align: right; /* متن‌ها به صورت راست‌چین */
-    box-sizing: border-box;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    max-height: 100vh; /* جلوگیری از بروز اسکرول عمودی */
-}
-.text {
-    font-size: 24px;
-    color: #555;
-    line-height: 1.8;
+    display: none;
 }
 
 /* اندازه فونت برای عناوین */
 .slide h1, .slide h2, .slide h3, .slide h4 {
-    color: #007bff;
+    color: rgb(245, 124, 26);
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
+    font-weight: bold;
 }
 
 .slide h1 {
-    font-size: 68px;
+    font-family: 'Lalezar';
+    font-weight: bolder;
+
+    text-align: center;
+    font-size: 4.375rem; /* 70px */
+
+    /* position: absolute;
+    top: 35%;
+    right: 20%; */
 }
 
-.slide h2 {
-    font-size: 36px;
+.slide #slide-1 h2 {
+    font-family: 'Lalezar';
+    text-align: center;
+    font-size: 1.5rem; /* 24px */
+    color: #686767;
+
+    /* position: absolute;
+    top: 60%;
+    right: 20%; */
+}
+
+.slide:not(:first-of-type) h2 {
+    /* position: relative;
+    top: 50%; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    font-family: 'Sahel';
+    font-size: 4.375rem; /* 70px */
+    font-weight: bolder;
+    text-align: center;
+}
+
+.slide #slide-2 h2 {
+    /* position: relative;
+    top: 10px; */
+
+    text-align: right;
+    font-size: 3.75rem; /* 60px */
+    line-height: 2;
 }
 
 .slide h3 {
-    font-size: 30px;
+    font-family: 'Sahel';
+    font-size: 2.5rem; /* 40px */
 }
 
 .slide h4 {
-    font-size: 24px;
+    font-size: 2.125rem; /* 34px */
 }
 
 /* تنظیمات برای لیست‌ها */
 .list {
-    margin: 10px auto;
-    font-size: 22px;
+    font-family: 'Sahel';
+    margin: 0 auto;
+    font-size: 1.5625rem; /* 25px */
     color: #666;
-    list-style-type: disc;
-    padding-left: 40px;
+    direction: rtl;
+    padding-right: 1.25rem; /* 20px */
+}
+li {
+    font-size: .875rem; /* 14px */
 }
 
-.list ol {
-    list-style-type: decimal;
+/* .list ul {
+    list-style-type: none;
+    padding-right: 0;
+    margin-right: 0;
 }
 
-.list ul {
-    list-style-type: disc;
+.list ul li {
+    text-align: right;
+    padding-right: 20px;
+    position: relative;
+    margin-bottom: 5px;
+} */
+
+/* li > li {
+    list-style: georgian;
+} */
+
+
+
+.slide p, .slide ul, .slide li {
+    direction: rtl;
+    text-align: right;
 }
 
 /* استایل لینک‌ها */
 .link {
-    color: #007bff;
+    color: rgb(245, 124, 26);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -89,49 +182,142 @@ html, body {
     color: #0056b3;
 }
 
+.slide {
+    display: grid;
+    grid-template-columns: 1fr auto;  /* ستون اول برای متن و ستون دوم برای تصویر */
+    grid-gap: 1.25rem; /* 20px */
+    align-items: start;
+    background-color: #ffffff;
+    border-radius: .75rem; /* 12px */
+    max-height: 100vh;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.text {
+    font-family: 'Sahel';
+    font-size: 1.5rem; /* 24px */
+    color: #555;
+    direction: rtl;
+}
+
 .image {
-    max-width: 100%; /* اطمینان از تناسب تصویر با صفحه */
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: .5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* تنظیم تصاویر */
+.reveal .slides img {
+    max-width: 100%;
+    height: auto;
+}
+
+.math-formula {
+    display: block;
+    direction: ltr;
+    text-align: left;
+    font-size: 1.375rem; /* 22px */
+    margin: 10px 0;
+    unicode-bidi: plaintext;
+}
+
+
+.math-inline {
+    display: inline-block;
+    direction: ltr;
+    text-align: left;
+    font-size: .75rem; /* 12px */
+    font-weight: bolder;
+    vertical-align: middle;
+    margin: 0 5px;
+    unicode-bidi: plaintext;
+}
+
+
+
 /* استایل برای جداول */
-.table {
-    margin: 20px auto;
+
+/* .table {
+    table-layout: fixed;
     width: 100%;
+} */
+
+.reveal table td, .reveal table th {
+    text-align: center;
+    border-bottom: 1px solid;
+    font-family: 'Sahel';
+    font-size: .6875rem; /* 11 px */
+    padding: .5rem;
+}
+
+.reveal .table {
+    margin: 0 auto;
+
     border-collapse: collapse;
-    border-radius: 12px;
-    overflow: hidden;
+
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .table th, .table td {
-    padding: 12px 20px;
+    padding: 0; /* حذف فضای داخلی سلول‌ها */
     border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .table th {
-    background-color: #007bff;
+    background-color: rgb(245, 124, 26);
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     font-weight: bold;
 }
 
 .table td {
     background-color: #f9f9f9;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
 }
 
-.math-container {
-    direction: ltr;  /* فرمول‌ها به صورت چپ به راست */
-    text-align: left;
-    margin: 20px 0;
+.table img {
+    width: 100%; /* تصویر دقیقاً به اندازه سلول */
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
+
+
+.reveal .slides table {
+    font-size: 1.125rem !important; /* 18px */
+    width: 70%;
+    max-height: 80vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: .75rem; /* 12px */
+    overflow: hidden; /* در صورت نیاز، اسکرول عمودی */
+}
+
+/* .reveal .slides table.small-table {
+    width: auto;
+    font-size: 1.125rem !important;
+} */
+
+/* 
+.reveal .slides img:not(td > img) {
+    transform: scale(0.6);
+} */
+
 p {
     margin: 20px 0;
 }
 
 /* استایل‌های جدید برای بخش ناوبری */
 .navigation {
+    backdrop-filter: blur(1px);
     position: fixed;
     bottom: 20px;
     left: 50%;
@@ -139,21 +325,24 @@ p {
     display: flex;
     align-items: center;
     z-index: 1000; /* اضافه کردن z-index بالا برای قرارگیری روی اسلاید */
-    background-color: rgba(255, 255, 255, 0.8); /* شفافیت پس‌زمینه */
+    background-color: rgba(255, 255, 255, 0.3); /* شفافیت پس‌زمینه */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه برای ظاهر بهتر */
 }
+
 .navigation button {
     margin: 0 5px;
     padding: 8px 16px;
-    background-color: #007bff;
+    background-color: rgb(248, 115, 5);
     color: #e4e4e4;
     border: none;
     cursor: pointer;
     font-size: 16px;
 }
+
 .navigation input {
+    background-color: rgba(255, 255, 255, 0.1);
     width: 45px;
     text-align: center;
     font-size: 16px;
@@ -162,14 +351,21 @@ p {
     border: 2px solid #ddd;
     border-radius: 8px;
 }
+
+input[type="number"]:focus {
+    outline: none;
+}
+
 .navigation input[type="number"] {
     -moz-appearance: textfield;
 }
+
 .navigation input::-webkit-outer-spin-button,
 .navigation input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 .navigation span {
     font-size: 16px;
     color: #333;
@@ -186,25 +382,298 @@ p {
     transform: scale(1);
 }
 
-/* تنظیمات برای دستگاه‌های کوچک */
-@media only screen and (max-width: 600px) {
-  .slide {
-    padding: 20px;
-  }
-  
-  .slide h1 {
-    font-size: 36px;
-  }
-
-  .slide h2 {
-    font-size: 28px;
-  }
-
-  .slide h3 {
-    font-size: 24px;
-  }
-
-  .text, .list {
-    font-size: 18px;
-  }
+.reveal .progress {
+    background: rgba(0, 0, 0, .2);
+    color: var(--r-link-color);
+    height: 5px;
 }
+
+.reveal .progress span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 124, 26);
+    transition: transform .8s cubic-bezier(.26,.86,.44,.985);
+    transform-origin: 0 0;
+    transform: scaleX(0);
+}
+
+
+/* حالت برای دستگاه‌های بزرگتر از 1200px (صفحات بزرگ مثل مانیتورها) */
+@media (min-width: 1200px) {
+    /* تنظیم اندازه فونت لیست‌ها */
+    .reveal .slides ul.list li {
+        font-size: 18px;
+    }
+
+    /* تغییر سایز علامت بولت لیست‌ها */
+    .reveal .slides ul.list li::before {
+        font-size: 12px;
+    }
+
+    /* تنظیم اندازه فونت عناوین */
+    .reveal .slides h1 {
+        font-size: 70px;
+    }
+
+    .reveal .slides h2 {
+        font-size: 60px;
+    }
+
+    .reveal .slides h3 {
+        font-size: 40px;
+    }
+
+    /* تنظیم اندازه جداول */
+    .reveal .slides table {
+        font-size: 18px !important; /* کاهش اندازه فونت */
+        transform: scale(0.6); /* کاهش اندازه به 90% */
+    }
+
+    /* تنظیم تصاویر */
+    .reveal .slides img:not(td > img) {
+        transform: scale(0.9); /* کاهش اندازه به 90% */
+    }
+    
+    .text {
+        font-size: 12px;
+    }
+
+    p {
+        margin: 8px 0 !important;
+        font-size: 12px;
+    }
+
+    .math-formula {
+        font-size: 12px;  /* کاهش اندازه فونت */
+        margin: 10px 0;   /* کاهش مارجین */
+    }
+}
+
+/* حالت برای دستگاه‌های متوسط (مثلاً تبلت‌ها) */
+@media (max-width: 1024px) {
+    /* تغییر سایز فونت لیست‌ها */
+    .reveal .slides ul.list li {
+        font-size: 10px;
+    }
+
+    /* تغییر سایز علامت بولت لیست‌ها */
+    .reveal .slides ul.list li::before {
+        font-size: 10px;
+    }
+
+    /* تغییر اندازه فونت عناوین */
+    .reveal .slides h1 {
+        font-size: 60px;
+    }
+    .reveal .slides h2 {
+        font-size: 45px;
+    }
+    .reveal .slides h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    /* تغییر اندازه جداول */
+    .reveal .slides table {
+        font-size: 10px !important; /* کاهش اندازه فونت */
+    }
+
+    .reveal .slides section {
+        width: 100vw;
+
+    }
+
+    /* تغییر سایز تصاویر */
+    .reveal .slides img:not(td > img) {
+        transform: scale(0.3);
+    }
+
+    .text {
+        font-size: 10px;
+    }
+
+    p {
+        margin: 5px 0 !important;
+        font-size: 10px;
+    }
+
+    .math-formula {
+        font-size: 10px;  /* کاهش اندازه فونت */
+        margin: 6px 0;   /* کاهش مارجین */
+    }
+
+    .math-inline {
+        font-size: 10px;          /* کاهش اندازه فونت */
+        margin: 0;
+    }
+
+}
+
+/* حالت برای دستگاه‌های کوچک (حداکثر 768px - گوشی‌های موبایل) */
+@media (max-width: 768px) {
+    /* تغییر سایز فونت لیست‌ها */
+    .reveal .slides ul.list li {
+        font-size: 9px !important;
+    }
+
+    /* تغییر سایز علامت بولت لیست‌ها */
+    .reveal .slides ul.list li::before {
+        font-size: 9px !important;
+    }
+
+    /* تغییر اندازه فونت عناوین */
+    .reveal .slides h1 {
+        font-size: 50px ;
+    }
+    
+    .reveal .slides h2 {
+        font-size: 35px ;
+    }
+
+    .reveal .slides h3 {
+        font-size: 22px;
+    }
+
+    .slide h4 {
+        font-size: 11px;
+    }
+
+    /* تنظیم جداول */
+    .reveal .slides table {
+        font-size: 14px !important; /* کاهش بیشتر اندازه فونت */
+    }
+
+    /* تنظیم سایز تصاویر */
+    .reveal .slides img:not(td > img) {
+        transform: scale(0.9); /* کاهش اندازه به 70% */
+    }
+
+    /* تنظیم اسلایدها */
+    .reveal .slides section {
+        width: 100vw;
+    }
+
+    /* کاهش padding برای متن اسلایدها */
+    .reveal .slides {
+        padding: 0 10px;
+    }
+
+    .reveal table td, .reveal table th {
+        /* padding: .3125rem; */
+        font-size: .37rem;
+        font-weight: bold;
+    }
+
+    /* .text {
+        font-size: 9px;
+    } */
+
+    p {
+        margin: 8px 0 !important;
+        font-size: 11px;
+    }
+
+    .math-formula {
+        font-size: 11px;  /* کاهش بیشتر اندازه فونت */
+        margin: 10px 0;   /* کاهش مارجین */
+    }
+
+    .math-inline {
+        font-size: 11px;          /* کاهش اندازه فونت */
+    }
+}
+
+/* حالت برای دستگاه‌های بسیار کوچک (حداکثر 480px - گوشی‌های کوچک) */
+@media (max-width: 480px) {
+    /* تغییر سایز فونت لیست‌ها */
+    .reveal .slides ul.list li {
+        font-size: 8px !important;
+    }
+
+    /* تغییر سایز علامت بولت لیست‌ها */
+    .reveal .slides ul.list li::before {
+        font-size: 8px !important;
+    }
+
+    /* تغییر اندازه فونت عناوین */
+    .reveal .slides h1 {
+        font-size: 40px !important;
+    }
+
+    .reveal .slides h2 {
+        font-size: 24px;
+    }
+
+    .reveal .slides h3 {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .slide h4 {
+        font-size: 11px;
+    }
+
+    /* تغییر اندازه جداول */
+    .reveal .slides table {
+        font-size: .375rem !important; /* کاهش بیشتر اندازه فونت */
+        width: 60%;
+    }
+    .table img {
+        width: 85%;
+        margin: auto;
+    }
+
+    .reveal table td, .reveal table th {
+        padding: .3125rem;
+        font-size: .375rem;
+    }
+
+    /* تنظیم سایز تصاویر */
+    .reveal .slides img:not(td > img) {
+        transform: scale(0.9); /* کاهش اندازه به 60% */
+    }
+
+    /* .text {
+        font-size: 8px;
+    } */
+
+    p {
+        margin: 8px 0 !important;
+        font-size: .75rem; 
+    }
+
+    .math-formula {
+        font-size: 8px;  /* کاهش اندازه فونت برای گوشی‌های کوچک */
+        margin: 8px 0;    /* کاهش مارجین */
+    }
+
+    .math-inline {
+        font-size: 8px;          /* کاهش اندازه فونت */
+    }
+}
+
+/* پیام برای چرخاندن صفحه در حالت موبایل */
+/* @media (max-width: 768px) and (orientation: landscape) {
+    #rotate-message { */
+        /* position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-align: center;
+        z-index: 9999;
+    }
+} */
+
+
+

@@ -1,0 +1,599 @@
+/* Font for h1 */
+@font-face {
+    font-family: 'Lalezar';
+    src: url(fonts/Lalezar-Regular.ttf);
+}
+
+/* Font for h2,h3 */
+@font-face {
+    font-family: 'NotoNaskh';
+    src: url(fonts/Noto_Naskh_Arabic/static/NotoNaskhArabic-Bold.ttf);
+}
+
+/* Font for all text */
+@font-face {
+    font-family: 'Yas';
+    src: url(fonts/Yas.ttf);
+}
+
+/* استایل‌های سفارشی */
+html, body {
+    /* font-family: 'Vazir', sans-serif; */
+
+    font-family: 'Yas';
+    background-color: #f7f7f7;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+.reveal .slides {
+    width: 75vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    direction: rtl;  /* قرار دادن کل اسلایدر به صورت چپ به راست */
+}
+
+.reveal .slides section {
+    direction: rtl;
+    text-align: right;
+}
+
+section {
+    max-height: 90vh;
+    height: 90vh;
+    max-width: 90vw;
+    width: 90vw;
+}
+
+/* مخفی کردن فلش‌های پیش‌فرض Reveal.js */
+.reveal .navigate-left,
+.reveal .navigate-right {
+    display: none;
+}
+
+/* اندازه فونت برای عناوین */
+.slide h1, .slide h2, .slide h3, .slide h4 {
+    color: rgb(245, 124, 26);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.slide h1 {
+    font-family: 'Lalezar';
+    font-weight: bolder;
+    position: absolute;
+    text-align: center;
+    font-size: 70px;
+    top: 35%;
+    right: 20%;
+}
+
+.slide #slide-1 h2 {
+    font-family: 'Lalezar';
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    color: #686767;
+    top: 60%;
+    right: 20%;
+}
+
+.slide h2 {
+    font-family: 'NotoNaskh';
+    position: relative;
+    font-size: 70px;
+    font-weight: bolder;
+    top: 50%;
+    text-align: center;
+    
+}
+
+.slide #slide-2 h2 {
+    position: relative;
+    top: 10px;
+    text-align: right;
+    font-size: 60px;
+    line-height: 2;;
+}
+
+.slide h3 {
+    font-family: 'NotoNaskh';
+    font-size: 40px;
+}
+
+.slide h4 {
+    font-size: 34px;
+}
+
+/* تنظیمات برای لیست‌ها */
+.list {
+    font-family: 'Yas';
+    margin: 10px auto;
+    font-size: 25px;
+    color: #666;
+    direction: rtl; /* تعیین جهت نوشتار */
+    padding-right: 20px; /* تنظیم فاصله برای لیست‌ها */
+}
+
+.list ul {
+    list-style-type: none; /* حذف علامت‌های پیش‌فرض */
+    padding-right: 0; /* تنظیم فاصله از سمت راست */
+    margin-right: 0; /* حذف فاصله پیش‌فرض */
+}
+
+.list ul li {
+    text-align: right; /* راست‌چین کردن متن لیست */
+    padding-right: 20px; /* فاصله برای فضای بین علامت و متن */
+    position: relative; /* برای موقعیت‌دهی علامت */
+    margin-bottom: 5px; /* فاصله بین آیتم‌های لیست */
+}
+
+.list ul li::before {
+    /* content: "•"; */
+    position: absolute;
+    right: 0; /* موقعیت علامت از سمت راست */
+    color: #333; /* رنگ علامت */
+    font-size: 25px; /* اندازه علامت */
+    line-height: 25px; /* ارتفاع خط علامت */
+}
+
+.slide p, .slide ul, .slide li {
+    direction: rtl;
+    text-align: right;
+}
+
+/* استایل لینک‌ها */
+.link {
+    color: rgb(245, 124, 26);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: 1fr auto;  /* ستون اول برای متن و ستون دوم برای تصویر */
+    grid-gap: 20px;
+    align-items: start;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-height: 100vh;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.text {
+    font-family: 'Yas';
+    font-size: 24px;
+    color: #555;
+    direction: rtl;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* تنظیم تصاویر */
+.reveal .slides img {
+    max-width: 100%;
+    height: auto;
+}
+
+.math-formula {
+    display: block;
+    direction: ltr;
+    text-align: left;
+    font-size: 22px;
+    margin: 10px 0;
+    unicode-bidi: plaintext;
+}
+
+
+.math-inline {
+    display: inline-block;
+    direction: ltr;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    vertical-align: middle;
+    margin: 0 5px;
+    unicode-bidi: plaintext;
+}
+
+
+
+/* استایل برای جداول */
+
+.reveal table td, .reveal table th {
+    text-align: center;
+    border-bottom: 1px solid;
+    font-family: 'Yas';
+}
+.reveal .table {
+    margin: 20px auto; /* وسط‌چینی افقی جدول */
+    width: 80%; /* عرض کمتر از 100% برای هماهنگی بهتر با فضای موجود */
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* باکس شادو به جدول اضافه شد */
+}
+
+
+.table th, .table td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    text-align: center; /* وسط‌چینی افقی */
+    vertical-align: middle; /* وسط‌چینی عمودی */
+    white-space: nowrap; /* جلوگیری از شکستن متن */
+}
+
+.table th {
+    background-color: rgb(245, 124, 26);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+.reveal .slides table {
+    font-size: 18px !important;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* جداول کوچک */
+.reveal .slides table.small-table {
+    width: auto; /* جداول کوچک در حالت پیش‌فرض بمانند */
+    font-size: 18px !important;
+}
+
+p {
+    margin: 20px 0;
+}
+
+/* استایل‌های جدید برای بخش ناوبری */
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* اضافه کردن z-index بالا برای قرارگیری روی اسلاید */
+    background-color: rgba(255, 255, 255, 0.8); /* شفافیت پس‌زمینه */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه برای ظاهر بهتر */
+}
+
+.navigation button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: rgb(248, 115, 5);
+    color: #e4e4e4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navigation input {
+    width: 45px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.navigation input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.navigation input::-webkit-outer-spin-button,
+.navigation input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.navigation span {
+    font-size: 16px;
+    color: #333;
+}
+
+/* افکت‌های تعویض اسلاید */
+.reveal .slides section {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.reveal .slides section.present {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.reveal .progress {
+    background: rgba(0, 0, 0, .2);
+    color: var(--r-link-color);
+    height: 5px;
+}
+
+.reveal .progress span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 124, 26);
+    transition: transform .8s cubic-bezier(.26,.86,.44,.985);
+    transform-origin: 0 0;
+    transform: scaleX(0);
+}
+
+
+/* حالت برای دستگاه‌های بزرگتر از 1200px (صفحات بزرگ مثل مانیتورها) */
+@media (min-width: 1200px) {
+    /* تنظیم اندازه فونت لیست‌ها */
+    .reveal .slides ul.list li {
+        font-size: 20px;
+    }
+
+    /* تغییر سایز علامت بولت لیست‌ها */
+    .reveal .slides ul.list li::before {
+        font-size: 20px;
+    }
+
+    /* تنظیم اندازه فونت عناوین */
+    .reveal .slides h1 {
+        font-size: 70px;
+    }
+
+    .reveal .slides h2 {
+        font-size: 60px;
+    }
+
+    .reveal .slides h3 {
+        font-size: 40px;
+    }
+
+    /* تنظیم اندازه جداول */
+    .reveal .slides table {
+        font-size: 18px !important; /* کاهش اندازه فونت */
+        transform: scale(0.9); /* کاهش اندازه به 90% */
+    }
+
+    /* تنظیم تصاویر */
+    .reveal .slides img {
+        transform: scale(0.9); /* کاهش اندازه به 90% */
+    }
+    
+    .text {
+        font-size: 20px;
+    }
+
+    p {
+        margin: 8px 0 !important;
+        font-size: 20px;
+    }
+
+    .math-formula {
+        font-size: 20px;  /* کاهش اندازه فونت */
+        margin: 10px 0;   /* کاهش مارجین */
+    }
+}
+
+/* حالت برای دستگاه‌های متوسط (مثلاً تبلت‌ها) */
+@media (max-width: 1024px) {
+    /* تغییر سایز فونت لیست‌ها */
+    .reveal .slides ul.list li {
+        font-size: 16px;
+    }
+
+    /* تغییر سایز علامت بولت لیست‌ها */
+    .reveal .slides ul.list li::before {
+        font-size: 16px;
+    }
+
+    /* تغییر اندازه فونت عناوین */
+    .reveal .slides h1 {
+        font-size: 60px;
+    }
+    .reveal .slides h2 {
+        font-size: 45px;
+    }
+    .reveal .slides h3 {
+        font-size: 30px;
+    }
+
+    /* تغییر اندازه جداول */
+    .reveal .slides table {
+        font-size: 16px !important; /* کاهش اندازه فونت */
+        transform: scale(0.8); /* کاهش اندازه به 80% */
+    }
+
+    /* تغییر سایز تصاویر */
+    .reveal .slides img {
+        transform: scale(0.8); /* کاهش اندازه به 80% */
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    p {
+        margin: 8px 0 !important;
+        font-size: 16px;
+    }
+
+    .math-formula {
+        font-size: 16px;  /* کاهش اندازه فونت */
+        margin: 8px 0;   /* کاهش مارجین */
+    }
+
+    .math-inline {
+        font-size: 16px;          /* کاهش اندازه فونت */
+        margin: 0;
+    }
+
+}
+
+/* حالت برای دستگاه‌های کوچک (حداکثر 768px - گوشی‌های موبایل) */
+@media (max-width: 768px) {
+    /* تغییر سایز فونت لیست‌ها */
+    .reveal .slides ul.list li {
+        font-size: 16px !important;
+    }
+
+    /* تغییر سایز علامت بولت لیست‌ها */
+    .reveal .slides ul.list li::before {
+        font-size: 16px !important;
+    }
+
+    /* تغییر اندازه فونت عناوین */
+    .reveal .slides h1 {
+        font-size: 50px !important;
+    }
+    
+    .reveal .slides h2 {
+        font-size: 35px !important;
+    }
+
+    .reveal .slides h3 {
+        font-size: 22px;
+    }
+
+    /* تنظیم جداول */
+    .reveal .slides table {
+        font-size: 14px !important; /* کاهش بیشتر اندازه فونت */
+    }
+
+    /* تنظیم سایز تصاویر */
+    .reveal .slides img {
+        transform: scale(0.7); /* کاهش اندازه به 70% */
+    }
+
+    /* تنظیم اسلایدها */
+    .reveal .slides section {
+        width: 100vw;
+        height: auto;
+    }
+
+    /* کاهش padding برای متن اسلایدها */
+    .reveal .slides {
+        padding: 0 10px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    p {
+        margin: 8px 0 !important;
+        font-size: 16px;
+    }
+
+    .math-formula {
+        font-size: 16px;  /* کاهش بیشتر اندازه فونت */
+        margin: 10px 0;   /* کاهش مارجین */
+    }
+
+    .math-inline {
+        font-size: 16px;          /* کاهش اندازه فونت */
+    }
+}
+
+/* حالت برای دستگاه‌های بسیار کوچک (حداکثر 480px - گوشی‌های کوچک) */
+@media (max-width: 480px) {
+    /* تغییر سایز فونت لیست‌ها */
+    .reveal .slides ul.list li {
+        font-size: 14px !important;
+    }
+
+    /* تغییر سایز علامت بولت لیست‌ها */
+    .reveal .slides ul.list li::before {
+        font-size: 14px !important;
+    }
+
+    /* تغییر اندازه فونت عناوین */
+    .reveal .slides h1 {
+        font-size: 40px !important;
+    }
+
+    .reveal .slides h2 {
+        font-size: 24px !important;
+    }
+
+    .reveal .slides h3 {
+        font-size: 18px;
+    }
+
+    /* تغییر اندازه جداول */
+    .reveal .slides table {
+        font-size: 12px !important; /* کاهش بیشتر اندازه فونت */
+    }
+
+    /* تنظیم سایز تصاویر */
+    .reveal .slides img {
+        transform: scale(0.6); /* کاهش اندازه به 60% */
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    p {
+        margin: 8px 0 !important;
+        font-size: 14px;
+    }
+
+    .math-formula {
+        font-size: 14px;  /* کاهش اندازه فونت برای گوشی‌های کوچک */
+        margin: 8px 0;    /* کاهش مارجین */
+    }
+
+    .math-inline {
+        font-size: 12px;          /* کاهش اندازه فونت */
+    }
+}
+
+/* پیام برای چرخاندن صفحه در حالت موبایل */
+@media (max-width: 768px) and (orientation: landscape) {
+    .rotate-message {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-align: center;
+        z-index: 9999;
+    }
+}

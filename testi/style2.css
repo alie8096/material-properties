@@ -1,0 +1,251 @@
+/* فونت‌ها برای استفاده در کل سایت */
+@font-face {
+    font-family: 'Lalezar';
+    src: url(fonts/Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'NotoNaskh';
+    src: url(fonts/Noto_Naskh_Arabic/static/NotoNaskhArabic-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Yas';
+    src: url(fonts/Yas.ttf);
+}
+
+/* استایل‌های عمومی صفحه */
+html, body {
+    font-family: 'Yas', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* تنظیمات Reveal.js */
+.reveal .slides {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    direction: rtl;
+}
+
+.reveal .slides section {
+    text-align: right;
+    direction: rtl;
+}
+
+section {
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 90vh;
+    width: 100vw;
+}
+
+/* حذف فلش‌های ناوبری پیش‌فرض */
+.reveal .navigate-left,
+.reveal .navigate-right {
+    display: none;
+}
+
+/* تنظیمات عنوان‌ها */
+h1, h2, h3, h4 {
+    color: rgb(245, 124, 26);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Lalezar';
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    right: 20%;
+}
+
+#slide-1 h2 {
+    font-family: 'Lalezar';
+    text-align: center;
+    font-size: 24px;
+    color: #686767;
+    top: 60%;
+    right: 20%;
+}
+
+h2 {
+    font-family: 'NotoNaskh';
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+h3 {
+    font-family: 'NotoNaskh';
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 34px;
+}
+
+/* استایل لیست‌ها */
+ul {
+    list-style: none;
+    padding-right: 20px;
+}
+
+ul li {
+    position: relative;
+    padding-right: 25px;
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    right: 0;
+    color: #333;
+    font-size: 25px;
+}
+
+/* استایل متن و پاراگراف‌ها */
+p, ul, li {
+    direction: rtl;
+    text-align: right;
+    font-size: 18px;
+}
+
+/* استایل تصاویر */
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* استایل جدول */
+.table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.table th, .table td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.table th {
+    background-color: rgb(245, 124, 26);
+    color: white;
+    font-size: 20px;
+}
+
+.table td {
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+/* استایل برای اسلاید شماره یک */
+#slide-1 {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+#slide-1 h1, #slide-1 h2 {
+    color: white;
+}
+
+/* اشکال برای زیباسازی */
+.shape-circle, .shape-square, .shape-triangle {
+    position: absolute;
+    z-index: 0;
+    animation: moveShape infinite alternate ease-in-out;
+}
+
+.shape-circle {
+    top: 20%;
+    left: 15%;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation-duration: 10s;
+}
+
+.shape-square {
+    bottom: 20%;
+    right: 10%;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation-duration: 8s;
+}
+
+.shape-triangle {
+    top: 40%;
+    right: 40%;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 260px solid rgba(255, 255, 255, 0.15);
+    animation-duration: 12s;
+}
+
+/* انیمیشن اشکال */
+@keyframes moveShape {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-20px) rotate(360deg);
+    }
+}
+
+/* استایل برای دستگاه‌های کوچک */
+@media only screen and (max-width: 600px) {
+    html, body {
+        font-size: 9px;
+    }
+    
+    .slide {
+        padding: 5vw;
+        line-height: 1.4;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 11px;
+    }
+
+    .text, .list {
+        font-size: 9px;
+    }
+    
+    .table {
+        width: 100%;
+    }
+}

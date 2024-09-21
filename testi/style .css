@@ -1,0 +1,258 @@
+/* استایل‌های سفارشی */
+html, body {
+    font-family: 'Vazir', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+.reveal .slides {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    direction: rtl;  /* قرار دادن کل اسلایدر به صورت چپ به راست */
+}
+
+.reveal .slides section {
+    direction: rtl;
+    text-align: right;
+}
+
+.reveal .navigate-left,
+.reveal .navigate-right {
+    display: none;  /* مخفی کردن فلش‌های پیش‌فرض Reveal.js */
+}
+
+/* اندازه فونت برای عناوین */
+.slide h1, .slide h2, .slide h3, .slide h4 {
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+.slide h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.slide #slide-1 h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #686767;
+}
+
+.slide h2 {
+    font-size: 60px;
+}
+
+.slide h3 {
+    font-size: 40px;
+}
+
+.slide h4 {
+    font-size: 24px;
+}
+
+/* تنظیمات برای لیست‌ها */
+.list {
+    margin: 10px auto;
+    font-size: 22px;
+    color: #666;
+    direction: rtl; /* تعیین جهت نوشتار */
+    padding-right: 20px; /* تنظیم فاصله برای لیست‌ها */
+}
+
+.list ul {
+    list-style-type: none; /* حذف علامت‌های پیش‌فرض */
+    padding-right: 0; /* تنظیم فاصله از سمت راست */
+    margin-right: 0; /* حذف فاصله پیش‌فرض */
+}
+
+.list ul li {
+    text-align: right; /* راست‌چین کردن متن لیست */
+    padding-right: 20px; /* فاصله برای فضای بین علامت و متن */
+    position: relative; /* برای موقعیت‌دهی علامت */
+    margin-bottom: 5px; /* فاصله بین آیتم‌های لیست */
+}
+
+.list ul li::before {
+    content: "•"; /* علامت لیست */
+    position: absolute;
+    right: 0; /* موقعیت علامت از سمت راست */
+    color: #333; /* رنگ علامت */
+    font-size: 22px; /* اندازه علامت */
+    line-height: 22px; /* ارتفاع خط علامت */
+}
+
+.slide p, .slide ul, .slide li {
+    direction: rtl;
+    text-align: right;
+}
+
+/* استایل لینک‌ها */
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: 1fr auto;  /* ستون اول برای متن و ستون دوم برای تصویر */
+    grid-gap: 20px;
+    align-items: start;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-height: 100vh;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.text {
+    font-size: 24px;
+    color: #555;
+    direction: rtl;
+}
+
+.image {
+    width: 100%; /* تصویر به‌طور خودکار عرض کامل ستون خود را می‌گیرد */
+    height: auto;
+    max-height: 100%; /* حداکثر ارتفاع تصویر برابر با ارتفاع فضای موجود است */
+    object-fit: contain; /* متناسب بودن تصویر با فضای موجود */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* استایل برای جداول */
+.table {
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+.math-container {
+    direction: ltr;  /* فرمول‌ها به صورت چپ به راست */
+    text-align: left;
+    margin: 20px 0;
+}
+
+p {
+    margin: 20px 0;
+}
+
+/* استایل‌های جدید برای بخش ناوبری */
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* اضافه کردن z-index بالا برای قرارگیری روی اسلاید */
+    background-color: rgba(255, 255, 255, 0.8); /* شفافیت پس‌زمینه */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه برای ظاهر بهتر */
+}
+
+.navigation button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #e4e4e4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navigation input {
+    width: 45px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.navigation input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.navigation input::-webkit-outer-spin-button,
+.navigation input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.navigation span {
+    font-size: 16px;
+    color: #333;
+}
+
+/* افکت‌های تعویض اسلاید */
+.reveal .slides section {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.reveal .slides section.present {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* تنظیمات برای دستگاه‌های کوچک */
+@media only screen and (max-width: 600px) {
+    .slide {
+        padding: 20px;
+    }
+
+    .slide h1 {
+        font-size: 36px;
+    }
+
+    .slide h2 {
+        font-size: 28px;
+    }
+
+    .slide h3 {
+        font-size: 24px;
+    }
+
+    .text, .list {
+        font-size: 18px;
+    }
+}

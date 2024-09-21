@@ -1,0 +1,402 @@
+/* Font for h1 */
+@font-face {
+    font-family: 'Lalezar';
+    src: url(fonts/Lalezar-Regular.ttf);
+}
+
+/* Font for h2,h3 */
+@font-face {
+    font-family: 'NotoNaskh';
+    src: url(fonts/Noto_Naskh_Arabic/static/NotoNaskhArabic-Bold.ttf);
+}
+
+/* Font for all text */
+@font-face {
+    font-family: 'Yas';
+    src: url(fonts/Yas.ttf);
+}
+
+/* استایل‌های سفارشی */
+html, body {
+    /* font-family: 'Vazir', sans-serif; */
+
+    font-family: 'Yas';
+    background-color: #f7f7f7;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90%;
+    text-align: right;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+.reveal .slides {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    direction: rtl;
+}
+
+
+.reveal .slides section {
+    direction: rtl;
+    text-align: right;
+}
+
+section {
+    max-height: 100vh;
+    height: 90vh;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+/* مخفی کردن فلش‌های پیش‌فرض Reveal.js */
+.reveal .navigate-left,
+.reveal .navigate-right {
+    display: none;
+}
+
+/* اندازه فونت برای عناوین */
+.slide h1, .slide h2, .slide h3, .slide h4 {
+    color: rgb(245, 124, 26);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.slide h1 {
+    font-family: 'Lalezar';
+    font-weight: bolder;
+    position: absolute;
+    text-align: center;
+    font-size: 70px;
+    top: 35%;
+    right: 20%;
+}
+
+.slide #slide-1 h2 {
+    font-family: 'Lalezar';
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    color: #686767;
+    top: 60%;
+    right: 20%;
+}
+
+.slide h2 {
+    font-family: 'NotoNaskh';
+    position: relative;
+    font-size: 70px;
+    font-weight: bolder;
+    top: 50%;
+    text-align: center;
+    
+}
+
+.slide #slide-2 h2 {
+    position: relative;
+    top: 10px;
+    text-align: right;
+    font-size: 60px;
+    line-height: 2;;
+}
+
+.slide h3 {
+    font-family: 'NotoNaskh';
+    font-size: 40px;
+}
+
+.slide h4 {
+    font-size: 34px;
+}
+
+/* تنظیمات برای لیست‌ها */
+.list {
+    margin: 10px auto;
+    font-size: 25px;
+    color: #666;
+    direction: rtl; /* تعیین جهت نوشتار */
+    padding-right: 20px; /* تنظیم فاصله برای لیست‌ها */
+}
+
+.list ul {
+    list-style-type: none; /* حذف علامت‌های پیش‌فرض */
+    padding-right: 0; /* تنظیم فاصله از سمت راست */
+    margin-right: 0; /* حذف فاصله پیش‌فرض */
+}
+
+.list ul li {
+    text-align: right; /* راست‌چین کردن متن لیست */
+    padding-right: 20px; /* فاصله برای فضای بین علامت و متن */
+    position: relative; /* برای موقعیت‌دهی علامت */
+    margin-bottom: 5px; /* فاصله بین آیتم‌های لیست */
+}
+
+.list ul li::before {
+    content: "•"; /* علامت لیست */
+    position: absolute;
+    right: 0; /* موقعیت علامت از سمت راست */
+    color: #333; /* رنگ علامت */
+    font-size: 25px; /* اندازه علامت */
+    line-height: 25px; /* ارتفاع خط علامت */
+}
+
+.slide p, .slide ul, .slide li {
+    direction: rtl;
+    text-align: center;
+}
+
+/* استایل لینک‌ها */
+.link {
+    color: rgb(245, 124, 26);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+/* .slide {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    align-items: start;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-height: 100vh;
+    box-sizing: border-box;
+    text-align: right;
+}*/
+.slide {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+} 
+
+/* .slide-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    align-items: start;
+    padding: 20px;
+} */
+
+
+.text {
+    font-size: 28px;
+    color: #555;
+    direction: rtl;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.math-container {
+    direction: ltr !important;  /* فرمول‌ها به صورت چپ به راست */
+    text-align: center !important;
+    margin: 20px 0;
+}
+
+/* استایل برای جداول */
+.table {
+    margin: 20px auto; /* وسط‌چینی افقی جدول */
+    width: 80%; /* عرض کمتر از 100% برای هماهنگی بهتر با فضای موجود */
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.table th, .table td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    text-align: center; /* وسط‌چینی افقی */
+    vertical-align: middle; /* وسط‌چینی عمودی */
+    white-space: nowrap; /* جلوگیری از شکستن متن */
+}
+
+.table th {
+    background-color: rgb(245, 124, 26);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+
+p {
+    margin: 20px 0;
+}
+
+/* استایل‌های جدید برای بخش ناوبری */
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* اضافه کردن z-index بالا برای قرارگیری روی اسلاید */
+    background-color: rgba(255, 255, 255, 0.8); /* شفافیت پس‌زمینه */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه برای ظاهر بهتر */
+}
+
+.navigation button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: rgb(248, 115, 5);
+    color: #e4e4e4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navigation input {
+    width: 45px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.navigation input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.navigation input::-webkit-outer-spin-button,
+.navigation input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.navigation span {
+    font-size: 16px;
+    color: #333;
+}
+
+/* افکت‌های تعویض اسلاید */
+.reveal .slides section {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.reveal .slides section.present {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.reveal .progress {
+    background: rgba(0, 0, 0, .2);
+    color: var(--r-link-color);
+    height: 5px;
+}
+
+.reveal .progress span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 124, 26);
+    transition: transform .8s cubic-bezier(.26,.86,.44,.985);
+    transform-origin: 0 0;
+    transform: scaleX(0);
+}
+
+/* پس‌زمینه گرادیانی برای صفحه */
+#slide-1 {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+/* استایل برای عنوان */
+#slide-1 h1 {
+    font-family: 'Lalezar';
+    font-size: 80px;
+    color: white;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+/* استایل برای زیرعنوان */
+#slide-1 h2 {
+    font-family: 'NotoNaskh';
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+/* دایره */
+.shape-circle {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+    animation: moveShape 10s infinite alternate ease-in-out;
+}
+
+/* مربع */
+.shape-square {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 0;
+    animation: moveShape 8s infinite alternate ease-in-out;
+}
+
+/* مثلث */
+.shape-triangle {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 260px solid rgba(255, 255, 255, 0.15);
+    z-index: 0;
+    animation: moveShape 12s infinite alternate ease-in-out;
+}
+
+/* انیمیشن برای اشکال */
+@keyframes moveShape {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-20px) rotate(360deg);
+    }
+}
+

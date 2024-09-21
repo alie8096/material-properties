@@ -1,0 +1,283 @@
+/* Custom Styles */
+html, body {
+    font-family: 'Vazir', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+.reveal .slides {
+    height: 100vh;
+    display: flex; /* Changed to flex for better responsiveness */
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+.reveal .slides section {
+    direction: rtl;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh; /* Prevent overflow in height */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.reveal .navigate-left,
+.reveal .navigate-right {
+    display: none;
+}
+
+/* Font size settings for headings */
+.slide h1, .slide h2, .slide h3, .slide h4 {
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.slide h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.slide #slide-1 h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #686767;
+}
+
+.slide h2 {
+    font-size: 60px;
+}
+
+.slide h3 {
+    font-size: 40px;
+}
+
+.slide h4 {
+    font-size: 24px;
+}
+
+/* List settings */
+.list {
+    margin: 10px auto;
+    font-size: 22px;
+    color: #666;
+    direction: rtl;
+    padding-right: 20px;
+}
+
+.list ul {
+    list-style-type: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.list ul li {
+    text-align: right;
+    padding-right: 20px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.list ul li::before {
+    content: "•";
+    position: absolute;
+    right: 0;
+    color: #333;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.slide p, .slide ul, .slide li {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Link styles */
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+.slide {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.text {
+    font-size: 24px;
+    color: #555;
+    direction: rtl;
+    flex: 1; /* Take more space for text */
+}
+
+.image {
+    width: auto;
+    max-width: 40%; /* Limit image width */
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Table styles */
+.table {
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+.math-container {
+    direction: ltr;
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    margin: 20px 0;
+}
+
+/* New styles for navigation section */
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navigation button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #e4e4e4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navigation input {
+    width: 45px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.navigation input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.navigation input::-webkit-outer-spin-button,
+.navigation input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.navigation span {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Slide transition effects */
+.reveal .slides section {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.reveal .slides section.present {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Responsive adjustments for small devices */
+@media (max-width: 768px) {
+    .slide h1 {
+        font-size: 40px;
+    }
+
+    .slide h2 {
+        font-size: 30px;
+    }
+
+    .slide h3 {
+        font-size: 2px;
+    }
+
+    .slide h4 {
+        font-size: 18px;
+    }
+
+    .list {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .image {
+        max-width: 80%; /* Increase image width for small devices */
+    }
+
+    .navigation {
+        flex-direction: column; /* Stack navigation buttons */
+    }
+
+    .navigation button {
+        width: 100%; /* Full width buttons */
+        margin-bottom: 5px;
+    }
+}
