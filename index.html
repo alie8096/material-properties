@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Material Properties</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="https://github.com/alie8096/alie8096/blob/main/Images/logo.svg" type="image/svg">
+  <link rel="icon" href="https://github.com/alie8096/alie8096/raw/main/Images/logo.svg" type="image/svg">
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font/dist/font-face.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
@@ -2604,15 +2604,17 @@
 
 
 
-window.addEventListener("orientationchange", function() {
-    if (window.orientation === 90 || window.orientation === -90) {
-        // چرخش به حالت افقی
-        document.querySelector("header").style.display = "none"; // بخش بالایی را مخفی کنید
-    } else {
-        // برگشت به حالت عمودی
-        document.querySelector("header").style.display = "block"; // بخش بالایی را نمایش دهید
+function openFullscreen() {
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+        document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+        document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+        document.documentElement.msRequestFullscreen();
     }
-});
+}
   </script>
 </body>
 </html>
