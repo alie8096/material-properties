@@ -2599,6 +2599,20 @@
         window.addEventListener('resize', checkOrientation);
         window.addEventListener('load', checkOrientation);
     })();
+
+
+
+
+
+window.addEventListener("orientationchange", function() {
+    if (window.orientation === 90 || window.orientation === -90) {
+        // چرخش به حالت افقی
+        document.querySelector("header").style.display = "none"; // بخش بالایی را مخفی کنید
+    } else {
+        // برگشت به حالت عمودی
+        document.querySelector("header").style.display = "block"; // بخش بالایی را نمایش دهید
+    }
+});
   </script>
 </body>
 </html>
