@@ -424,6 +424,10 @@ input[type="number"]:focus {
         font-size: 40px;
     }
 
+    .slide h4 {
+        font-size: 2.125rem; /* 34px */
+    }
+
     /* تنظیم اندازه جداول */
     .reveal .slides table {
         font-size: 1.125rem !important; /* 18px */
@@ -436,17 +440,22 @@ input[type="number"]:focus {
     }
     
     .text {
-        font-size: 12px;
+        font-size: 20px;
     }
 
     p {
         margin: 8px 0 !important;
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .math-formula {
-        font-size: 12px;  /* کاهش اندازه فونت */
+        font-size: 20px;  /* کاهش اندازه فونت */
         margin: 10px 0;   /* کاهش مارجین */
+    }
+
+    .math-inline {
+        font-size: 18px;          /* کاهش اندازه فونت */
+        margin: 0;
     }
 }
 
@@ -472,6 +481,9 @@ input[type="number"]:focus {
     .reveal .slides h3 {
         font-size: 30px;
         margin-bottom: 15px;
+    }
+    .slide h4 {
+        font-size: 1.5rem; /* 24px */
     }
 
     /* تغییر اندازه جداول */
@@ -536,8 +548,9 @@ input[type="number"]:focus {
     }
 
     .slide h4 {
-        font-size: 11px;
+        font-size: 16px;
     }
+
 
     /* تنظیم جداول */
     .reveal .slides table {
