@@ -426,8 +426,8 @@ input[type="number"]:focus {
 
     /* تنظیم اندازه جداول */
     .reveal .slides table {
-        font-size: 18px !important; /* کاهش اندازه فونت */
-        transform: scale(0.6); /* کاهش اندازه به 90% */
+        font-size: 1.125rem !important; /* 18px */
+/*         transform: scale(0.6); */
     }
 
     /* تنظیم تصاویر */
