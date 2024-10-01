@@ -7,3 +7,5 @@
 - [ ] Responsive pages
 
 - [ ] Use cdn for constant images.
+
+- [ ] Change image to table (use color instead curly brace) of page 19 
