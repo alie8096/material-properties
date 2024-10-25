@@ -1,6 +1,7 @@
 import markdown
 from jinja2 import Template
 import re
+import htmlmin
 import pdfkit  # اضافه کردن کتابخانه pdfkit
 
 # خواندن فایل Markdown
@@ -211,9 +212,12 @@ template = Template(html_template)
 output_html = template.render(content="\n".join(
     html_pages), totalSlides=len(slides))
 
+# Minify html to faster run
+minified_html = htmlmin.minify(output_html, remove_empty_space=True)
+
 # ذخیره HTML خروجی
 with open('index.html', 'w', encoding='utf-8') as f:
-    f.write(output_html)
+    f.write(minified_html)
 
 # تبدیل HTML به PDF با pdfkit
 # options = {

@@ -71,7 +71,7 @@ section {
 
 /* اندازه فونت برای عناوین */
 .slide h1, .slide h2, .slide h3, .slide h4 {
-    color: rgb(245, 124, 26);
+    color: #f57c1a;
     text-transform: uppercase;
     margin-bottom: 1.25rem; /* 20px */
     font-weight: bold;
