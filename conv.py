@@ -2,6 +2,7 @@ import markdown
 from jinja2 import Template
 import re
 import htmlmin
+from weasyprint import HTML, CSS
 import pdfkit  # اضافه کردن کتابخانه pdfkit
 
 # خواندن فایل Markdown
@@ -99,6 +100,8 @@ html_template = r"""
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font/dist/font-face.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   
   <!-- پشتیبانی از KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
@@ -128,30 +131,174 @@ html_template = r"""
       <span id="totalSlides">از {{ totalSlides }}</span>
     </div>
   </div>
+
+  <div id="toolbar">
+    <button class="icon-button" onclick="setTool('pencil')">
+      <img src="images/pen-solid.svg" alt="Pencil" title="مداد">
+    </button>
+    <button class="icon-button" onclick="setTool('highlighter')">
+      <img src="images/highlighter-solid.svg" alt="Highlighter" title="هایلایت">
+    </button>
+    <button class="icon-button" onclick="setTool('rectangle')">
+      <img src="images/square-regular.svg" alt="Rectangle" title="رسم مستطیل">
+    </button>
+    <button class="icon-button" onclick="setTool('circle')">
+      <img src="images/circle-regular.svg" alt="Circle" title="رسم دایره">
+    </button>
+    <input type="color" id="color-picker" value="\#000000" title="رنگ قلم">
+    <button class="icon-button" onclick="clearCanvas()">
+      <img src="images/eraser-solid.svg" alt="Clear" title="پاک کردن تخته">
+    </button>
+  </div>
+
+  <canvas id="whiteboard-canvas"></canvas>
+
+  <button class="toggle-button" onclick="toggleWhiteboard()"><i class="fa-solid fa-pen-to-square"></i></button>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
   <script>
+      let canvas = document.getElementById('whiteboard-canvas');
+      let ctx = canvas.getContext('2d');
+      let drawing = false;
+      let startX, startY;
+      let currentColor = '\#000000';
+      let tool = 'pencil';
+      let isWhiteboardVisible = false;
+
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+
+      document.getElementById('color-picker').addEventListener('input', (e) => {
+        currentColor = e.target.value;
+      });
+
+      function setTool(selectedTool) {
+        tool = selectedTool;
+      }
+
+      function getMousePos(canvas, evt) {
+        const rect = canvas.getBoundingClientRect();
+        return {
+          x: evt.clientX - rect.left,
+          y: evt.clientY - rect.top
+        };
+      }
+
+      function getTouchPos(canvas, evt) {
+        const rect = canvas.getBoundingClientRect();
+        return {
+          x: evt.touches[0].clientX - rect.left,
+          y: evt.touches[0].clientY - rect.top
+        };
+      }
+
+      canvas.addEventListener('mousedown', startDrawing);
+      canvas.addEventListener('mousemove', draw);
+      canvas.addEventListener('mouseup', stopDrawing);
+      canvas.addEventListener('mouseleave', stopDrawing);
+
+      canvas.addEventListener('touchstart', (e) => {
+        const pos = getTouchPos(canvas, e);
+        startX = pos.x;
+        startY = pos.y;
+        startDrawing(e);
+        e.preventDefault(); // جلوگیری از رفتار پیش‌فرض
+      });
+
+      canvas.addEventListener('touchmove', (e) => {
+        draw(e);
+        e.preventDefault(); // جلوگیری از رفتار پیش‌فرض
+      });
+
+      canvas.addEventListener('touchend', stopDrawing);
+
+      function startDrawing(e) {
+        drawing = true;
+        const pos = (e.type === 'mousedown') ? getMousePos(canvas, e) : getTouchPos(canvas, e);
+        startX = pos.x;
+        startY = pos.y;
+
+        ctx.beginPath();
+        ctx.moveTo(startX, startY);
+        ctx.strokeStyle = currentColor;
+
+        if (tool === 'highlighter') {
+          ctx.globalAlpha = 0.02; // شفافیت برای هایلایتر
+          ctx.lineWidth = 20; // ضخامت بیشتر
+        } else {
+          ctx.globalAlpha = 1.0; // بدون شفافیت برای مداد
+          ctx.lineWidth = 2; // ضخامت کمتر برای مداد
+        }
+      }
+
+      function draw(e) {
+        if (!drawing) return;
+
+        const mousePos = (e.type === 'mousemove') ? getMousePos(canvas, e) : getTouchPos(canvas, e);
+        
+        if (tool === 'rectangle') {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.beginPath();
+          ctx.strokeRect(startX, startY, mousePos.x - startX, mousePos.y - startY);
+          ctx.stroke(); // رسم مستطیل
+        } else if (tool === 'circle') {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.beginPath();
+          let radius = Math.sqrt(Math.pow(mousePos.x - startX, 2) + Math.pow(mousePos.y - startY, 2));
+          ctx.arc(startX, startY, radius, 0, Math.PI * 2);
+          ctx.stroke(); // رسم دایره
+        } else {
+          ctx.lineTo(mousePos.x, mousePos.y);
+          ctx.stroke(); // رسم با مداد یا هایلایتر
+        }
+      }
+
+      function stopDrawing() {
+        drawing = false;
+        ctx.closePath();
+      }
+
+      function clearCanvas() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+
+      function toggleWhiteboard() {
+        isWhiteboardVisible = !isWhiteboardVisible;
+        const toolbar = document.getElementById('toolbar');
+        const canvas = document.getElementById('whiteboard-canvas');
+
+        if (isWhiteboardVisible) {
+          toolbar.style.display = 'block';
+          canvas.style.display = 'block';
+        } else {
+          toolbar.style.display = 'none';
+          canvas.style.display = 'none';
+        }
+      }
+
       Reveal.initialize();
 
       const totalSlides = {{ totalSlides }};
       const input = document.getElementById('slideNumberInput');
 
-      // تنظیم ورودی شماره اسلاید فعلی
       Reveal.on('slidechanged', function(event) {
         input.value = Reveal.getIndices().h + 1;
       });
 
-      // جستجو و حرکت به اسلاید بر اساس شماره
       input.addEventListener('change', function() {
         const persianNumbers = '۰۱۲۳۴۵۶۷۸۹';
-        let inputValue = input.value.trim(); // حذف فضای خالی
+        let inputValue = input.value.trim();
 
-        // تبدیل اعداد فارسی به انگلیسی
         let slideNumber = inputValue.split('').map(c => {
           return persianNumbers.includes(c) ? persianNumbers.indexOf(c) : c;
         }).join('');
 
-        // بررسی معتبر بودن عدد
-        slideNumber = parseInt(slideNumber, 10); // پایه ۱۰ برای اطمینان از تبدیل صحیح
+        slideNumber = parseInt(slideNumber, 10);
 
         if (!isNaN(slideNumber) && slideNumber >= 1 && slideNumber <= totalSlides) {
           Reveal.slide(slideNumber - 1);
@@ -161,17 +308,16 @@ html_template = r"""
         }
       });
 
-      // مقداردهی اولیه ورودی شماره اسلاید
       input.value = Reveal.getIndices().h + 1;
 
       Reveal.initialize({
         width: '100%',
         height: '100%',
-        margin: 0.1, // کاهش فاصله‌های داخلی
+        margin: 0.1,
         minScale: 1,
         maxScale: 2
       });
-      
+
       (function() {
         const message = document.createElement('div');
         message.id = 'rotate-message';
@@ -185,58 +331,65 @@ html_template = r"""
         message.style.zIndex = '1000';
         message.textContent = 'لطفاً دستگاه خود را به حالت افقی بچرخانید';
         document.body.appendChild(message);
+
         function checkOrientation() {
-            if (window.innerHeight > window.innerWidth) {
-                message.style.display = 'flex';
-                message.style.justifyContent = "center"
-                message.style.alignItems = "Center"
-                document.body.style.overflow = 'hidden'; // مخفی کردن overflow
-                document.querySelector(".container").style.display = "none";
-            } else {
-                message.style.display = 'none';
-                document.body.style.overflow = 'auto'; // اجازه overflow در حالت لند اسکیپ
-                document.querySelector(".container").style.display = "block"; 
-            }
+          if (window.innerHeight > window.innerWidth) {
+            message.style.display = 'flex';
+            message.style.justifyContent = "center";
+            message.style.alignItems = "center";
+            document.body.style.overflow = 'hidden';
+            document.querySelector(".container").style.display = "none";
+          } else {
+            message.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            document.querySelector(".container").style.display = "block";
+          }
         }
-    
+
         window.addEventListener('resize', checkOrientation);
         window.addEventListener('load', checkOrientation);
-    })();
+      })();
   </script>
 </body>
 </html>
 """
+
 
 # استفاده از Jinja2 برای ترکیب HTML و محتوای تبدیل شده
 template = Template(html_template)
 output_html = template.render(content="\n".join(
     html_pages), totalSlides=len(slides))
 
-# Minify html to faster run
+# Minify html to faster
 minified_html = htmlmin.minify(output_html, remove_empty_space=True)
 
 # ذخیره HTML خروجی
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(minified_html)
 
-# تبدیل HTML به PDF با pdfkit
-# options = {
-#     'enable-local-file-access': '',  # دسترسی به فایل‌های محلی
-#     'no-stop-slow-scripts': '',
-#     'javascript-delay': '5000',  # تأخیر برای اجرای جاوااسکریپت
-#     'debug-javascript': '',  # برای مشاهده مشکلات جاوااسکریپت
-#     'orientation': 'Landscape',  # تنظیم صفحات به صورت افقی
-#     'page-size': 'A5',  # اندازه صفحه
-#     'margin-top': '5mm',  # حاشیه‌ها را به حداقل برسانید
-#     'margin-right': '5mm',
-#     'margin-bottom': '5mm',
-#     'margin-left': '5mm',
-#     'zoom': '2.0',  # افزایش زوم برای بزرگ‌تر کردن محتوای PDF
-#     'load-media-error-handling': 'ignore',  # نادیده گرفتن خطاهای بارگذاری مدیا
-#     'user-style-sheet': 'style.css'  # مشخص کردن فایل CSS
-# }
 
-# pdfkit.from_file('index.html', 'slides.pdf', options=options)
+# # مسیر فایل HTML که از مارک‌داون تبدیل شده
+# html_path = "index.html"  # نام فایل HTML شما
+# pdf_path = "output.pdf"
+
+# # بارگذاری HTML و تبدیل به PDF
+# HTML(html_path).write_pdf(
+#     pdf_path,
+#     stylesheets=[
+#         CSS(string="""
+#             @page {
+#                 size: A4 landscape; /* تنظیم صفحه به صورت افقی */
+#                 margin: 10mm;
+#             }
+#             section {
+#                 page-break-after: always;
+#             }
+#             #toolbar {
+#                 display: none; /* مخفی کردن تولبار در PDF */
+#             }
+#         """)
+#     ]
+# )
 
 
 print("Conversion completed. Check the 'index.html' and 'slides.pdf' files.")

@@ -398,6 +398,90 @@ input[type="number"]:focus {
     transform: scaleX(0);
 }
 
+/* تخته وایت‌برد */
+#whiteboard-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: transparent;
+    display: none;
+    border: 2px dashed rgba(0, 0, 0, 0.3); /* اضافه کردن خط حاشیه */
+}
+
+/* نوار ابزار */
+#toolbar {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* سایه برای عمق بیشتر */
+    display: none;
+    z-index: 1001;
+    backdrop-filter: blur(5px); /* حالت شفاف و مات */
+}
+
+/* دکمه آیکون‌ها */
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.icon-button img {
+    width: 28px;
+    height: 28px;
+}
+
+/* حالت فعال دکمه‌ها */
+.icon-button.active {
+    background-color: #4CAF50; /* رنگ پس‌زمینه برای دکمه فعال */
+    transform: scale(1.1); /* بزرگ‌تر شدن برای نمایش فعال بودن */
+}
+
+/* دکمه تغییر وضعیت وایت‌برد */
+.toggle-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1002;
+    font-size: 20px;
+    background-color: #ff994b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-button:hover {
+    background-color: #F57C1f;
+    transform: scale(1.1); /* بزرگ‌تر شدن هنگام شناور شدن */
+}
+
+.toggle-button:active {
+    background-color: #F57C1f;
+    transform: scale(0.95); /* کوچک‌تر شدن هنگام کلیک */
+}
+
+.toggle-button i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+/* تغییر رنگ برای حالت فعال */
+.toggle-button.active {
+    background-color: #4CAF50; /* سبز برای حالت فعال */
+}
 
 /* حالت برای دستگاه‌های بزرگتر از 1200px (صفحات بزرگ مثل مانیتورها) */
 @media (min-width: 1200px) {
