@@ -559,7 +559,7 @@
 
 - در بسیاری از مواد، پیوندهای بین اتمی ترکیبی از پیوندهای اولیه یا ثانویه است.
 
-<img class="image" loading="lazy" alt="پیوند هیبریدی" src="images/mp32.webp" style="position: absolute; height: 70%; width: auto; left: 25%; top: 100px;">
+<img class="image" loading="lazy" alt="پیوند هیبریدی" src="images/mp32.webp" style="position: absolute; height: 70%; width: auto; left: 25%; top: 130px;">
 
 ^^^
 
@@ -1815,7 +1815,7 @@ $$\mathbf{b} = \frac{[hkl]}{2a}$$
 
 مرز دانه‌ها (Grain Boundaries) یکی از اجزای کلیدی در ساختار مواد مهندسی و بلوری هستند که تأثیر زیادی بر خواص فیزیکی و مکانیکی مواد دارند. این مرزها نواحی بین دو دانه یا بلور با جهات کریستالی متفاوت را تشکیل می‌دهند و به عنوان عیوب دوبعدی در مواد چندبلوری شناخته می‌شوند.
 
-<img class="image" loading="lazy" alt="CrystalGrain" src="images/CrystalGrain.webp" style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
+<img class="image" loading="lazy" alt="CrystalGrain" src="images/CrystalGrain.webp" style="position: absolute; height: 80%; width: 65%; left: 0px; top: 150px;">
 
 ^^^
 
@@ -1861,7 +1861,7 @@ $$\mathbf{b} = \frac{[hkl]}{2a}$$
 
   - استفاده در تولید کاتالیزورها و مواد با خواص خاص
 
-<img class="image" loading="lazy" alt="Twin Boundary" src="images/Twin-Boundary.webp" style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
+<img class="image" loading="lazy" alt="Twin Boundary" src="images/Twin-Boundary.webp" style="position: absolute; height: 80%; width: 65%; left: 0px; top: 150px;">
 
 ^^^
 
@@ -2130,7 +2130,7 @@ $$\sigma = E \cdot \varepsilon$$
 
 - **منطقه پلاستیک:** پس از نقطه تسلیم شروع می‌شود و نشان‌دهنده تغییر شکل دائمی ماده است.
 
-<img class="image" loading="lazy" alt="elastic-plastic" src="images/elastic-plastic.webp" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
+<img class="image" loading="lazy" alt="elastic-plastic" src="images/elastic-plastic.webp" style="position: absolute; height: 80%; width: 60%; left: 0px; top: 180px;">
 
 ^^^
 
@@ -2271,7 +2271,7 @@ $$\sigma = E \cdot \varepsilon$$
 
 3. **شکست ناگهانی:** زمانی که ترک به اندازه‌ای بزرگ شود که ماده نتواند تنش‌های باقی‌مانده را تحمل کند، شکست ناگهانی و بدون هشدار رخ می‌دهد.
 
-<img class="image" loading="lazy" alt="Fatigue" src="images/Fatigue.webp" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
+<img class="image" loading="lazy" alt="Fatigue" src="images/Fatigue.webp" style="position: absolute; height: 80%; width: 60%; left: 0px; top: 180px;">
 
 ^^^
 
@@ -2508,7 +2508,7 @@ $$\sigma = E \cdot \varepsilon$$
 
 ### مقایسه روش‌های آزمون سختی برینل، ویکرز، نوپ و راکول
 
-<img class="image" loading="lazy" alt="آزمون سختی ها" src="images/mt.webp" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
+<img class="image" loading="lazy" alt="آزمون سختی ها" src="images/mt.webp" style="position: absolute; height: 80%; width: 60%; left: 0px; top: 180px;">
 
 ^^^
 
