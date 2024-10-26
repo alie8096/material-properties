@@ -20,6 +20,7 @@ html_pages = []
 # متغیری برای بررسی اینکه آیا intro-container اضافه شده است یا خیر
 intro_section_added = False
 
+
 for i, slide in enumerate(slides):
     html_slide = markdown.markdown(slide, extensions=md_extensions)
 
@@ -53,40 +54,41 @@ for i, slide in enumerate(slides):
 
     # افزودن کلاس‌های مناسب به انواع محتوا
     html_slide = re.sub(
-        r'<p>(.*?)</p>', r'<p class="text">\1</p>', html_slide)  # متون
+        r'<li>(?!<p)(.*?)</li>', r'<li><p class="text">\1</p></li>', html_slide)  # متون
     html_slide = re.sub(r'<ul>', r'<ul class="list">', html_slide)  # لیست‌ها
     html_slide = re.sub(r'<ol>', r'<ol class="list">',
                         html_slide)  # لیست‌های شماره‌دار
     html_slide = re.sub(
         r'<a href=', r'<a class="link" href=', html_slide)  # لینک‌ها
-    html_slide = re.sub(r'<img ', r'<img class="image" ', html_slide)  # تصاویر
+
+    # اضافه کردن کلاس img-table به تصاویری که داخل td هستند
+    html_slide = re.sub(r'(<td>\s*<img )',
+                        r'\1class="image img-table" ', html_slide)
+
+    # اضافه کردن کلاس image به سایر تصاویر
+    html_slide = re.sub(r'(<img(?!.*class="))',
+                        r'<img class="image" ', html_slide)
+
+    # جداول
     html_slide = re.sub(
         r'<table>', r'<table class="table">', html_slide)  # جداول
 
     # شناسایی و اضافه کردن intro-container فقط برای اولین اسلاید
     if i == 0 and not intro_section_added:
-        # پیدا کردن h1 و اولین h2
         h1_match = re.search(r'(<h1.*?>.*?</h1>)', html_slide)
         h2_match = re.search(r'(<h2.*?>.*?</h2>)', html_slide)
 
         if h1_match and h2_match:
-            # ساختار intro-container شامل h1 و h2
             intro_content = f'<div class="intro-container">{
                 h1_match.group(1)}{h2_match.group(1)}</div>'
-
-            # حذف h1 و اولین h2 از محتوای اسلاید اصلی
             html_slide = re.sub(r'<h1.*?>.*?</h1>', '', html_slide)
             html_slide = re.sub(r'<h2.*?>.*?</h2>', '', html_slide)
-
-            # افزودن intro-container به اولین section (slide-1)
             html_slide = intro_content + html_slide
-
-            intro_section_added = True  # مشخص می‌کنیم که intro اضافه شده است
+            intro_section_added = True
 
     # اضافه کردن اسلاید به صفحات
     html_pages.append(
         f'<section id="slide-{i+1}" class="slide">{html_slide}</section>')
-
 
 # قالب HTML برای اسلایدر
 html_template = r"""
@@ -349,6 +351,32 @@ html_template = r"""
         window.addEventListener('resize', checkOrientation);
         window.addEventListener('load', checkOrientation);
       })();
+      
+      // تعیین ابعاد صفحه
+      const viewportHeight = window.innerHeight;
+      const viewportWidth = window.innerWidth;
+
+      // پیدا کردن تمام عناصر با مقادیر پیکسلی
+      document.querySelectorAll('*').forEach(element => {
+          const style = window.getComputedStyle(element);
+
+          // جابجایی مقادیر top
+          if (style.top.includes('px')) {
+              const pxValue = parseFloat(style.top);
+              const vhValue = (pxValue / viewportHeight) * 100;
+              element.style.top = `${vhValue}vh`;
+          }
+
+          // جابجایی مقادیر left
+          if (style.left.includes('px')) {
+              const pxValue = parseFloat(style.left);
+              const vwValue = (pxValue / viewportWidth) * 100;
+              element.style.left = `${vwValue}vw`;
+          }
+
+          // تغییر دیگر مقادیر مشابه
+      });
+
   </script>
 </body>
 </html>

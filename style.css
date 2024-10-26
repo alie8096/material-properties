@@ -131,6 +131,7 @@ section {
 
 .slide h4 {
     font-size: 2.125rem; /* 34px */
+    margin-bottom: 10px;
 }
 
 /* تنظیمات برای لیست‌ها */
@@ -230,7 +231,7 @@ li {
     display: inline-block;
     direction: ltr;
     text-align: left;
-    font-size: .75rem; /* 12px */
+    font-size: 20px;
     font-weight: bolder;
     vertical-align: middle;
     margin: 0 5px;
@@ -250,7 +251,7 @@ li {
     text-align: center;
     border-bottom: 1px solid;
     font-family: 'Sahel';
-    font-size: 18px;/*.6875rem;  11 px */
+    font-size: 20px;
     padding: .5rem;
 }
 
@@ -312,7 +313,9 @@ li {
 } */
 
 p {
+    font-family: 'Sahel';
     margin: 20px 0;
+    color: #666;
 }
 
 /* استایل‌های جدید برای بخش ناوبری */
@@ -398,7 +401,7 @@ input[type="number"]:focus {
     transform: scaleX(0);
 }
 
-/* تخته وایت‌برد */
+/* Whiteboard */
 #whiteboard-canvas {
     position: fixed;
     top: 0;
@@ -408,10 +411,10 @@ input[type="number"]:focus {
     z-index: 1000;
     background-color: transparent;
     display: none;
-    border: 2px dashed rgba(0, 0, 0, 0.3); /* اضافه کردن خط حاشیه */
+    border: 2px dashed rgba(255, 104, 3, 0.527); /* Add boarder line */
 }
 
-/* نوار ابزار */
+/* Toolbar */
 #toolbar {
     position: fixed;
     top: 25px;
@@ -419,13 +422,13 @@ input[type="number"]:focus {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* سایه برای عمق بیشتر */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     display: none;
     z-index: 1001;
     backdrop-filter: blur(5px); /* حالت شفاف و مات */
 }
 
-/* دکمه آیکون‌ها */
+/* Icon button */
 .icon-button {
     background: none;
     border: none;
@@ -440,13 +443,13 @@ input[type="number"]:focus {
     height: 28px;
 }
 
-/* حالت فعال دکمه‌ها */
+/* Active button */
 .icon-button.active {
-    background-color: #4CAF50; /* رنگ پس‌زمینه برای دکمه فعال */
-    transform: scale(1.1); /* بزرگ‌تر شدن برای نمایش فعال بودن */
+    background-color: #4CAF50;
+    transform: scale(1.1);
 }
 
-/* دکمه تغییر وضعیت وایت‌برد */
+/* Toggle whiteboard button */
 .toggle-button {
     position: fixed;
     top: 10px;
@@ -465,12 +468,12 @@ input[type="number"]:focus {
 
 .toggle-button:hover {
     background-color: #F57C1f;
-    transform: scale(1.1); /* بزرگ‌تر شدن هنگام شناور شدن */
+    transform: scale(1.1);
 }
 
 .toggle-button:active {
     background-color: #F57C1f;
-    transform: scale(0.95); /* کوچک‌تر شدن هنگام کلیک */
+    transform: scale(0.95);
 }
 
 .toggle-button i {
@@ -478,9 +481,9 @@ input[type="number"]:focus {
     vertical-align: middle;
 }
 
-/* تغییر رنگ برای حالت فعال */
+/* change active color */
 .toggle-button.active {
-    background-color: #4CAF50; /* سبز برای حالت فعال */
+    background-color: #4CAF50;
 }
 
 /* حالت برای دستگاه‌های بزرگتر از 1200px (صفحات بزرگ مثل مانیتورها) */
@@ -514,14 +517,20 @@ input[type="number"]:focus {
 
     /* تنظیم اندازه جداول */
     .reveal .slides table {
-        font-size: 18px !important; /* کاهش اندازه فونت */
-        transform: scale(0.6); /* کاهش اندازه به 90% */
+        font-size: 18px !important;
+        transform: scale(0.7); 
     }
 
     /* تنظیم تصاویر */
-    .reveal .slides img:not(td > img) {
-        transform: scale(0.9); /* کاهش اندازه به 90% */
+    /* .reveal .slides img:not(td > img) {
+        transform: scale(0.9);
+    } */
+    .image {
+        transform: scale(0.9);
+        margin-top: -500px;
     }
+    
+    
     
     .text {
         font-size: 18px;
@@ -535,6 +544,10 @@ input[type="number"]:focus {
     .math-formula {
         font-size: 18px;  /* کاهش اندازه فونت */
         margin: 10px 0;   /* کاهش مارجین */
+    }
+
+    .math-inline {
+        font-size: 18px;
     }
 }
 
@@ -568,7 +581,8 @@ input[type="number"]:focus {
 
     /* تغییر اندازه جداول */
     .reveal .slides table {
-        font-size: 10px !important; /* کاهش اندازه فونت */
+        font-size: 16px !important;
+        transform: scale(0.6); 
     }
 
     .reveal .slides section {
@@ -577,9 +591,14 @@ input[type="number"]:focus {
     }
 
     /* تغییر سایز تصاویر */
-    .reveal .slides img:not(td > img) {
-        transform: scale(0.3);
+    /* .reveal .slides img:not(td > img) {
+        transform: scale(0.8);
+    } */
+
+    .image {
+        transform: scale(0.8) translateY(-85px);
     }
+    
 
     .text {
         font-size: 16px;
@@ -631,14 +650,24 @@ input[type="number"]:focus {
         font-size: 16px;
     }
 
-    /* تنظیم جداول */
+    /* تنظیم اندازه جداول */
     .reveal .slides table {
-        font-size: 14px !important; /* کاهش بیشتر اندازه فونت */
+        font-size: 14px !important;
+        transform: scaleX(.9) scaleY(.7) translateY(-30px); 
     }
 
     /* تنظیم سایز تصاویر */
-    .reveal .slides img:not(td > img) {
-        transform: scale(0.9); /* کاهش اندازه به 70% */
+    /* .reveal .slides img:not(td > img) {
+        transform: scale(0.7); 
+    } */
+    
+
+    .image {
+        transform: scale(0.7) translateY(-85px);
+    }
+
+    .img-table {
+        transform: translateY(0);
     }
 
     /* تنظیم اسلایدها */
@@ -652,8 +681,8 @@ input[type="number"]:focus {
     }
 
     .reveal table td, .reveal table th {
-        /* padding: .3125rem; */
-        font-size: .37rem;
+        padding: .3125rem;
+        font-size: 14px;
         font-weight: bold;
     }
 
@@ -706,9 +735,10 @@ input[type="number"]:focus {
         font-size: 14px;
     }
 
-    /* تغییر اندازه جداول */
+    /* تنظیم اندازه جداول */
     .reveal .slides table {
-        font-size: .375rem !important; /* کاهش بیشتر اندازه فونت */
+        font-size: 12px !important;
+        transform: scale(0.4); 
         width: 60%;
     }
     .table img {
@@ -722,10 +752,11 @@ input[type="number"]:focus {
     }
 
     /* تنظیم سایز تصاویر */
-    .reveal .slides img:not(td > img) {
-        transform: scale(0.9); /* کاهش اندازه به 60% */
+    .image {
+        transform: scale(0.4);
+        margin-top: -20px;
     }
-
+    
     .text {
         font-size: 12px;
     }
@@ -744,28 +775,4 @@ input[type="number"]:focus {
         font-size: 12px;          /* کاهش اندازه فونت */
     }
 }
-
-/* پیام برای چرخاندن صفحه در حالت موبایل */
-/* @media (max-width: 768px) and (orientation: landscape) {
-    #rotate-message { */
-        /* position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-
-        /* display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-        font-size: 18px;
-        padding: 10px 20px;
-        border-radius: 8px;
-        text-align: center;
-        z-index: 9999;
-    }
-} */
-
-
 

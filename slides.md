@@ -20,8 +20,8 @@
 - متالورژی به عنوان صنعت مادر حدود 6-7 هزار سال پیش شکل گرفت.
 - مس اولین فلزی بود که به صورت خالص استخراج شد.
 
-<!-- ![تاریخه](images/mp1.jpg) -->
-<img class="image" loading="lazy" alt="تاریخه" src="images/mp1.jpg" style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
+<!-- ![تاریخه](images/mp1.webp) -->
+<img class="image" loading="lazy" alt="تاریخه" src="images/mp1.webp" style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
 
 ^^^
 
@@ -67,8 +67,8 @@
 
 - بیشترین کاربرد در مهندسی
 
-<!-- ![فلز ها](images/mp2.jpg) -->
-<img class="image" loading="lazy" alt="فلز ها" src="images/mp2.jpg"  style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
+<!-- ![فلز ها](images/mp2.webp) -->
+<img class="image" loading="lazy" alt="فلز ها" src="images/mp2.webp"  style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
 
 ^^^
 
@@ -87,12 +87,9 @@
 - فولادها: آلیاژهای آهن-کربن با بیشتر از 2% کربن
   - ساده کربنی
 
-
   - کم آلیاژ
 
-
   - زنگ نزن
-
 
   - ابزار
 
@@ -112,8 +109,8 @@
 
 - استثنا: برخی الکتروسرامیک‌ها رسانا هستند (در ساخت ترانزیستورها، یکسو کننده‌ها، و ICها)
 
-<!-- ![سرامیک ها](images/mp3.jpg) -->
-<img class="image" loading="lazy" alt="سرامیک ها" src="images/mp3.jpg" style="position: absolute; height: auto; width: 65%; left: 0px; top: 300px;">
+<!-- ![سرامیک ها](images/mp3.webp) -->
+<img class="image" loading="lazy" alt="سرامیک ها" src="images/mp3.webp" style="position: absolute; height: 55%; width: auto; left: 0px; top: 220px;">
 
 ^^^
 
@@ -157,8 +154,8 @@
 
 - پایداری شیمیایی در دمای محیط
 
-<!-- ![پلیمر ها](images/mp4.jpg) -->
-<img class="image" loading="lazy" src="images/mp4.jpg" alt="پلیمر ها" style="position: absolute; height: auto; width: 58%; left: 0px; top: 200px;">
+<!-- ![پلیمر ها](images/mp4.webp) -->
+<img class="image" loading="lazy" src="images/mp4.webp" alt="پلیمر ها" style="position: absolute; height: auto; width: 58%; left: 0px; top: 200px;">
 
 ^^^
 
@@ -189,10 +186,10 @@
 
 - دارای خواص بهتر نسبت به اجزاء اولیه.
 
-<!-- ![کامپوزیت ها](images/mp5.jpg)
-![کامپوزیت ها](images/mp6.png) -->
-<img class="image" loading="lazy" alt="کامپوزیت ها" src="images/mp5.jpg" style="position: absolute; height: auto; width: 400px; left: 0px; top: 150px;">
-<img class="image" loading="lazy" alt="کامپوزیت ها" src="images/mp6.png" style="position: absolute; height: auto; width: 50%; right: 0px;">
+<!-- ![کامپوزیت ها](images/mp5.webp)
+![کامپوزیت ها](images/mp6.webp) -->
+<img class="image" loading="lazy" alt="کامپوزیت ها" src="images/mp5.webp" style="position: absolute; height: 55%; width: 55%; left: 0px; top: 150px;">
+<img class="image" loading="lazy" alt="کامپوزیت ها" src="images/mp6.webp" style="position: absolute; height: auto; width: 50%; right: 0px;">
 
 ^^^
 
@@ -206,10 +203,10 @@
 
 - مواد نانو  
 
-<!-- ![مواد مدرن](images/mp7.jpg)
-![مواد مدرن](images/mp8.jpg) -->
-<img class="image" loading="lazy" alt="مواد مدرن" src="images/mp7.jpg" style="position: absolute; height: auto; width: 45%; left: 0px; top: 150px">
-<img class="image" loading="lazy" alt="مواد مدرن" src="images/mp8.jpg" style="position: absolute; height: auto; width: 50%; right: 0px;">
+<!-- ![مواد مدرن](images/mp7.webp)
+![مواد مدرن](images/mp8.webp) -->
+<img class="image" loading="lazy" alt="مواد مدرن" src="images/mp7.webp" style="position: absolute; height: auto; width: 45%; left: 0px; top: 150px">
+<img class="image" loading="lazy" alt="مواد مدرن" src="images/mp8.webp" style="position: absolute; height: auto; width: 50%; right: 0px;">
 
 ^^^
 
@@ -224,8 +221,8 @@
 - مواد الکترو/مغناطیسی  
 
 
-<!-- ![مواد هوشمند](images/mp9.png) -->
-<img class="image" loading="lazy" alt="مواد هوشمند" src="images/mp9.png" style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
+<!-- ![مواد هوشمند](images/mp9.webp) -->
+<img class="image" loading="lazy" alt="مواد هوشمند" src="images/mp9.webp" style="position: absolute; height: auto; width: 55%; left: 0px; top: 80px;">
 
 ^^^
 
@@ -239,8 +236,8 @@
 
 - کارایی  
 
-<!-- ![محورهای اصلی علم مواد](images/mp10.png) -->
-<img class="image" loading="lazy" alt="محورهای اصلی علم مواد" src="images/mp10.png" style="position: absolute; height: auto; width: 75%; left: 0px; top: 150px;">
+<!-- ![محورهای اصلی علم مواد](images/mp10.webp) -->
+<img class="image" loading="lazy" alt="محورهای اصلی علم مواد" src="images/mp10.webp" style="position: absolute; height: auto; width: 75%; left: 0px; top: 150px;">
 
 ^^^
 
@@ -252,8 +249,8 @@
 
 برای مثال، تأثیر فرایند در ساختار، ویژگی و عملکرد در برابر نور.
 
-<!-- ![تأثیر محورهای اصلی بر هم](images/mp11.png) -->
-<img class="image" loading="lazy" alt="تأثیر محورهای اصلی بر هم" src="images/mp11.png" style="position: absolute; height: auto; width: 55%; left: 0px;">
+<!-- ![تأثیر محورهای اصلی بر هم](images/mp11.webp) -->
+<img class="image" loading="lazy" alt="تأثیر محورهای اصلی بر هم" src="images/mp11.webp" style="position: absolute; height: auto; width: 55%; left: 0px;">
 
 ^^^
 
@@ -265,8 +262,8 @@
 
 - یک قرص چندبلوری کاملاً مات
 
-<!-- ![آلومینیم اکسید](images/mp12.png) -->
-<img class="image" loading="lazy" alt="آلومینیم اکسید" src="images/mp12.png" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
+<!-- ![آلومینیم اکسید](images/mp12.webp) -->
+<img class="image" loading="lazy" alt="آلومینیم اکسید" src="images/mp12.webp" style="position: absolute; height: auto; width: 55%; left: 0px; top: 100px;">
 
 ^^^
 
@@ -274,13 +271,13 @@
 
 برای موفقیت به عنوان مهندس، باید اطلاعاتی درباره ساختار و ویژگی‌های مواد و تأثیر آن‌ها در فرایند ساخت برای دستیابی به عملکرد بهتر داشته باشیم.
 
-![Question mark](images/mp13.png)
+<img class="image" loading="lazy" alt="Question mark" src="images/mp13.webp" style="position: absolute; height: 70%; width: 50%; left: 25%; top: 100px;">
 
 ^^^
 
 ### سطوح ساختار مواد
 
-<!-- ![سطوح ساختار مواد](images/mp14.png) -->
+<!-- ![سطوح ساختار مواد](images/mp14.webp) -->
 
 | **مشخصه‌های ساختاری**                 | **مقیاس (m)**             | **محدوده قابل کنترل برای تغییر خواص** |
 | --------------------------------------- | -------------------------- | ------------------------------------- |
@@ -306,7 +303,7 @@
 |  | استحکام خستگی |
 |  | استحکام خزشی |
 
-<!-- ![حساسیت به ریزساختار](images/mp15.png) -->
+<!-- ![حساسیت به ریزساختار](images/mp15.webp) -->
 
 ^^^
 
@@ -324,7 +321,7 @@
 
 - استهلاکی
 
-![انواع خواص مواد](images/mp16.jpg)
+<img class="image" loading="lazy" alt="انواع خواص مواد" src="images/mp16.webp" style="position: absolute; height: 80%; width: 50%; left: 0; top: 100px;">
 
 ^^^
 
@@ -338,9 +335,11 @@
 
 - الکترون (منفی)
 
-![اتم](images/mp17.png)
+<img class="image" loading="lazy" alt="اتم" src="images/mp17.webp" style="position: absolute; height: 50%; width: 50%; left: 0; top: 200px;">
 
-**نمایش ساختار هسته‌ای اتم:**
+^^^
+
+### نمایش ساختار هسته‌ای اتم
 
 - عدد اتمی ($Z$): تعداد پروتون‌ها
 
@@ -352,7 +351,7 @@
   
   $$N_A = 6.02 \times 10^{23}$$
 
-![آووگادرو](images/mp18.jpg)
+<img class="image" loading="lazy" alt="آووگادرو" src="images/mp18.webp" style="position: absolute; height: 90%; width: 40%; left: 0; top: 100px;">
 
 ^^^
 
@@ -389,7 +388,7 @@
 
 - اساس چیدمان: آرایش الکترونی عناصر
 
-![ساختار الکترونی](images/mp19.png)
+<img class="image" loading="lazy" alt="ساختار الکترونی" src="images/mp19.webp" style="position: absolute; height: 80%; width: 55%; left: 10%; top: 100px;">
 
 ^^^
 
@@ -409,9 +408,9 @@
 
 - فلزی
 
-![یونی](images/mp22.svg)
-![کوالانسی](images/mp21.jpg)
-![فلزی](images/mp20.png)
+<img class="image" loading="lazy" alt="یونی" src="images/mp22.svg" style="position: absolute; height: 30%; width: 40%; left: 0; top: 50px;">
+<img class="image" loading="lazy" alt="کوالانسی" src="images/mp21.webp" style="position: absolute; height: 50%; width: 40%; left: 40%; top: 100px;">
+<img class="image" loading="lazy" alt="فلزی" src="images/mp20.webp" style="position: absolute; height: 50%; width: 40%; left: 0; top: 240px;">
 
 ^^^
 
@@ -421,8 +420,8 @@
 
 - هیدروژنی
 
-![هیدروژنی](images/mp23.svg)
-![واندروالس](images/mp24.png)
+<img class="image" loading="lazy" alt="هیدروژنی" src="images/mp23.svg" style="position: absolute; height: 50%; width: auto; left: 0; top: 10px;">
+<img class="image" loading="lazy" alt="واندروالس" src="images/mp24.webp" style="position: absolute; height: 50%; width: 50%; left: 30%; top: 250px;">
 
 **نکته:** در این پیوندها انتقال و اشتراک الکترون وجود ندارد.
 
@@ -440,7 +439,7 @@
 
 - عامل اتصال: جاذبه بین الکترون‌های آزاد و هسته‌های یونی با بار مثبت
 
-![پیوند فلزی](images/mp25.png)
+<img class="image" loading="lazy" alt="پیوند فلزی" src="images/mp25.webp" style="position: absolute; height: 40%; width: 40%; left: 0; top: 280px;">
 
 **نکته 1:** در مدل دریای الکترون آزاد، الکترون‌های آزاد به اتم‌های خاص تعلق ندارند.
 
@@ -462,7 +461,7 @@
 
 - هر چه اختلاف الکترونگاتیو (فلز-غیرفلز) بیشتر باشد، پیوند یونی قوی‌تر یا انرژی پیوند بیشتر است.
 
-![پیوند یونی](images/mp26.png)
+<img class="image" loading="lazy" alt="پیوند یونی" src="images/mp26.webp" style="position: absolute; height: 50%; width: 50%; left: 0; top: 250px;">
 
 ^^^
 
@@ -496,7 +495,7 @@
 
 - به علت نامتقارن بودن شکل اربیتال‌ها، قدرت پیوند بین اتمی در تمام جهات یکسان نیست.
 
-![پیوند کووالانسی](images/mp27.png)
+<img class="image" loading="lazy" alt="پیوند کووالانسی" src="images/mp27.webp" style="position: absolute; height: 50%; width: 50%; left: 0; top: 250px;">
 
 ^^^
 
@@ -512,7 +511,7 @@
 
 - عایق الکتریکی (برای حرکت الکترون باید پیوند شکسته شود که به دما و انرژی زیاد نیاز دارد)
 
-![پیوند کووالانسی](images/mp28.png)
+<img class="image" loading="lazy" alt="پیوند کووالانسی" src="images/mp28.webp" style="position: absolute; height: 50%; width: 50%; left: 0; top: 250px;">
 
 ^^^
 
@@ -524,7 +523,7 @@
 
 - عامل اتصال: دو قطبی‌های مولکولی یا اتمی است که به صورت دائم یا موقتی به وجود می‌آیند.
 
-![پیوند واندروالس](images/mp29.png)
+<img class="image" loading="lazy" alt="پیوند واندروالس" src="images/mp29.webp" style="position: absolute; height: 60%; width: 60%; left: 0; top: 180px;">
 
 ^^^
 
@@ -534,7 +533,7 @@
 
 - در اثر ارتعاشات حرارتی از بین خواهند رفت
 
-![پیوند واندروالس](images/mp30.png)
+<img class="image" loading="lazy" alt="پیوند واندروالس" src="images/mp30.webp" style="position: absolute; height: 60%; width: 60%; left: 0; top: 150px;">
 
 ^^^
 
@@ -544,7 +543,7 @@
 
 - عامل اتصال: همراه شدن هیدروژن با یکی از عناصر با الکترونگاتیوی بالا (اکسیژن، نیتروژن، فلوئور)
 
-![پیوند هیدروژنی](images/mp31.png)
+<img class="image" loading="lazy" alt="پیوند هیدروژنی" src="images/mp31.webp" style="position: absolute; height: 70%; width: auto; left: 0; top: 150px;">
 
 ^^^
 
@@ -560,7 +559,7 @@
 
 - در بسیاری از مواد، پیوندهای بین اتمی ترکیبی از پیوندهای اولیه یا ثانویه است.
 
-![پیوند هیبریدی](images/mp32.png)
+<img class="image" loading="lazy" alt="پیوند هیبریدی" src="images/mp32.webp" style="position: absolute; height: 70%; width: auto; left: 25%; top: 100px;">
 
 ^^^
 
@@ -582,7 +581,7 @@
 
 ### انرژی پیوند بخش دوم
 
-![انرژی پیوند](images/mp33.jpg)
+<img class="image" loading="lazy" alt="انرژی پیوند" src="images/mp33.webp" style="position: absolute; height: 89%; width: auto; left: 20%; top: 60px;">
 
 ^^^
 
@@ -609,7 +608,7 @@
 
 - ضریب انبساط حرارتی کاهش می‌یابد
 
-![انرژی پیوند](images/mp34.jpg)
+<img class="image" loading="lazy" alt="انرژی پیوند" src="images/mp34.webp" style="position: absolute; height: 90%; width: auto; left: 0; top: 10px;">
 
 ^^^
 
@@ -633,7 +632,7 @@ $$aE \propto - \left(\frac{dF}{dr_0}\right)_{r = r_0}$$
 
 3. **آمورف**: نظم کم دامنه، عدد همسایگی متغیر، نظم تا چند فاصله اتمی حفظ می‌شود، سریع سرد کردن مذاب با سرعت بالا برای تولید آمورف فلزی
 
-![نظم اتمی](images/mp35.png)
+<img class="image" loading="lazy" alt="نظم اتمی" src="images/mp35.webp" style="position: absolute; height: 60%; width: 80%; left: 0; top: 180px;">
 
 ^^^
 
@@ -641,7 +640,7 @@ $$aE \propto - \left(\frac{dF}{dr_0}\right)_{r = r_0}$$
 
 **کریستال**: مجموعه اتم‌هایی که با نظم معین در تمام حجم توزیع شده‌اند. از اتصال فرضی مرکز اتم‌ها، سیستم سه‌بعدی شامل تعداد زیادی متوازی‌السطوح که شبکه بلوری را تشکیل می‌دهند، ایجاد می‌شود. کوچک‌ترین متوازی‌السطوح تکرار شونده در تمام سه جهت، حجم بلور را سلول واحد کویند می‌نامند.
 
-![ساختار کریستالی](images/mp36.png)
+<img class="image" loading="lazy" alt="ساختار کریستالی" src="images/mp36.webp" style="position: absolute; height: 60%; width: auto; left: 0; top: 180px;">
 
 ^^^
 
@@ -656,7 +655,7 @@ $$aE \propto - \left(\frac{dF}{dr_0}\right)_{r = r_0}$$
 5. زاویه بین بردارها $a$ و $b$
 6. زاویه بین بردارها $a$ و $c$
 
-![سیستم‌های بلوری](images/mp37.png)
+<img class="image" loading="lazy" alt="سیستم‌های بلوری" src="images/mp37.webp" style="position: absolute; height: 80%; width: auto; left: 0; top: 100px;">
 
 ^^^
 
@@ -678,7 +677,7 @@ $$aE \propto - \left(\frac{dF}{dr_0}\right)_{r = r_0}$$
 
 - تری‌کلینیك
 
-![سیستم‌های بلوری](images/mp38.jpg)
+<img class="image" loading="lazy" alt="سیستم‌های بلوری" src="images/mp38.webp" style="position: absolute; height: 80%; width: auto; left: 0; top: 100px;">
 
 ^^^
 
@@ -688,9 +687,9 @@ $$aE \propto - \left(\frac{dF}{dr_0}\right)_{r = r_0}$$
 
 | **حالت‌های مکعبی** | **انگلیسی** | **اختصار** | **شکل** |
 | --- | --- | --- | --- |
-| ***مکعبی ساده*** | Simple Cubic | SC | ![SC](images/mp39.png) |
-| ***مکعبی مرکزدار*** | Body Centered Cubic | BCC | ![BCC](images/mp40.png) |
-| ***مکعبی با سطوح مرکز دار*** | Face Centered Cubic | FCC | ![FCC](images/mp41.png) |
+| ***مکعبی ساده*** | Simple Cubic | SC | ![SC](images/mp39.webp) |
+| ***مکعبی مرکزدار*** | Body Centered Cubic | BCC | ![BCC](images/mp40.webp) |
+| ***مکعبی با سطوح مرکز دار*** | Face Centered Cubic | FCC | ![FCC](images/mp41.webp) |
 
 ^^^
 
@@ -706,7 +705,7 @@ $$aE \propto - \left(\frac{dF}{dr_0}\right)_{r = r_0}$$
 
 - مؤلفه‌های بردار به کوچک‌ترین اعداد صحیح تبدیل می‌شوند.
 
-![اندیس](images/mp42.png)
+<img class="image" loading="lazy" alt="اندیس" src="images/mp42.webp" style="position: absolute; height: 80%; width: auto; left: 0; top: 100px;">
 
 ^^^
 
@@ -726,7 +725,7 @@ $$aE \propto - \left(\frac{dF}{dr_0}\right)_{r = r_0}$$
 
 $$[\bar{1}11], [1\bar{1}1], [11\bar{1}], [111]$$
 
-![صفحات](images/mp43.jpg)
+<img class="image" loading="lazy" alt="صفحات" src="images/mp43.webp" style="position: absolute; height: 60%; width: auto; left: 20%; top: 200px;">
 
 ^^^
 
@@ -736,11 +735,11 @@ $$[\bar{1}11], [1\bar{1}1], [11\bar{1}], [111]$$
 
 $$(1\bar{1}1), (\bar{1}11), (11\bar{1}), (\bar{1}\bar{1}\bar{1})$$
 
-![صفحات](images/mp44.jpg)
+<img class="image" loading="lazy" alt="صفحات" src="images/mp44.webp" style="position: absolute; height: 60%; width: auto; left: 35%; top: 200px;">
 
 ^^^
 
-![صفحات](images/mp45.png)
+<img class="image" loading="lazy" alt="صفحات" src="images/mp45.webp" style="position: absolute; height: 90%; width: auto; left: 15%;">
 
 ^^^
 
@@ -759,13 +758,13 @@ $$(1\bar{1}1), (\bar{1}11), (11\bar{1}), (\bar{1}\bar{1}\bar{1})$$
 
 $$i = -(h + k)$$
 
-![هگزاگونال](images/mp46-47.png)
+<img class="image" loading="lazy" alt="هگزاگونال" src="images/mp46-47.webp" style="position: absolute; height: 60%; width: auto; left: 0; top: 200px;">
 
 ^^^
 
 ### اندیس‌های بلوری (صفحات)
 
-![اندیس صفحات](images/mp48.png)
+<img class="image" loading="lazy" alt="اندیس صفحات" src="images/mp48.webp" style="position: absolute; height: 90%; width: auto; left: 25%; top: 50px;">
 
 ^^^
 
@@ -785,7 +784,7 @@ $$i = -(h + k)$$
 
 - **تصویر:** نمایش انواع ساختارهای بلوری (فلزات بلوری)
 
-![فلزات بلوری](images/mp49.png)
+<img class="image" loading="lazy" alt="فلزات بلوری" src="images/mp49.webp" style="position: absolute; height: 70%; width: auto; left: 20px; top: 100px;">
 
 ^^^
 
@@ -802,7 +801,7 @@ $$i = -(h + k)$$
 
   - **تصویر:** سیستم مکعبی ساده (SC)
   
-  ![سیستم مکعبی ساده](images/mp51.png)
+  <img class="image" loading="lazy" alt="سیستم مکعبی ساده" src="images/mp51.webp" style="position: absolute; height: 50%; width: auto; left: 0; top: 280px;">
 
 ^^^
 
@@ -813,13 +812,13 @@ $$i = -(h + k)$$
   - برای صفحه $ [100] $ در سیستم SC:
     $$PPD_{[100]} = \frac{\pi R^2}{(2R)^2} = 0.785$$
 
-  ![تراکم چگالی](images/mp56.png)
+  <img class="image" loading="lazy" alt="تراکم چگالی" src="images/mp56.webp" style="position: absolute; height: 50%; width: auto; left: 0; top: 50px;">
 
   - **جهات فشرده:** یال‌های مکعب جهات فشرده ساختار هستند.
 
   - **نمونه:** شبکه بلوری مکعبی ساده سدیم کلرید (NaCl)
 
-  ![تراکم چگالی](images/mp59.png)
+  <img class="image" loading="lazy" alt="تراکم چگالی" src="images/mp59.webp" style="position: absolute; height: 50%; width: auto; left:25%; top: 300px;">
 
 ^^^
 
@@ -832,7 +831,7 @@ $$i = -(h + k)$$
 
   - **کل تعداد اتم‌ها:** ۲ اتم در هر سلول واحد.
   
-  ![سیستم مکعبی مرکزدار](images/mp57.png)
+  <img class="image" loading="lazy" alt="سیستم مکعبی مرکزدار" src="images/mp57.webp" style="position: absolute; height: 50%; width: auto; left: 0; top: 200px;">
 
 ^^^
 
@@ -850,8 +849,8 @@ $$i = -(h + k)$$
   - **ضریب تراکم اتمی (APF):**
   
     $$APF = 0.68$$
-  
-  ![سیستم مکعبی مرکزدار](images/mp58.png)
+
+  <img class="image" loading="lazy" alt="سیستم مکعبی مرکزدار" src="images/mp58.webp" style="position: absolute; height: 70%; width: auto; left: 0; top: 100px;">
 
 ^^^
 
@@ -880,7 +879,7 @@ $$i = -(h + k)$$
 
 - **مثال‌ها:** آلومینیوم (Al)، مس (Cu)، طلا (Au)
   
-  ![سیستم مکعبی با وجوه مرکزدار](images/mp41.png)
+  <img class="image" loading="lazy" alt="سیستم مکعبی با وجوه مرکزدار" src="images/mp41.webp" style="position: absolute; height: 50%; width: auto; left: 0; top: 200px;">
 
 ^^^
 
@@ -908,7 +907,7 @@ $$i = -(h + k)$$
 
 $$\text{APF} = \frac{4 \times \frac{4}{3}\times \pi \left(\sqrt{2}\frac{a}{4}\right)^3}{a^3}$$
 
-- ![FCC](images/mp60.png)
+<img class="image" loading="lazy" alt="FCC" src="images/mp60.webp" style="position: absolute; height: 70%; width: auto; left: 0; top: 200px;">
 
 ^^^
 
@@ -918,28 +917,28 @@ $$\text{APF} = \frac{4 \times \frac{4}{3}\times \pi \left(\sqrt{2}\frac{a}{4}\ri
 
 - **نمایش دو بعدی:**
   
-  ![FCC Stacking Sequence](images/mp62.png)
+  <img class="image" loading="lazy" alt="FCC Stacking Sequence" src="images/mp62.webp" style="position: absolute; height: 50%; width: auto; left: 0; top: 100px;">
   
 - **سلول واحد FCC:**
   
-  ![FCC Unit Cell](images/mp63.png)
+  <img class="image" loading="lazy" alt="FCC Unit Cell" src="images/mp63.webp" style="position: absolute; height: 60%; width: auto; right: 10px; top: 250px;">
 
 ^^^
 
 ### تصاویر تکمیلی ساختار FCC
 
-- ![FCC](images/mp64.jpg)
-- ![FCC](images/mp65.png)
+<img class="image" loading="lazy" alt="FCC" src="images/mp64.webp" style="position: absolute; height: 60%; width: auto; left: 10px; top: 150px;">
+<img class="image" loading="lazy" alt="FCC" src="images/mp65.webp" style="position: absolute; height: 60%; width: auto; right: 10px; top: 150px;">
 
 ^^^
 
 ### چیدمان صفحات اتمی در ساختار FCC
 
-- **توالی چیدمان متوالی صفحات اتمی:** ABCABCABC
+- **توالی چیدمان متوالی صفحات اتمی:** $ABCABCABC$
 
 **تصویر مربوطه:**
 
-![چیدمان متوالی صفحات اتمی FCC](images/mp66.jpg)
+<img class="image" loading="lazy" alt="چیدمان متوالی صفحات اتمی FCC" src="images/mp66.webp" style="position: absolute; height: 70%; width: auto; left: 10px; top: 100px;">
 
 ^^^
 
@@ -1816,7 +1815,7 @@ $$\mathbf{b} = \frac{[hkl]}{2a}$$
 
 مرز دانه‌ها (Grain Boundaries) یکی از اجزای کلیدی در ساختار مواد مهندسی و بلوری هستند که تأثیر زیادی بر خواص فیزیکی و مکانیکی مواد دارند. این مرزها نواحی بین دو دانه یا بلور با جهات کریستالی متفاوت را تشکیل می‌دهند و به عنوان عیوب دوبعدی در مواد چندبلوری شناخته می‌شوند.
 
-<img class="image" loading="lazy" alt="CrystalGrain" src="images/CrystalGrain.jpg" style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
+<img class="image" loading="lazy" alt="CrystalGrain" src="images/CrystalGrain.webp" style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
 
 ^^^
 
@@ -1862,7 +1861,7 @@ $$\mathbf{b} = \frac{[hkl]}{2a}$$
 
   - استفاده در تولید کاتالیزورها و مواد با خواص خاص
 
-<img class="image" loading="lazy" alt="Twin Boundary" src="images/Twin-Boundary.jpeg" style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
+<img class="image" loading="lazy" alt="Twin Boundary" src="images/Twin-Boundary.webp" style="position: absolute; height: auto; width: 65%; left: 0px; top: 150px;">
 
 ^^^
 
@@ -2131,7 +2130,7 @@ $$\sigma = E \cdot \varepsilon$$
 
 - **منطقه پلاستیک:** پس از نقطه تسلیم شروع می‌شود و نشان‌دهنده تغییر شکل دائمی ماده است.
 
-<img class="image" loading="lazy" alt="elastic-plastic" src="images/elastic-plastic.jpg" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
+<img class="image" loading="lazy" alt="elastic-plastic" src="images/elastic-plastic.webp" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
 
 ^^^
 
@@ -2272,7 +2271,7 @@ $$\sigma = E \cdot \varepsilon$$
 
 3. **شکست ناگهانی:** زمانی که ترک به اندازه‌ای بزرگ شود که ماده نتواند تنش‌های باقی‌مانده را تحمل کند، شکست ناگهانی و بدون هشدار رخ می‌دهد.
 
-<img class="image" loading="lazy" alt="Fatigue" src="images/Fatigue.jpg" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
+<img class="image" loading="lazy" alt="Fatigue" src="images/Fatigue.webp" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
 
 ^^^
 
@@ -2509,7 +2508,7 @@ $$\sigma = E \cdot \varepsilon$$
 
 ### مقایسه روش‌های آزمون سختی برینل، ویکرز، نوپ و راکول
 
-<img class="image" loading="lazy" alt="آزمون سختی ها" src="images/mt.png" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
+<img class="image" loading="lazy" alt="آزمون سختی ها" src="images/mt.webp" style="position: absolute; height: auto; width: 60%; left: 0px; top: 180px;">
 
 ^^^
 
